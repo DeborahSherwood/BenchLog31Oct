@@ -1,0 +1,52 @@
+{
+  "name": "Bench-Log-31-Oct",
+  "version": "1.0.0",
+  "description": "Gamewritten with twee and compiled with tweego.",
+  "main": "./dist/index.html",
+  "config": {
+    "format": "sugarcube-2.36"
+  },
+  "scripts": {
+    "build-once": "gulp build && tweego -t -f sugarcube-2 -o dist/index.html --head=src/head-content.html project",
+    "watch:gulp": "gulp default",
+    "watch:twee": "tweego -t -f sugarcube-2 -w -o dist/index.html --head=src/head-content.html project"
+  },
+  "keywords": [
+    "sugarcube",
+    "adventure",
+    "interactive fiction",
+    "exploring",
+    "problem solving"
+  ],
+  "author": "Deborah Sherwood",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2",
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeborahSherwood/BenchLog31Oct.git"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "glob-parent": "^5.1.2",
+    "gulp-csslint": "^1.0.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-noop": "^1.0.1",
+    "gulp-sass": "^5.1.0",
+    "jshint": "^2.13.4",
+    "node-sass": "^8.0",
+    "snapsvg": "^0.5.1"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}

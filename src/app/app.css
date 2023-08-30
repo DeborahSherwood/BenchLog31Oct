@@ -1,0 +1,142 @@
+/*
+
+Custom App CSS
+
+to use CSS instead of SCSS:
+
+ 1) Add any number of .css files in this folder, or just use this one
+ 2) In gulpfile.js, set CFG.CSS.SASS to false
+ 3) Files in this folder ending with .scss ignored
+ 4) Files in this folder ending with .css will be compiled and minified to project/modules/app.min.css
+
+*/
+
+
+.low {
+    text-transform: lowercase; 
+}
+.tra { text-transform: capitalize; }
+
+#finders {
+	border-collapse: collapse;
+    width: 75%;
+}
+#stats th, #stats td, #stats tr {
+	padding: 0;
+    text-align: center;
+}
+#passages {
+  margin-left: 3px
+}
+.passage {
+	/* an "ex" is supposedly the width of an 'x' character.
+	 * A lot of characters are narrower, so you get more. */
+	max-width: 80ex;
+	/* Set the side margins to "auto" to center the block. */
+	margin-left: 3px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  .gold {
+    color: #B37B0B;
+  }
+  .white {
+    color: #FFF;
+  }
+  .purple {
+    color: #31293F;
+  }
+  .song {
+    font-style: italic;
+  }
+  .messContainer {
+    border: 2px solid #222;
+    background-color: #222;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 46%;
+  }
+  .messContainer.a {
+    color: #222222;
+  }
+
+  .leftBubble {
+    border: 2px solid #8e8e93;
+    background-color: #8e8e93;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    color: white;
+    width: 65%;
+    clear: both;
+
+  }
+  .rightBubble {
+    border: 2px solid #147efb;
+    background-color: #147efb;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 10px 0;
+    float: right;
+    text-align: right;
+    color: white;
+   
+  }
+
+#maze {
+  height: 250px;
+}
+
+.goldText {
+  color: #B37B0B;
+  text-align: right;
+}
+#floor {
+  width: 250px;
+  
+
+}
+.mapWords {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+#metro {
+
+  width:80%;
+}
+
+.demo {
+  width: 40%;
+}
+
+/***********************************************************************
+	BLEACHED - A largely white style for SugarCube ≥v2.25.0
+***********************************************************************/
+body
+{
+    background: #31293F;
+    color: #bcc3c7;
+    font-family: Tahoma, sans-serif;
+    font-size: large;
+}
+a {
+  color: #A6A9C8;
+  }
+a:hover {
+  color: rgb(250, 250, 250);
+  text-decoration: underline;
+  }
+a:visited {
+      color: #A6A9C8;
+}

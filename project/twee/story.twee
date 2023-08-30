@@ -1,0 +1,21 @@
+:: StoryData
+{
+    "ifid": "F14172B6-DD10-4C50-AF16-43DE19EB2C64",
+    "format": "SugarCube",
+    "format-version": "2.36.1",
+    "start" : "Introduction"
+}
+
+:: StoryTitle
+
+Bench Log 31 Oct
+
+:: Introduction
+
+Your just starting your second week at your new job. So far, it's been a cake walk.
+
+[[Continue|begin]]
+
+:: begin
+
+Welcome!

@@ -1,0 +1,9 @@
+:: StoryInit
+
+<<set $actions to {
+    respects: false,
+    phone: false,
+    startCleaning: false,
+    checkBenchLog: false,
+    checkSys: false 
+}>>

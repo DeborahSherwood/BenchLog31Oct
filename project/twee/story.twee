@@ -18,4 +18,14 @@ You're just starting your second week at your new job. So far, it's been a breez
 
 :: begin
 
-Welcome!
+
+You're an Operator in Training at the old water treatment plant. You work the night shift. 
+You clean, monitor the plant and well systems and answer the phone in case of emergencies.
+<br /><br />
+[[Emergencies]]<br />
+[[Cleaning]]
+
+Emergencies include water lines bursting, no water available, flooding from storms or other water related challenges.
+These events rarely happen so you have lots of time to clean. And cleaning only takes you about an hour, if you move very slowly.
+
+

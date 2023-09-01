@@ -26,18 +26,30 @@ You role is to clean, monitor the plant and well systems and answer the phone in
 
 :: p1
 
-Emergencies include water line breaks, low water pressure, flooding or other water related challenges.
-These events rarely happen so you have lots of time to clean. 
+Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
+On Wednesdays, you have to handle customer calls when they come home late and realize their water has been cut off for non-payment.
+The emergencies rarely happen so you have lots of time to clean. 
 Cleaning only takes you about an hour, if you move slowly.
 You have eight hours, you try to make the most of it.
 <br /><br />
+[[You]]
+
+:: You 
+
+You are  female, male, binary
+and recently divorced, widowed
+after 25 years in your chosen profession you retired but found yourself with too much time on your hands.
+You decided you wanted to do something easy and stress free.
+<br /><br />
+This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
+
 [[Next|p2]]
 
 :: p2
 
 You enter in the control room just as the day crew is leaving for the night.
 They pass along pertinent information before eagerly heading out. 
-You notice one Operator lingering.
+You notice one operator lingering.
 <br /><br />
 [[Talk to Joe|p3]]<br />
 
@@ -47,7 +59,7 @@ You notice one Operator lingering.
 "Keep a vigilant watch tonight." He pauses. "There might be some mischief going on."<br />
 You're confused for just one second then remember the date.<br />
 "Because of Halloween?" You ask.<br />
-"Exactly. Just keep an eye out. You know how the kids can be." He confirms. "And don't forget to Pay Respects."
+"Exactly. Just keep an eye out. You know how kids can be." He confirms. "And don't forget to Pay Respects."
 He tilts his head towards the catwalk.<br />
 "Sure, sure. Everything will be fine." You assure him.<br />
 He purses his lips together for a moment then heads downstairs to leave.<br />
@@ -59,7 +71,7 @@ He purses his lips together for a moment then heads downstairs to leave.<br />
 <<if visited() is 1>>You think about how you want to start your night.<<else>>You decide what to do next.<</if>>
 <br /><br />
 [[Pay Respects]]<br />
-[[Uniform]]<br />
+[[Locker]]<br />
 [[Duty Phone]]<br />
 [[Cameras]]<br />
 [[Clean]]<br />

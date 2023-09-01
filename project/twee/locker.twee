@@ -1,6 +1,6 @@
-:: Uniform
+:: Locker
 
-You have been issued four jumpers to wear while on duty. You also have an assigned locker in the restroom where you keep the jumpers, your safety shoes and other personal items. 
+You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. 
 You head towards the restroom to get changed over and are stopped short when you hear the door open.
 A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol movie.
 [[Run]]<br />
@@ -15,7 +15,7 @@ Behind you, you hear cackling. You turn to find your coworker, Scott. He has lif
 "I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He explains, still laughing.<br />
 "You could have given me a heads up." You sputter, shaking your head.<br />
 He turns to leave then stops and quickly turns and jumps at you yelling "Boo!"<br />
-You fall backwards and land hard on your backside.<br />
+You crash backwards into the door.<br />
 <br /><br />
 [[Asshole!|u2][$phrase to 'Asshole!']]<br />
 [[Jerk!|u2][$phrase to 'Jerk!']]<br />
@@ -42,10 +42,36 @@ He starts to giggle then escalates up to a loud cackle.
 
 :: u2
 
-"<<=$phrase>>" You holler at him as he leaves.
-Cursing to yourself, you make your way into the restroom.
-Opening your locker reveals your jumper and work boots. 
+"<<=$phrase>>" You holler as he creeps out the door.
+Cursing to yourself, you make your way into the restroom and open your locker.
 <br /><br />
-[[Wear jumper over clothing]]<br />
-[[Wear jumper and undergarments only]]<br />
-[[Wear jumper only]]
+[[Coveralls]]<br />
+[[Safety Shoes]]<br />
+[[Cell Phone]]
+
+:: Coveralls
+
+You have two sets of two coveralls. Two for winter and two for summer.
+Summer is over but it is still warm enough to wear your summer coveralls.
+<br /><br />
+[[Wear over clothes|style][$style to 'a']]<br />
+[[Wear over underwear|style][$style to 'b']]<br />
+[[Wear only coveralls|style][$style to 'c']]<br />
+
+:: style
+
+<<if $style is 'a'>>You pull the coveralls on over your clothes.
+<<elseif $stye is 'b'>>You strip down to your skivvies and sox and slip into your coveralls.
+<<else>>Commando style it is. You remove all your clothing except your sox and slip into your coveralls.
+<</if>>
+Lifting your shoes from the bottom of your locker, you plop down on the bench. 
+SELECT SHOE: Steel toed Cowboy boots, Carhartt work boots, Steel toed Puma sneakers, Steel toed Chelsea boots
+You put on your extremely uncomfortable safety shoes. They hurt your feet but are required by OSHA.
+
+You carefully slide your personal phone on the top shelf of your locker. 
+Policy states all operators on shift must lock up their phones during working hours.
+Almost every operator has told you since you're the night shift, you don't have to follow that rule.
+But you comply.
+
+    
+    

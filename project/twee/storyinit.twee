@@ -1,6 +1,7 @@
 :: StoryInit
 
 <<set $phrase to ''>>
+<<set $style to ''>>
 
 <<set $actions to {
     respects: false,

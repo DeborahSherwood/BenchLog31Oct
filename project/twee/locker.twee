@@ -2,7 +2,7 @@
 
 You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. 
 You head towards the restroom to get changed over and are stopped short when you hear the door open.
-A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol movie.
+A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.
 [[Run]]<br />
 [[Fight]]<br />
 
@@ -10,7 +10,7 @@ A very large and tall shape emerges from the restroom. It reminds you of the Gho
 :: Run
 
 Shrieking in fear, you turn to run back to the safety of the control room.
-Behind you, you hear cackling. You turn to find your coworker, Scott. He has lifted the shroud to reveal his head.<br />
+Behind you, you start to hear cackling. You turn to find your coworker, Scott. He has lifted the shroud to reveal his head.<br />
 "Jesus, Scott! You scared the hell out of me." Your heart is still racing. He continues to to cackle.<br />
 "I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He explains, still laughing.<br />
 "You could have given me a heads up." You sputter, shaking your head.<br />
@@ -61,8 +61,8 @@ Summer is over but it is still warm enough to wear your summer coveralls.
 :: style
 
 <<if $style is 'a'>>You pull the coveralls on over your clothes.
-<<elseif $stye is 'b'>>You strip down to your skivvies and sox and slip into your coveralls.
-<<else>>Commando style it is. You remove all your clothing except your sox and slip into your coveralls.
+<<elseif $stye is 'b'>>You strip down to your skivvies and socks and slip into your coveralls.
+<<else>>Commando style it is. You remove all your clothing except your socks and slip into your coveralls.
 <</if>>
 Lifting your shoes from the bottom of your locker, you plop down on the bench. 
 SELECT SHOE: Steel toed Cowboy boots, Carhartt work boots, Steel toed Puma sneakers, Steel toed Chelsea boots

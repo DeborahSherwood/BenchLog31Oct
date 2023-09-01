@@ -1,5 +1,7 @@
 :: StoryInit
 
+<<set $phrase to ''>>
+
 <<set $actions to {
     respects: false,
     phone: false,

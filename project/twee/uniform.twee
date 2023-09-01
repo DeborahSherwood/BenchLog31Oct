@@ -1,0 +1,51 @@
+:: Uniform
+
+You have been issued four jumpers to wear while on duty. You also have an assigned locker in the restroom where you keep the jumpers, your safety shoes and other personal items. 
+You head towards the restroom to get changed over and are stopped short when you hear the door open.
+A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol movie.
+[[Run]]<br />
+[[Fight]]<br />
+
+
+:: Run
+
+Shrieking in fear, you turn to run back to the safety of the control room.
+Behind you, you hear cackling. You turn to find your coworker, Scott. He has lifted the shroud to reveal his head.<br />
+"Jesus, Scott! You scared the hell out of me." Your heart is still racing. He continues to to cackle.<br />
+"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He explains, still laughing.<br />
+"You could have given me a heads up." You sputter, shaking your head.<br />
+He turns to leave then stops and quickly turns and jumps at you yelling "Boo!"<br />
+You fall backwards and land hard on your backside.<br />
+<br /><br />
+[[Asshole!|u2][$phrase to 'Asshole!']]<br />
+[[Jerk!|u2][$phrase to 'Jerk!']]<br />
+[[Dickhead!|u2][$phrase to 'Dickhead!']]<br />
+
+
+:: Fight
+
+With your bare fists, you start swinging at the imposing figure.
+"Ow!" you hear and take a step back, your fists still at the ready.
+The Reaper lifts his shroud. Underneath, you find the familiar face of your coworker, Scott. 
+He looks slightly peeved that you hit him. <br />
+
+"What the heck did you do that for?" he asks in bewilderment.<br />
+"You caught me off guard! What are you still doing here?" You drop your fists.<br />
+"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He explains in a matter of fact voice.<br />
+"Sorry - I'm a little on edge I guess. You could have given me a heads up." You sigh.<br />
+He starts to giggle then escalates up to a loud cackle.
+"I guess my costume is believable then!" He pats you on the shoulder and turns to leave, still laughing.<br />
+<br /><br />
+[[Asshole!|u2][$phrase to 'Asshole!']]<br />
+[[Jerk!|u2][$phrase to 'Jerk!']]<br />
+[[Dickhead!|u2][$phrase to 'Dickhead!']]<br />
+
+:: u2
+
+"<<=$phrase>>" You holler at him as he leaves.
+Cursing to yourself, you make your way into the restroom.
+Opening your locker reveals your jumper and work boots. 
+<br /><br />
+[[Wear jumper over clothing]]<br />
+[[Wear jumper and undergarments only]]<br />
+[[Wear jumper only]]

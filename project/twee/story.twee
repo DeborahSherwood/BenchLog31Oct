@@ -18,23 +18,24 @@ You're just starting your second week at your new job. So far, it's been a breez
 
 :: begin
 
-You're an Operator in Training at the old water treatment plant. You work the night shift. 
+You're an Operator in Training at the old water plant. You work the night shift. 
 You role is to clean, monitor the plant and well systems and answer the phone in case of emergencies.
 <br /><br />
+[[Old Water Plant]]
 [[Next|p1]]
 
 :: p1
 
 Emergencies include water line breaks, low water pressure, flooding or other water related challenges.
-These events rarely happen so you have lots of time to fill. 
+These events rarely happen so you have lots of time to clean. 
 Cleaning only takes you about an hour, if you move slowly.
-You have eight hours, make the most of it.
+You have eight hours, you try to make the most of it.
 <br /><br />
 [[Next|p2]]
 
 :: p2
 
-You enter in the control room just as the day crew are wrapping up.
+You enter in the control room just as the day crew is leaving for the night.
 They pass along pertinent information before eagerly heading out. 
 You notice one Operator lingering.
 <br /><br />
@@ -48,7 +49,7 @@ You're confused for just one second then remember the date.<br />
 "Because of Halloween?" You ask.<br />
 "Exactly. Just keep an eye out. You know how the kids can be." He confirms. "And don't forget to Pay Respects."
 He tilts his head towards the catwalk.<br />
-"Sure, sure." You assure him. "Everything will be fine." You respond with great confidence.<br />
+"Sure, sure. Everything will be fine." You assure him.<br />
 He purses his lips together for a moment then heads downstairs to leave.<br />
 <br />
 [[Next|p4]]
@@ -58,7 +59,9 @@ He purses his lips together for a moment then heads downstairs to leave.<br />
 <<if visited() is 1>>You think about how you want to start your night.<<else>>You decide what to do next.<</if>>
 <br /><br />
 [[Pay Respects]]<br />
+[[Uniform]]<br />
 [[Duty Phone]]<br />
+[[Cameras]]<br />
 [[Clean]]<br />
 [[Bench log]]<br />
 [[Systems status]]<br />

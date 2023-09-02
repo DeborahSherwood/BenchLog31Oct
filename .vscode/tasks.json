@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build-once",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build-once",
+			"detail": "gulp build && tweego -t -f sugarcube-2 -o dist/index.html --head=src/head-content.html project"
+		}
+	]
+}

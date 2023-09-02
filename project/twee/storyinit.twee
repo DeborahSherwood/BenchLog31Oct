@@ -2,6 +2,7 @@
 
 <<set $phrase to ''>>
 <<set $style to ''>>
+<<set $entry to []>>
 
 <<set $actions to {
     respects: false,
@@ -13,5 +14,6 @@
 
 <<set $player to {
     gender: '',
-    
+    status: '',
+
 }>>

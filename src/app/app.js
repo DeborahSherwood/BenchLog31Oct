@@ -15,7 +15,12 @@ var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
 var time = today.getHours() + ":" + today.getMinutes();
 var dateTime = date+' '+time;
 var curTime = time;
- 
+curTime.toLocaleString('en-US', { hour12: false,})
 State.variables.curDateTime = dateTime;
 State.variables.curTime = curTime;
+
+
+  
+
+
 

@@ -2,7 +2,7 @@
 
 <<if visited() is 1>>You look over the bench log. There is a space for day shift and night shift notes.
 Day shift recorded normal operations. You're certain night shift will report the same.<<else>>
-You usually fill out the bench log towards the end of your shift.    
+You add notes to the bench log as events occur and at the end of your shift.    
 <</if>>
 <br /><br />
 [[Log entry]]<br />
@@ -10,4 +10,14 @@ You usually fill out the bench log towards the end of your shift.
 
 :: Log entry
 
-<<set _date to $curDateTime>>
+You enter your shift start time in the log.<br />
+<br />
+<b>Bench Log, 31 Oct 2023</b><br />
+
+<<set $entry.push('Shift start 1756')>>
+<<for _i to 0; _i lt $entry.length; _i++>>
+$entry[_i]<br />
+<</for>>
+
+<br /><br />
+[[Continue|p4]]

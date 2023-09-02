@@ -1,2 +1,6 @@
 # Start Here
-SCADA Training Plan by Deborah Sherwood
+
+The night shift at a water treatment plant is usually quiet. 
+But tonight is Halloween and strange things are happening.
+
+

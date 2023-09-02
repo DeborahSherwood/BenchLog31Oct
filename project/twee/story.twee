@@ -12,14 +12,8 @@ Bench Log 31 Oct
 
 :: Introduction
 
-You're just starting your second week at your new job. So far, it's been a breeze.
-
-[[Continue|begin]]
-
-:: begin
-
 You're an Operator in Training at the old water plant. You work the night shift. 
-You role is to clean, monitor the plant and well systems and answer the phone in case of emergencies.
+You job is to clean, monitor the plant and well systems and answer the phone in case of emergencies.
 <br /><br />
 [[Old Water Plant]]
 [[Next|p1]]
@@ -27,7 +21,6 @@ You role is to clean, monitor the plant and well systems and answer the phone in
 :: p1
 
 Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
-On Wednesdays, you have to handle customer calls when they come home late and realize their water has been cut off for non-payment.
 The emergencies rarely happen so you have lots of time to clean. 
 Cleaning only takes you about an hour, if you move slowly.
 You have eight hours, you try to make the most of it.
@@ -36,9 +29,19 @@ You have eight hours, you try to make the most of it.
 
 :: You 
 
-You are  female, male, binary
-and recently divorced, widowed
-after 25 years in your chosen profession you retired but found yourself with too much time on your hands.
+
+
+
+You are <<set _playerGender = ["female", "male", "gender-neutral"]>>
+<<listbox "$player.gender" autoselect>>
+	<<optionsfrom _playerGender>>
+<</listbox>>
+and recently 
+<<set _playerStatus = ["single", "divorced", "widowed"]>>
+<<listbox "$player.status" autoselect>>
+	<<optionsfrom _playerStatus>>
+<</listbox>>
+after 25 years in your chosen profession, you retired but found yourself with too much time on your hands.
 You decided you wanted to do something easy and stress free.
 <br /><br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
@@ -47,7 +50,7 @@ This job is exactly what you needed. It can be lonely at times, but it suits you
 
 :: p2
 
-You enter in the control room just as the day crew is leaving for the night.
+You enter in the control room just as the day crew is wrapping up for the night.
 They pass along pertinent information before eagerly heading out. 
 You notice one operator lingering.
 <br /><br />
@@ -59,7 +62,7 @@ You notice one operator lingering.
 "Keep a vigilant watch tonight." He pauses. "There might be some mischief going on."<br />
 You're confused for just one second then remember the date.<br />
 "Because of Halloween?" You ask.<br />
-"Exactly. Just keep an eye out. You know how kids can be." He confirms. "And don't forget to Pay Respects."
+"Exactly. Just keep an eye out. You know how kids can be." He states. "And don't forget to Pay Respects."
 He tilts his head towards the catwalk.<br />
 "Sure, sure. Everything will be fine." You assure him.<br />
 He purses his lips together for a moment then heads downstairs to leave.<br />

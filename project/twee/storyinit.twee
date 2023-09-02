@@ -10,3 +10,8 @@
     checkBenchLog: false,
     checkSys: false 
 }>>
+
+<<set $player to {
+    gender: '',
+    
+}>>

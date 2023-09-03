@@ -15,5 +15,11 @@
 <<set $player to {
     gender: '',
     status: '',
+    coveralls: false,
+    cType: '',
+    shoes: false,
+    shoeType: '',
+    phone: false,
+    pPhone: true
 
 }>>

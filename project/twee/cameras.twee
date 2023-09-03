@@ -1,7 +1,7 @@
 :: Cameras
 
 <<if visited() is 1>>The control room has a wall of monitors. Camera feeds from the plant, well sites and water towers appear on the monitors.<</if>>
-You take a moment to study the feeds. All looks quiet for now.
+You take a moment to study the feeds. All looks good for now.
 <br />
 <br />
-[[Continue|p4]]
+[[Control Room|p4]]

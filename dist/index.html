@@ -99,8 +99,8 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="20" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
-.low{text-transform:lowercase}.tra{text-transform:capitalize}#finders{border-collapse:collapse;width:75%}#stats td,#stats th,#stats tr{padding:0;text-align:center}#passages{margin-left:3px}.passage{max-width:80ex;margin-left:3px}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:8px}.gold{color:#b37b0b}.white{color:#fff}.purple{color:#31293f}.song{font-style:italic}.messContainer{border:2px solid #222;background-color:#222;border-radius:24px;padding:10px;margin:10px 0;width:46%}.messContainer.a{color:#222}.leftBubble{border:2px solid #8e8e93;background-color:#8e8e93;border-radius:24px;padding:10px;margin:10px 0;text-align:left;color:#fff;width:65%;clear:both}.rightBubble{border:2px solid #147efb;background-color:#147efb;border-radius:24px;padding:10px;margin:10px 0;float:right;text-align:right;color:#fff}#maze{height:250px}.goldText{color:#b37b0b;text-align:right}#floor{width:250px}.mapWords{font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:14px}#metro{width:80%}.demo{width:40%}body{background:#31293f;color:#bcc3c7;font-family:Tahoma,sans-serif;font-size:large}a{color:#a6a9c8}a:hover{color:#fafafa;text-decoration:underline}a:visited{color:#a6a9c8}
+	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="24" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
+#ui-bar{background-color:#1a1a1d}.low{text-transform:lowercase}.tra{text-transform:capitalize}#passages{margin-left:3px}.passage{max-width:80ex;margin-left:3px}body{background:#202124;color:#bdc1c6;font-family:Tahoma,sans-serif;font-size:large}.voiceA{color:#88888a}.voiceB{color:#bdbeaf}a{color:#8ab4f8}a:hover{color:#bdbeaf;text-decoration:underline}a:visited{color:#8ab4f8}
 /* twine-user-stylesheet #2: "deftone stylus.ttf" */
 @font-face {
 	font-family: "deftone stylus";
@@ -111,7 +111,7 @@ You add notes to the bench log as events occur and at the end of your shift.
 &lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Log entry]]&lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="2" name="Log entry" tags="" position="225,100" size="100,100">You enter your shift start time in the log.&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="2" name="Log entry" tags="" position="225,100" size="100,100">You enter your shift start time in the log.&lt;br /&gt;
 &lt;br /&gt;
 &lt;b&gt;Bench Log, 31 Oct 2023&lt;/b&gt;&lt;br /&gt;
 
@@ -121,19 +121,20 @@ $entry[_i]&lt;br /&gt;
 &lt;&lt;/for&gt;&gt;
 
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="3" name="Cameras" tags="" position="350,100" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;The control room has a wall of monitors. Camera feeds from the plant, well sites and water towers appear on the monitors.&lt;&lt;/if&gt;&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="3" name="Cameras" tags="" position="350,100" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;The control room has a wall of monitors. Camera feeds from the plant, well sites and water towers appear on the monitors.&lt;&lt;/if&gt;&gt;
 You take a moment to study the feeds. All looks quiet for now.
 &lt;br /&gt;
 &lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="4" name="Locker" tags="" position="475,100" size="100,100">You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. 
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="4" name="Locker" tags="" position="475,100" size="100,100">You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. 
 You head towards the restroom to get changed over and are stopped short when you hear the door open.
-A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.
+A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.&lt;br /&gt;
+&lt;br /&gt;
 [[Run]]&lt;br /&gt;
 [[Fight]]&lt;br /&gt;
-IF YOU HAVE THE PHONE - YOU CAN ALSO THROW THAT</tw-passagedata><tw-passagedata pid="5" name="Run" tags="" position="600,100" size="100,100">Shrieking in fear, you turn to run back to the safety of the control room.
+&lt;&lt;if $player.phone is true&gt;&gt;[[Throw Duty Phone]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Run" tags="" position="600,100" size="100,100">Shrieking in fear, you turn to run back to the safety of the control room.
 Behind you, you hear cackling. You turn to find your coworker, Scott. He has lifted the shroud to reveal his head.&lt;br /&gt;
-&quot;Jesus, Scott! You scared the hell out of me.&quot; Your heart is still racing. He continues to to cackle.&lt;br /&gt;
-&quot;I&#39;m working the Haunted Hog Farm tonight and didn&#39;t have time to go home to change.&quot; He explains, still laughing.&lt;br /&gt;
+&lt;span class=&quot;voiceA&quot;&gt;&quot;Jesus, Scott! You scared the hell out of me.&quot;&lt;/span&gt; Your heart is still racing. He continues to to cackle.&lt;br /&gt;
+&lt;span class=&quot;voiceB&quot;&gt;&quot;I&#39;m working the Haunted Hog Farm tonight and didn&#39;t have time to go home to change.&quot;&lt;/span&gt; He explains, still laughing.&lt;br /&gt;
 &quot;You could have given me a heads up.&quot; You sputter, shaking your head.&lt;br /&gt;
 He turns to leave then stops and quickly turns and jumps at you yelling &quot;Boo!&quot;&lt;br /&gt;
 You crash backwards into the door.&lt;br /&gt;
@@ -148,46 +149,77 @@ He looks slightly peeved that you hit him. &lt;br /&gt;
 &quot;What the heck did you do that for?&quot; he asks in bewilderment.&lt;br /&gt;
 &quot;Are you kidding? Look at you! What are you still doing here?&quot; You drop your fists.&lt;br /&gt;
 &quot;I&#39;m working the Haunted Hog Farm tonight and didn&#39;t have time to go home to change.&quot; He explains in a matter of fact voice.&lt;br /&gt;
-&quot;Sorry - I&#39;m a little on edge I guess. You could have given me a heads up.&quot; You sigh.&lt;br /&gt;
-He starts to giggle then escalates up to a loud cackle.
+&quot;Geez. You could have given me a heads up.&quot; You sigh.&lt;br /&gt;
+He starts to giggle which then escalates up to a loud cackle.
 &quot;I guess my costume is believable then!&quot; He pats you on the shoulder and turns to leave, still laughing.&lt;br /&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Asshole!|u2][$phrase to &#39;Asshole!&#39;]]&lt;br /&gt;
 [[Jerk!|u2][$phrase to &#39;Jerk!&#39;]]&lt;br /&gt;
-[[Dickhead!|u2][$phrase to &#39;Dickhead!&#39;]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="7" name="u2" tags="" position="850,100" size="100,100">&quot;&lt;&lt;=$phrase&gt;&gt;&quot; You holler as he creeps out the door.
+[[Dickhead!|u2][$phrase to &#39;Dickhead!&#39;]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="7" name="Throw Duty Phone" tags="" position="850,100" size="100,100">You chuck the heavy phone towards the creature, making contact right at eye level.&lt;br /&gt;
+&quot;Ow!&quot; you hear a muffled sound from under the shroud.
+A moment later, the creature lifts the shroud to reveal your co-worker, Scott.
+He looks slightly peeved that you hit him. &lt;br /&gt;
+
+&quot;What the heck did you do that for?&quot; he asks.&lt;br /&gt;
+&quot;Are you kidding? Look at you! What are you still doing here?&quot; You voice is higher than usual.&lt;br /&gt;
+
+&quot;I&#39;m working the Haunted Hog Farm tonight and didn&#39;t have time to go home to change.&quot; He bends down and picks up the phone.&lt;br /&gt;
+&quot;Dang. Sorry man.&quot; You take the phone from him.&lt;br /&gt;
+&quot;I think the phone is O.K.&quot; He says, rubbing his forehead.
+&quot;You have a good night.&quot; He turns and leaves.&lt;br /&gt;
+You feel bad you threw the phone at him, but he did kind of freak you out.
+&lt;br /&gt;&lt;br /&gt;
+[[Coveralls]]&lt;br /&gt;
+[[Safety Shoes]]&lt;br /&gt;
+[[Cell Phone]]&lt;br /&gt;
+[[Key Card]]&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="8" name="u2" tags="" position="975,100" size="100,100">&quot;&lt;&lt;=$phrase&gt;&gt;&quot; You holler as he creeps out the door.
 Cursing to yourself, you make your way into the restroom and open your locker.
 &lt;br /&gt;&lt;br /&gt;
 [[Coveralls]]&lt;br /&gt;
 [[Safety Shoes]]&lt;br /&gt;
-[[Cell Phone]]</tw-passagedata><tw-passagedata pid="8" name="Coveralls" tags="" position="975,100" size="100,100">You have two sets of two coveralls. Two for winter and two for summer.
-Summer is over but it is still warm enough to wear your summer coveralls.
+[[Cell Phone]]&lt;br /&gt;
+[[Key Card]]&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="9" name="Coveralls" tags="" position="1100,100" size="100,100">You have two sets of two coveralls. Two for winter and two for summer.
+Summer is over but it&#39;s still warm enough to wear your summer coveralls.
 &lt;br /&gt;&lt;br /&gt;
 [[Wear over clothes|style][$style to &#39;a&#39;]]&lt;br /&gt;
 [[Wear over underwear|style][$style to &#39;b&#39;]]&lt;br /&gt;
-[[Wear only coveralls|style][$style to &#39;c&#39;]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="9" name="style" tags="" position="1100,100" size="100,100">&lt;&lt;if $style is &#39;a&#39;&gt;&gt;You pull the coveralls on over your clothes.
+[[Wear only coveralls|style][$style to &#39;c&#39;]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="10" name="style" tags="" position="1225,100" size="100,100">&lt;&lt;set $player.coveralls to true&gt;&gt;
+&lt;&lt;if $style is &#39;a&#39;&gt;&gt;You pull the coveralls on over your clothes.
 &lt;&lt;elseif $stye is &#39;b&#39;&gt;&gt;You strip down to your skivvies and socks and slip into your coveralls.
 &lt;&lt;else&gt;&gt;Commando style it is. You remove all your clothing except your socks and slip into your coveralls.
 &lt;&lt;/if&gt;&gt;
-&lt;br /&gt;
-Lifting your shoes from the bottom of your locker, you plop down on the bench.&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+[[Safety Shoes]]&lt;br /&gt;
+[[Cell Phone]]</tw-passagedata><tw-passagedata pid="11" name="Safety Shoes" tags="" position="100,225" size="100,100">&lt;&lt;set $player.shoes to true&gt;&gt;
+Lifting your &lt;&lt;set _playerShoes = [&quot;Steel toe Cowboy boots&quot;, &quot;Carhartt work boots&quot;, &quot;Puma safety sneakers&quot;, &quot;Chelsea steel toe boots&quot;]&gt;&gt;
+&lt;&lt;listbox &quot;$player.shoeType&quot; autoselect&gt;&gt;
+	&lt;&lt;optionsfrom _playerShoes&gt;&gt;
+&lt;&lt;/listbox&gt;&gt;  from the bottom of your locker, you plop down on the bench.&lt;br /&gt;
 
-
-&lt;&lt;set _playerGender = [&quot;Steel toed Cowboy boots&quot;, &quot;Carhartt work boots&quot;, &quot;Steel toed Puma sneakers&quot;, &quot;Steel toed Chelsea boots&quot;]&gt;&gt;
-&lt;&lt;listbox &quot;$player.shoes&quot; autoselect&gt;&gt;
-	&lt;&lt;optionsfrom _playerGender&gt;&gt;
-&lt;&lt;/listbox&gt;&gt; 
-You put on your safety shoes. They hurt your feet but are required by OSHA.&lt;br /&gt;
-
-
+You put on your shoes. They hurt your feet but are required by OSHA.
+&lt;br /&gt;&lt;br /&gt;
+[[Cell Phone]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="12" name="Cell Phone" tags="" position="225,225" size="100,100">&lt;&lt;set $player.pPhone to false&gt;&gt;
 You carefully slide your personal phone on the top shelf of your locker. 
 Policy states all operators on shift must lock up their personal phones during working hours.
-Almost every operator has told you that because you&#39;re the night shift, you don&#39;t have to follow that rule.
-But you comply.
-
-&lt;&lt;if $gender is &#39;male&#39;&gt;&gt;You remove your ID card, which is also a key card, then put your wallet on the shelf.
-&lt;&lt;elseif $gender is &#39;female&#39;&gt;&gt;You remove your ID card, which is also a key card, then put your purse on the shelf.
-&lt;&lt;else&gt;&gt;You remove your ID card, which is also a key card, then put your other personal items on the shelf.
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Old Water Plant" tags="" position="1225,100" size="100,100">The old brick water plant was built in the early 1950s to provide water safe for consumption to the surrounding communities.
+&lt;br /&gt;&lt;br /&gt;
+[[Coveralls]]&lt;br /&gt;
+[[Safety Shoes]]&lt;br /&gt;
+[[Cell Phone]]&lt;br /&gt;
+[[Key Card]]&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="13" name="Key Card" tags="" position="350,225" size="100,100">&lt;&lt;set $player.key to true&gt;&gt;
+&lt;&lt;if $gender is &#39;male&#39;&gt;&gt;You remove your key card from your wallet, then put your wallet in the locker.
+&lt;&lt;elseif $gender is &#39;female&#39;&gt;&gt;You remove your key card from your purse, then put your purse in the locker.
+&lt;&lt;else&gt;&gt;You keep your key card then put your other personal items in the locker.
+&lt;&lt;/if&gt;&gt;
+Your key card is also your ID card. All the exterior doors can be opened by swiping your card.
+&lt;br /&gt;&lt;br /&gt;
+[[Coveralls]]&lt;br /&gt;
+[[Safety Shoes]]&lt;br /&gt;
+[[Cell Phone]]&lt;br /&gt;
+[[Key Card]]&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="14" name="Old Water Plant" tags="" position="475,225" size="100,100">The old brick water plant was built in the early 1950s to provide water safe for consumption to the surrounding communities.
 The plant is well maintained and kept clean but it is old. There must be 20 coats of paint on the interior walls.&lt;br /&gt;
 &lt;br /&gt;
 Since it&#39;s your job to keep it clean, you&#39;re aware of every crack and crevice throughout the building.
@@ -195,51 +227,53 @@ You take great pride in keeping the floors cleaned and polished; the thick windo
 &lt;br /&gt;
 In spite of all your hard work, dust still accumulates and cobwebs lace the corners of the building. &lt;br /&gt;
 &lt;br /&gt;
-[[Continue|p1]]</tw-passagedata><tw-passagedata pid="11" name="Duty Phone" tags="" position="100,225" size="100,100">The duty phone must be carried by any operator who leaves the control room desk. 
+[[Continue|p1]]</tw-passagedata><tw-passagedata pid="15" name="Duty Phone" tags="" position="600,225" size="100,100">The duty phone must be carried by any operator who leaves the control room desk. 
 It is an old, wireless set that is the same size and weight of a masonry brick.
 The ringer volume is set to blaring loud and can&#39;t be changed, which is great for 
-day shift but annoying during the quiet of night shift.
+day shift but annoying during the quiet hours of night shift.
 &lt;br /&gt;&lt;br /&gt;
 [[Take phone]]&lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="12" name="Take phone" tags="" position="225,225" size="100,100">You lift the blocky device off the charger. It currently has a 54 percent charge. The battery never seems to charge past 60.
-You drop the phone into a side cargo pocket.
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="16" name="Take phone" tags="" position="725,225" size="100,100">&lt;&lt;set $player.phone to true&gt;&gt;
+You lift the blocky device off the charger. It currently has a 54 percent charge. The battery never seems to charge past 60.
+&lt;&lt;if $player.coveralls is true&gt;&gt;You drop the phone into a side cargo pocket.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;
-&lt;br /&gt;</tw-passagedata><tw-passagedata pid="13" name="Pay Respects" tags="" position="350,225" size="100,100">&quot;Paying Respects&quot; means to walk down a narrow catwalk from the control room towards the back of the plant.
+&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="17" name="Pay Respects" tags="" position="850,225" size="100,100">&quot;Paying Respects&quot; means to walk down a narrow catwalk from the control room towards the back of the plant.
 The catwalk is suspended above several chemical tanks.
 About half way down the walk, there is a memorial to the only operator ever killed while on duty at the plant.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r2]]</tw-passagedata><tw-passagedata pid="14" name="r2" tags="" position="475,225" size="100,100">Bobby Murphy had been on the job for about a year. He was young and energetic and picked up things quickly.
+[[Next|r2]]</tw-passagedata><tw-passagedata pid="18" name="r2" tags="" position="975,225" size="100,100">Bobby Murphy had been on the job for about a year. He was young and energetic and picked up things quickly.
 He got the job right out of high school and had settled into a blue-collar life with his high school sweetheart by his side.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r3]]</tw-passagedata><tw-passagedata pid="15" name="r3" tags="" position="600,225" size="100,100">The story goes that Bobby was always in a hurry, even when he didn&#39;t need to be.
+[[Next|r3]]</tw-passagedata><tw-passagedata pid="19" name="r3" tags="" position="1100,225" size="100,100">The story goes that Bobby was always in a hurry, even when he didn&#39;t need to be.
 The Lead Operator constantly counseled Bobby on safety and to slow down and take his time.
 But Bobby just couldn&#39;t. It wasn&#39;t in his nature.
 
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r4]]</tw-passagedata><tw-passagedata pid="16" name="r4" tags="" position="725,225" size="100,100">Back in those days, the chemical tanks had lids that could be removed for easier cleaning.
+[[Next|r4]]</tw-passagedata><tw-passagedata pid="20" name="r4" tags="" position="1225,225" size="100,100">Back in those days, the chemical tanks had lids that could be removed for easier cleaning.
 One tank had been drained so it could be cleaned. The lid was off. It was nearly empty when Bobby decided to start the chore of cleaning it.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r5]]</tw-passagedata><tw-passagedata pid="17" name="r5" tags="" position="850,225" size="100,100">He dashed out of the control room and started along the catwalk, moving too fast. He tripped and sailed head-long over the side rail and straight into the tank.
+[[Next|r5]]</tw-passagedata><tw-passagedata pid="21" name="r5" tags="" position="100,350" size="100,100">He dashed out of the control room and started along the catwalk, moving too fast. He tripped and sailed head-long over the side rail and straight into the tank.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r6]]</tw-passagedata><tw-passagedata pid="18" name="r6" tags="" position="975,225" size="100,100">Tragically, this tank still had about six inches of Sulfuric Acid (H2sO4) in it. When Bobby landed, he panicked because he had been made well aware of how dangerous this chemical was.
+[[Next|r6]]</tw-passagedata><tw-passagedata pid="22" name="r6" tags="" position="225,350" size="100,100">Tragically, this tank still had about six inches of Sulfuric Acid (H2sO4) in it. When Bobby landed, he panicked because he had been made well aware of how dangerous this chemical was.
 He gulped in a big swallow as his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank, making his injuries worse. 
 He had no way to climb out.
 His eyeballs would dissolve first, followed by his tongue and the soft tissue in his nose, throat and lungs. Painfully, Bobby succumbed to the acid.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|r7]]</tw-passagedata><tw-passagedata pid="19" name="r7" tags="" position="1100,225" size="100,100">By the time anyone realized what was going on, it was too late. The plant was shutdown for three days while crews removed what was left of Bobby&#39;s body.
+[[Next|r7]]</tw-passagedata><tw-passagedata pid="23" name="r7" tags="" position="350,350" size="100,100">By the time anyone realized what was going on, it was too late. The plant was shutdown for three days while crews removed what was left of Bobby&#39;s body.
 The tank was disassembled and removed. It was replaced by two modern tanks that are completely enclosed with only fill and release valves.
 Paying Respects is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back to the control room.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|p4]]</tw-passagedata><tw-passagedata pid="20" name="Introduction" tags="" position="1225,225" size="100,100">You&#39;re an Operator in Training at the old water plant. You work the night shift. 
+[[Next|p4]]</tw-passagedata><tw-passagedata pid="24" name="Introduction" tags="" position="475,350" size="100,100">You&#39;re an Operator in Training at the old water plant. You work the night shift. 
 Your job is to clean, monitor the plant and well systems and answer the phone in case of emergencies.
 &lt;br /&gt;&lt;br /&gt;
 [[Old Water Plant]]&lt;br /&gt;
-[[Next|p1]]</tw-passagedata><tw-passagedata pid="21" name="p1" tags="" position="100,350" size="100,100">Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
+[[Next|p1]]</tw-passagedata><tw-passagedata pid="25" name="p1" tags="" position="600,350" size="100,100">Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
 Emergencies rarely happen so you have lots of time to clean. 
 Cleaning only takes you about an hour, if you move slowly.
 You have eight hours, try to make the most of it.
 &lt;br /&gt;&lt;br /&gt;
-[[You]]</tw-passagedata><tw-passagedata pid="22" name="You" tags="" position="225,350" size="100,100">You are &lt;&lt;set _playerGender = [&quot;female&quot;, &quot;male&quot;, &quot;gender-neutral&quot;]&gt;&gt;
+[[You]]</tw-passagedata><tw-passagedata pid="26" name="You" tags="" position="725,350" size="100,100">You are &lt;&lt;set _playerGender = [&quot;female&quot;, &quot;male&quot;, &quot;gender-neutral&quot;]&gt;&gt;
 &lt;&lt;listbox &quot;$player.gender&quot; autoselect&gt;&gt;
 	&lt;&lt;optionsfrom _playerGender&gt;&gt;
 &lt;&lt;/listbox&gt;&gt;
@@ -248,25 +282,25 @@ and recently
 &lt;&lt;listbox &quot;$player.status&quot; autoselect&gt;&gt;
 	&lt;&lt;optionsfrom _playerStatus&gt;&gt;
 &lt;&lt;/listbox&gt;&gt;
-after 25 years in your chosen profession, you retired but found yourself with too much free time.
+. After 25 years in your chosen profession, you retired but found yourself with too much free time.
 You decided you wanted to do something easy and stress free.
 &lt;br /&gt;&lt;br /&gt;
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
-
-[[Next|p2]]</tw-passagedata><tw-passagedata pid="23" name="p2" tags="" position="350,350" size="100,100">You enter in the control room just as the day crew is wrapping up for the night.
-They pass along pertinent information before eagerly heading out. 
-You notice one operator lingering.
 &lt;br /&gt;&lt;br /&gt;
-[[Talk to Joe|p3]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="24" name="p3" tags="" position="475,350" size="100,100">&quot;Hey, Joe.&quot; You say as he steps closer to you.&lt;br /&gt;
+[[Next|p2]]</tw-passagedata><tw-passagedata pid="27" name="p2" tags="" position="850,350" size="100,100">You enter the control room just as the day crew is wrapping up for the night.
+They pass along pertinent information before eagerly heading out. 
+You notice one operator lingering by the door.
+&lt;br /&gt;&lt;br /&gt;
+[[Talk to Joe|p3]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="28" name="p3" tags="" position="975,350" size="100,100">&quot;Hey, Joe.&quot; You say as he steps closer to you.&lt;br /&gt;
 &quot;Keep a vigilant watch tonight.&quot; He pauses. &quot;There might be some mischief going on.&quot;&lt;br /&gt;
 You&#39;re confused for just one second then remember the date.&lt;br /&gt;
 &quot;Because of Halloween?&quot; You ask.&lt;br /&gt;
 &quot;Exactly. Just keep an eye out. You know how kids can be.&quot; He states. &quot;And don&#39;t forget to Pay Respects.&quot;
 He tilts his head towards the catwalk.&lt;br /&gt;
 &quot;Sure, sure. Everything will be fine.&quot; You assure him.&lt;br /&gt;
-He purses his lips together for a moment then heads downstairs to leave.&lt;br /&gt;
+He purses his lips together for a moment, like he doesn&#39;t agree, then heads downstairs to leave.&lt;br /&gt;
 &lt;br /&gt;
-[[Next|p4]]</tw-passagedata><tw-passagedata pid="25" name="p4" tags="" position="600,350" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;You think about how you want to start your night.&lt;&lt;else&gt;&gt;You decide what to do next.&lt;&lt;/if&gt;&gt;
+[[Next|p4]]</tw-passagedata><tw-passagedata pid="29" name="p4" tags="" position="1100,350" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;You think about how you want to start your night.&lt;&lt;else&gt;&gt;You decide what to do next.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Pay Respects]]&lt;br /&gt;
 [[Locker]]&lt;br /&gt;
@@ -274,7 +308,7 @@ He purses his lips together for a moment then heads downstairs to leave.&lt;br /
 [[Cameras]]&lt;br /&gt;
 [[Clean]]&lt;br /&gt;
 [[Bench log]]&lt;br /&gt;
-[[Systems status]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="26" name="StoryInit" tags="" position="725,350" size="100,100">&lt;&lt;set $phrase to &#39;&#39;&gt;&gt;
+[[Systems status]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="30" name="StoryInit" tags="" position="1225,350" size="100,100">&lt;&lt;set $phrase to &#39;&#39;&gt;&gt;
 &lt;&lt;set $style to &#39;&#39;&gt;&gt;
 &lt;&lt;set $entry to []&gt;&gt;
 
@@ -289,6 +323,12 @@ He purses his lips together for a moment then heads downstairs to leave.&lt;br /
 &lt;&lt;set $player to {
     gender: &#39;&#39;,
     status: &#39;&#39;,
+    coveralls: false,
+    cType: &#39;&#39;,
+    shoes: false,
+    shoeType: &#39;&#39;,
+    phone: false,
+    pPhone: true
 
 }&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">

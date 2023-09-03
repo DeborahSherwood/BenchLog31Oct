@@ -6,7 +6,7 @@ You add notes to the bench log as events occur and at the end of your shift.
 <</if>>
 <br /><br />
 [[Log entry]]<br />
-[[Continue|p4]]
+[[Control Room|p4]]
 
 :: Log entry
 
@@ -20,4 +20,4 @@ $entry[_i]<br />
 <</for>>
 
 <br /><br />
-[[Continue|p4]]
+[[Control Room|p4]]

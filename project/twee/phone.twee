@@ -6,12 +6,12 @@ The ringer volume is set to blaring loud and can't be changed, which is great fo
 day shift but annoying during the quiet hours of night shift.
 <br /><br />
 [[Take phone]]<br />
-[[Continue|p4]]
+[[Control Room|p4]]
 
 :: Take phone
-
+<<set $player.phone to true>>
 You lift the blocky device off the charger. It currently has a 54 percent charge. The battery never seems to charge past 60.
 <<if $player.coveralls is true>>You drop the phone into a side cargo pocket.<</if>>
 <br />
 <br />
-[[Continue|p4]]
+[[Control Room|p4]]

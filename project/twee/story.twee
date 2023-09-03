@@ -38,18 +38,18 @@ and recently
 <<listbox "$player.status" autoselect>>
 	<<optionsfrom _playerStatus>>
 <</listbox>>
-after 25 years in your chosen profession, you retired but found yourself with too much free time.
+. After 25 years in your chosen profession, you retired but found yourself with too much free time.
 You decided you wanted to do something easy and stress free.
 <br /><br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
-
+<br /><br />
 [[Next|p2]]
 
 :: p2
 
-You enter in the control room just as the day crew is wrapping up for the night.
+You enter the control room just as the day crew is wrapping up for the night.
 They pass along pertinent information before eagerly heading out. 
-You notice one operator lingering.
+You notice one operator lingering by the door.
 <br /><br />
 [[Talk to Joe|p3]]<br />
 
@@ -62,7 +62,7 @@ You're confused for just one second then remember the date.<br />
 "Exactly. Just keep an eye out. You know how kids can be." He states. "And don't forget to Pay Respects."
 He tilts his head towards the catwalk.<br />
 "Sure, sure. Everything will be fine." You assure him.<br />
-He purses his lips together for a moment then heads downstairs to leave.<br />
+He purses his lips together for a moment, like he doesn't agree, then heads downstairs to leave.<br />
 <br />
 [[Next|p4]]
 

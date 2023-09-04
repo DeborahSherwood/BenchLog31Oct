@@ -13,18 +13,11 @@ Bench Log 31 Oct
 :: Introduction
 
 You're an Operator in Training at the old water plant. You work the night shift. 
-Your job is to clean, monitor the plant and well systems and answer the phone in case of emergencies.
+Your job is to monitor the plant and well systems, clean, and answer the phone in case of emergencies.
+Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
+But these rarely happen so you have lots of time to clean.
 <br /><br />
 [[Old Water Plant]]<br />
-[[Next|p1]]
-
-:: p1
-
-Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
-Emergencies rarely happen so you have lots of time to clean. 
-Cleaning only takes you about an hour, if you move slowly.
-You have eight hours, try to make the most of it.
-<br /><br />
 [[You]]
 
 :: You 
@@ -40,10 +33,10 @@ and recently
 <</listbox>>
 . After 25 years in your chosen profession, you retired but found yourself with too much free time.
 You decided you wanted to do something easy and stress free.
-<br /><br />
+<br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
 <br /><br />
-[[Next|p2]]
+[[Control Room|p2]]
 
 :: p2
 
@@ -66,16 +59,6 @@ He purses his lips together for a moment, like he doesn't agree, then heads down
 <br />
 [[Next|p4]]
 
-:: p4
 
-<<if visited() is 1>>You think about how you want to start your night.<<else>>You decide what to do next.<</if>>
-<br /><br />
-[[Pay Respects]]<br />
-[[Locker]]<br />
-[[Duty Phone]]<br />
-[[Cameras]]<br />
-[[Clean]]<br />
-[[Bench log]]<br />
-[[Systems status]]<br />
 
 

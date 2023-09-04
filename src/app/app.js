@@ -2,6 +2,7 @@
 let testvar = 444;
  //$('#ui-bar').remove();
 // $(document.head).find('#style-ui-bar').remove();
+config.addVisitedLinkClass = true;
 
 //this sets the back button to off
 //Config.history.maxStates = 1;

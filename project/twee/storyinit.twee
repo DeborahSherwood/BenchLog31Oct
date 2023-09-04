@@ -1,8 +1,12 @@
 :: StoryInit
-
+<<nobr>>
 <<set $phrase to ''>>
 <<set $style to ''>>
 <<set $entry to []>>
+
+<<set $plant to {
+    lights: false
+}>>
 
 <<set $actions to {
     respects: false,
@@ -23,3 +27,4 @@
     pPhone: true
 
 }>>
+<</nobr>>

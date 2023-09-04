@@ -1,0 +1,12 @@
+:: p4
+
+<<if visited() is 1>>You think about how you want to start your night.<<else>>You decide what to do next.<</if>>
+<<if $plant.lights is true>>The greenish lights make the control room feel surreal.<</if>>
+<br /><br />
+[[Pay Respects]]<br />
+[[Locker]]<br />
+[[Duty Phone]]<br />
+[[Cameras]]<br />
+[[Clean]]<br />
+[[Bench log]]<br />
+[[Systems status]]<br />

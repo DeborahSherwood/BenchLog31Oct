@@ -61,7 +61,7 @@ You feel bad you threw the phone at him, but he did kind of freak you out.
 [[Safety Shoes]]<br />
 [[Cell Phone]]<br />
 [[Key Card]]<br />
-[[Control Room|p4]]
+[[Exit|e1]]
 
 :: u2
 
@@ -72,7 +72,7 @@ Cursing to yourself, you make your way into the restroom and open your locker.
 [[Safety Shoes]]<br />
 [[Cell Phone]]<br />
 [[Key Card]]<br />
-[[Control Room|p4]]
+[[Exit|e1]]
 
 :: Coveralls
 
@@ -88,7 +88,7 @@ Summer is over but it's still warm enough to wear your summer coveralls.
 <<if $style is 'a'>>You pull the coveralls on over your clothes.
 <<elseif $stye is 'b'>>You strip down to your skivvies and socks and slip into your coveralls.
 <<else>>Commando style it is. You remove all your clothing except your socks and slip into your coveralls.
-<</if>>
+<</if>>Oddly, you pick up a scent from the coveralls. As if someone else may have worn them.
 <br /><br />
 [[Safety Shoes]]<br />
 [[Cell Phone]]
@@ -100,21 +100,35 @@ Lifting your <<set _playerShoes = ["Steel toe Cowboy boots", "Carhartt work boot
 	<<optionsfrom _playerShoes>>
 <</listbox>>  from the bottom of your locker, you plop down on the bench.<br />
 
-You put on your shoes. They hurt your feet but are required by OSHA.
+The shoes hurt your feet but are required by OSHA. 
+You're about to slip your right foot in when you notice a cobweb draped across the vamp of the shoe.
 <br /><br />
+[[Brush it off and wear shoe.|wearShoe]]<br />
+[[Throw the shoe across the room.|throwShoe]]<br />
 [[Cell Phone]]<br />
+
+:: wearShoe
+
+You mindlessly brush off the web and start to put on the shoe. This building is over 70 years old, it has spiders.
+But before your big toe reaches the opening, you see a spider tucked into the heel cup, ready to pounce.
+
+:: throwShoe
+
+You launch the shoe across the room. You hate spiders and can't stand the sight of the them.
+The shoe comes to stop near the door. You watch in horror, as a large spider emerges from your shoe and slips under the door.
+Trembling, you quickly toss your other shoe across the room and decide to wear the shoes you wore in.
 
 
 :: Cell Phone
 <<set $player.pPhone to false>>
-You carefully slide your personal phone on the top shelf of your locker. 
+You slide your personal phone on the top shelf of your locker. 
 Policy states all operators on shift must lock up their personal phones during working hours.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
 [[Cell Phone]]<br />
 [[Key Card]]<br />
-[[Control Room|p4]]
+[[Exit|e1]]
 
 :: Key Card
 <<set $player.key to true>>
@@ -128,7 +142,16 @@ Your key card is also your ID card. All the exterior doors can be opened by swip
 [[Safety Shoes]]<br />
 [[Cell Phone]]<br />
 [[Key Card]]<br />
-[[Control Room|p4]]
+[[Exit|e1]]
 
+:: e1
+<<set $plant.lights to true>>
+As you leave the restroom, the power goes out.
+You wait in the darkened hallway, hoping the generator will kick on.
+The silence is deafening.
+After a minute, power flickers on but the lights don't seem to have enough voltage.
+The normally bright light is now a putrid green, casting eerie shadows.
+<br /><br />
+[[Control Room|p4]]
 
     

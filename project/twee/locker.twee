@@ -59,7 +59,7 @@ You feel bad you threw the phone at him, but he did kind of freak you out.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
-[[Cell Phone]]<br />
+
 [[Key Card]]<br />
 [[Exit|e1]]
 
@@ -70,7 +70,7 @@ Cursing to yourself, you make your way into the restroom and open your locker.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
-[[Cell Phone]]<br />
+
 [[Key Card]]<br />
 [[Exit|e1]]
 
@@ -105,30 +105,38 @@ You're about to slip your right foot in when you notice a cobweb draped across t
 <br /><br />
 [[Brush it off and wear shoe.|wearShoe]]<br />
 [[Throw the shoe across the room.|throwShoe]]<br />
-[[Cell Phone]]<br />
+
 
 :: wearShoe
 
 You mindlessly brush off the web and start to put on the shoe. This building is over 70 years old, it has spiders.
 But before your big toe reaches the opening, you see a spider tucked into the heel cup, ready to pounce.
+Trembling, you quickly toss your other shoe across the room. You are not about to risk a spider encounter while putting on shoes.
+<br /><br />
+[[Socks]]<br />
+[[Crocs]]<br />
+[[Bare feet]]
 
 :: throwShoe
 
 You launch the shoe across the room. You hate spiders and can't stand the sight of the them.
 The shoe comes to stop near the door. You watch in horror, as a large spider emerges from your shoe and slips under the door.
-Trembling, you quickly toss your other shoe across the room and decide to wear the shoes you wore in.
-
-
-:: Cell Phone
-<<set $player.pPhone to false>>
-You slide your personal phone on the top shelf of your locker. 
-Policy states all operators on shift must lock up their personal phones during working hours.
+Trembling, you quickly toss your other shoe across the room. You are not about to risk a spider encounter while putting on shoes.
 <br /><br />
-[[Coveralls]]<br />
-[[Safety Shoes]]<br />
-[[Cell Phone]]<br />
-[[Key Card]]<br />
-[[Exit|e1]]
+[[Socks]]<br />
+[[Crocs]]<br />
+[[Bare feet]]
+
+:: Socks
+
+
+:: Crocs
+
+
+:: Bare feet
+
+
+
 
 :: Key Card
 <<set $player.key to true>>
@@ -140,7 +148,6 @@ Your key card is also your ID card. All the exterior doors can be opened by swip
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
-[[Cell Phone]]<br />
 [[Key Card]]<br />
 [[Exit|e1]]
 

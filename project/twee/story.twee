@@ -22,16 +22,8 @@ But these rarely happen so you have lots of time to clean.
 
 :: You 
 
-You are <<set _playerGender = ["female", "male", "gender-neutral"]>>
-<<listbox "$player.gender" autoselect>>
-	<<optionsfrom _playerGender>>
-<</listbox>>
-and recently 
-<<set _playerStatus = ["single", "divorced", "widowed"]>>
-<<listbox "$player.status" autoselect>>
-	<<optionsfrom _playerStatus>>
-<</listbox>>
-. After 25 years in your chosen profession, you retired but found yourself with too much free time.
+Your name is <<textbox "$player.name" "Crispin" autofocus>>. 
+After 25 years in your chosen profession, you retired but found yourself with too much free time.
 You decided you wanted to do something easy and stress free.
 <br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine.

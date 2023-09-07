@@ -1,12 +1,12 @@
-:: Locker
+:: Restroom
 
-You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. 
-You head towards the restroom to get changed over and are stopped short when you hear the door open.
+You head towards the restroom to get changed over but are stopped short when you hear the door open.
 A very large and tall shape emerges from the restroom. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.<br />
 <br />
 [[Run]]<br />
 [[Fight]]<br />
 <<if $player.phone is true>>[[Throw Duty Phone]]<</if>>
+
 
 :: Run
 
@@ -57,15 +57,16 @@ He looks slightly peeved that you hit him. <br />
 "You have a good night." He turns and leaves.<br />
 You feel bad you threw the phone at him, but he did kind of freak you out.
 <br /><br />
-[[Coveralls]]<br />
-[[Safety Shoes]]<br />
-[[Key Card]]<br />
+[[Locker|u2]]<br />
 [[Exit|e1]]
 
-:: u2
 
+:: u2
+<<if visited() is 1>>
 "<<=$phrase>>" You holler as he creeps out the door.
 Cursing to yourself, you make your way into the restroom and open your locker.
+You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. <</if>>
+You're standing in front of you locker.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
@@ -83,10 +84,10 @@ Summer is over but it's still warm enough to wear your summer coveralls.
 
 :: style
 <<set $player.coveralls to true>>
-<<if $style is 'a'>>You pull the coveralls on over your clothes.
-<<elseif $stye is 'b'>>You strip down to your skivvies and socks and slip into your coveralls.
-<<else>>Commando style it is. You remove all your clothing except your socks and slip into your coveralls.
-<</if>>Oddly, you pick up a scent from the coveralls. As if someone else may have worn them.
+<<if $style is 'a'>><<set $player.cType to 'over'>>You pull the coveralls on over your clothes.
+<<elseif $stye is 'b'>><<set $player.cType to 'under'>>You strip down to your skivvies and socks and slip into your coveralls.
+<<else>><<set $player.cType to 'nada'>>Commando style it is. You remove all your clothing except your socks and slip into your coveralls.
+<</if>>Oddly, you pick up a scent from the coveralls. As if someone else may have worn them but you're certain the lock was secured.
 <br /><br />
 [[Safety Shoes]]<br />
 [[Cell Phone]]
@@ -109,7 +110,7 @@ You're about to slip your right foot in when you notice a cobweb draped across t
 
 You mindlessly brush off the web and start to put on the shoe. This building is over 70 years old, it has spiders.
 But before your big toe reaches the opening, you see a spider tucked into the heel cup, ready to pounce.
-Trembling, you quickly toss your other shoe across the room. You are not about to risk a spider encounter while putting on shoes.
+Trembling, you launch your shoe across the room. You pick up the other shoe and throw it in the same direction.
 <br /><br />
 [[Socks]]<br />
 [[Crocs]]<br />
@@ -127,7 +128,7 @@ Trembling, you quickly toss your other shoe across the room. You are not about t
 
 :: Socks
 
-You decide to go shoeless, wearing your socks only. The floors do seem a little slippery.
+You decide to go shoeless, wearing socks only. The floor does seem a little slippery.
 
 :: Crocs
 
@@ -135,9 +136,8 @@ Putting on your well-worn crocs, you somehow feel vulnerable. But at least you c
 
 :: Bare feet
 
-You remove your socks. Since you recently waxed the floor, you feel the socks will be too slippery.
+You remove your socks. Since you recently waxed the floors, you feel the socks will be too slippery.
 The floor is cool against your bare feet, which is actually kind of nice.
-
 
 
 :: Key Card
@@ -156,10 +156,11 @@ Your key card is also your ID card. All the exterior doors can be opened by swip
 :: e1
 <<set $plant.lights to true>>
 As you leave the restroom, the power goes out.
-You wait in the darkened hallway, hoping the generator will kick on.
+You wait in the darkened hallway, hoping the generator will kick on soon.
 The silence is deafening.
 After a minute, power flickers on but the lights don't seem to have enough voltage.
-The normally bright light is now a putrid green, casting eerie shadows.
+The normally bright light is now a putrid green, casting eerie shadows about the plant.
+The phone starts to ring.<<set $plant.phoneRinging to true>>
 <br /><br />
 [[Control Room|p4]]
 

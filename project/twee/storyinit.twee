@@ -5,7 +5,8 @@
 <<set $entry to []>>
 
 <<set $plant to {
-    lights: false
+    lights: false,
+    phoneRinging: false
 }>>
 
 <<set $actions to {
@@ -17,14 +18,11 @@
 }>>
 
 <<set $player to {
-    gender: '',
-    status: '',
     coveralls: false,
     cType: '',
     shoes: false,
     shoeType: '',
-    phone: false,
-    pPhone: true
+    phone: false
 
 }>>
 <</nobr>>

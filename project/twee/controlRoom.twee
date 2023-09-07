@@ -4,7 +4,7 @@
 <<if $plant.lights is true>>The greenish lights make the control room feel surreal.<</if>>
 <br /><br />
 [[Pay Respects]]<br />
-[[Locker]]<br />
+[[Restroom]]<br />
 [[Duty Phone]]<br />
 [[Cameras]]<br />
 [[Clean]]<br />

@@ -11,8 +11,8 @@ A very large and tall shape emerges from the restroom. It reminds you of the Gho
 :: Run
 
 Shrieking in fear, you turn to run back to the safety of the control room.
-Behind you, you hear cackling. You turn to find your coworker, Scott. He has lifted the shroud to reveal his head.<br />
-<span class="voiceA">"Jesus, Scott! You scared the hell out of me."</span> Your heart is still racing. He continues to to cackle.<br />
+Behind you, you hear cackling. You turn to find your coworker, Scotty. He has lifted the shroud to reveal his head.<br />
+<span class="voiceA">"Jesus, Scotty! You scared the hell out of me."</span> Your heart is still racing. He continues to to cackle.<br />
 <span class="voiceB">"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change."</span> He explains, still laughing.<br />
 "You could have given me a heads up." You sputter, shaking your head.<br />
 He turns to leave then stops and quickly turns and jumps at you yelling "Boo!"<br />
@@ -27,15 +27,15 @@ You crash backwards into the door.<br />
 
 With your bare fists, you start swinging at the imposing figure.
 "Ow!" you hear and take a step back, your fists still at the ready.
-The Reaper lifts his shroud. Underneath, you find the familiar face of your coworker, Scott. 
+The Reaper lifts his shroud. Underneath, you find the familiar face of your coworker, Scotty. 
 He looks slightly peeved that you hit him. <br />
-
+<br />
 "What the heck did you do that for?" he asks in bewilderment.<br />
 "Are you kidding? Look at you! What are you still doing here?" You drop your fists.<br />
 "I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He explains in a matter of fact voice.<br />
-"Geez. You could have given me a heads up." You sigh.<br />
+"You could have given me a heads up." You sigh.<br />
 He starts to giggle which then escalates up to a loud cackle.
-"I guess my costume is believable then!" He pats you on the shoulder and turns to leave, still laughing.<br />
+"I guess my costume is believable then." He pats you on the shoulder and turns to leave, still laughing.<br />
 <br /><br />
 [[Asshole!|u2][$phrase to 'Asshole!']]<br />
 [[Jerk!|u2][$phrase to 'Jerk!']]<br />
@@ -45,21 +45,20 @@ He starts to giggle which then escalates up to a loud cackle.
 
 You chuck the heavy phone towards the creature, making contact right at eye level.<br />
 "Ow!" you hear a muffled sound from under the shroud.
-A moment later, the creature lifts the shroud to reveal your co-worker, Scott.
+A moment later, the creature lifts the hood to reveal your co-worker, Scotty.
 He looks slightly peeved that you hit him. <br />
-
+<br />
 "What the heck did you do that for?" he asks.<br />
 "Are you kidding? Look at you! What are you still doing here?" You voice is higher than usual.<br />
-
+<br />
 "I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." He bends down and picks up the phone.<br />
 "Dang. Sorry man." You take the phone from him.<br />
-"I think the phone is O.K." He says, rubbing his forehead.
+"I think the phone is OK." He says, rubbing his forehead.
 "You have a good night." He turns and leaves.<br />
 You feel bad you threw the phone at him, but he did kind of freak you out.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
-
 [[Key Card]]<br />
 [[Exit|e1]]
 
@@ -70,7 +69,6 @@ Cursing to yourself, you make your way into the restroom and open your locker.
 <br /><br />
 [[Coveralls]]<br />
 [[Safety Shoes]]<br />
-
 [[Key Card]]<br />
 [[Exit|e1]]
 
@@ -120,7 +118,7 @@ Trembling, you quickly toss your other shoe across the room. You are not about t
 :: throwShoe
 
 You launch the shoe across the room. You hate spiders and can't stand the sight of the them.
-The shoe comes to stop near the door. You watch in horror, as a large spider emerges from your shoe and slips under the door.
+The shoe comes to stop near the door. You watch in horror, as a large spider emerges from your shoe and slips under the door to the hall.
 Trembling, you quickly toss your other shoe across the room. You are not about to risk a spider encounter while putting on shoes.
 <br /><br />
 [[Socks]]<br />
@@ -129,12 +127,16 @@ Trembling, you quickly toss your other shoe across the room. You are not about t
 
 :: Socks
 
+You decide to go shoeless, wearing your socks only. The floors do seem a little slippery.
 
 :: Crocs
 
+Putting on your well-worn crocs, you somehow feel vulnerable. But at least you can work in comfort.
 
 :: Bare feet
 
+You remove your socks. Since you recently waxed the floor, you feel the socks will be too slippery.
+The floor is cool against your bare feet, which is actually kind of nice.
 
 
 

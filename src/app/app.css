@@ -21,7 +21,7 @@ to use CSS instead of SCSS:
 .tra { text-transform: capitalize; }
 
 #passages {
-  margin-left: 3px
+  margin-left: 3px;
 }
 .passage {
 	/* an "ex" is supposedly the width of an 'x' character.

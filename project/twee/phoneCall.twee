@@ -1,0 +1,12 @@
+:: Ring1
+
+The phone starts to ring. Policy states the phone must be answered by the third ring.
+You race towards the control room, 
+<<if $player.shoeType eq 'Crocs'>>squishing your way around the corner.
+    <<elseif $player.shoeType eq 'Socks'>>sliding your way around the corner.
+<<else>>padding your way around the corner.
+<</if>>
+
+"Water Treatment Plant. How can I help you?" You answer breathlessly.<br />
+"Are you there alone?" A raspy voice asks. The voice sounds like Demi Moore only much deeper.<br />
+You're not sure you heard that correctly. "What was that?"<br />

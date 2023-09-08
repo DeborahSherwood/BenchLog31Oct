@@ -13,7 +13,7 @@ to use CSS instead of SCSS:
 
 #ui-bar {
 
-  background-color: #1a1a1d;
+  background-color: #1f1b1a;
 }
 .low {
     text-transform: lowercase; 
@@ -33,25 +33,25 @@ to use CSS instead of SCSS:
 
 body
 {
-    background: rgb(32,33,36);
-    color: #bdc1c6;
+    background: #1f1b1a;
+    color: #8b957c;
     font-family: Tahoma, sans-serif;
     font-size: large;
 }
 .voiceA {
-  color: #88888a;
+  color: #b09c61;
 }
 .voiceB {
-  color: #BDBEAF;
+  color: #c9b06d;
 }
 a {
-  color: #8ab4f8;
+  color: #d7a241;
   }
 a:hover {
-  color: #BDBEAF;
+  color: #d7a241;
   text-decoration: underline;
   }
   a.link-visited {
-      color: #c58af9;
+      color: #c58136;
       
 }

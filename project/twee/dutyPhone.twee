@@ -1,17 +1,27 @@
-:: Duty Phone
-
+:: dp1
+<<if visited() is 1 and $player.phone is false>>
 The duty phone must be carried by any operator who leaves the control room desk. 
 It is an old, wireless set that is the same size and weight of a masonry brick.
 The ringer volume is set to blaring loud and can't be changed, which is great for 
-day shift but annoying during the quiet hours of night shift.
+day shift but annoying during the quiet hours of night shift.<<else>>
+The heavy phone probably needs to be recharged.
+<</if>>
 <br /><br />
-[[Take phone]]<br />
+<<if $player.phone is false>>[[Take phone]]<br /><<else>>[[Charge phone|dp2]]<br /><</if>>
 [[Control Room|p4]]
 
 :: Take phone
 <<set $player.phone to true>>
 You lift the blocky device off the charger. It currently has a 54 percent charge. The battery never seems to charge past 60.
 <<if $player.coveralls is true>>You drop the phone into a side cargo pocket.<</if>>
+<br />
+<br />
+[[Control Room|p4]]
+
+:: dp2
+<<set $player.phone to false>>
+You carefully place the phone on the charger. You have to slide the phone back and forth slightly before the 
+phone begins to charge.
 <br />
 <br />
 [[Control Room|p4]]

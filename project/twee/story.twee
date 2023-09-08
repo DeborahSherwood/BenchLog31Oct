@@ -22,7 +22,6 @@ But these rarely happen so you have lots of time to clean.
 
 :: You 
 
-Your name is <<textbox "$player.name" "Crispin" autofocus>>. 
 After 25 years in your chosen profession, you retired but found yourself with too much free time.
 You decided you wanted to do something easy and stress free.
 <br />
@@ -40,13 +39,14 @@ You notice one operator lingering by the door.
 
 :: p3
 
-"Hey, Joe." You say as he steps closer to you.<br />
-"Keep a vigilant watch tonight." He pauses. "There might be some mischief going on."<br />
+<span class="voiceA">"Hey, Joe."</span> You say as he steps closer to you.<br />
+<span class="voiceB">"Keep a vigilant watch tonight." </span>He pauses. <span class="voiceB">"There might be some mischief going on."</span><br />
 You're confused for just one second then remember the date.<br />
-"Because of Halloween?" You ask.<br />
-"Exactly. Just keep an eye out. You know how kids can be." He states. "And don't forget to Pay Respects."
+<span class="voiceA">"Because of Halloween?"</span> You ask.<br />
+<span class="voiceB">"Exactly. Just keep an eye out. You know how kids can be."</span> He states. <br />
+<span class="voiceB">"And don't forget to cw1."</span>
 He tilts his head towards the catwalk.<br />
-"Sure, sure. Everything will be fine." You assure him.<br />
+<span class="voiceA">"Sure, sure. Everything will be fine."</span> You assure him.<br />
 He purses his lips together for a moment, like he doesn't agree, then heads downstairs to leave.<br />
 <br />
 [[Next|p4]]

@@ -18,6 +18,7 @@
 }>>
 
 <<set $player to {
+    
     coveralls: false,
     cType: '',
     shoes: false,

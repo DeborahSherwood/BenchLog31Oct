@@ -1,12 +1,14 @@
 :: p4
-
-<<if visited() is 1>>You think about how you want to start your night.<<else>>You decide what to do next.<</if>>
-<<if $plant.lights is true>>The greenish lights make the control room feel surreal.<</if>>
+<<if visited() is 1>>
+You enter the control room just as the day crew is wrapping up for the night.
+They pass along pertinent information before eagerly heading out. 
+<<else>>The control room is the epicenter of the plant.<</if>>
+<<if $actions.joe is false>>One operator lingers by the door.<</if>>
 <br /><br />
-
-[[Bench log]]<br />
+<<if $actions.joe is false>>[[Talk to Joe|p3]]<br /><</if>>
+[[Bench log|bl1]]<br />
 [[Duty Phone|dp1]]<br />
 [[Cameras|c1]]<br />
 [[Systems status|ss1]]<br />
 [[Catwalk|cw1]]<br />
-[[Restroom]]<br />
+[[Locker room|lr1]]<br />

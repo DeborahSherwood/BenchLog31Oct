@@ -10,46 +10,30 @@
 
 Bench Log 31 Oct
 
+
 :: Introduction
 
 You're an Operator in Training at the old water plant. You work the night shift. 
 Your job is to monitor the plant and well systems, clean, and answer the phone in case of emergencies.
-Emergencies you might have to deal with include water line breaks, low water pressure, and flooding. 
-But these rarely happen so you have lots of time to clean.
+This is your second week on the job.
 <br /><br />
+[[About]]<br />
 [[Old Water Plant]]<br />
-[[You]]
-
-:: You 
-
-After 25 years in your chosen profession, you retired but found yourself with too much free time.
-You decided you wanted to do something easy and stress free.
-<br />
-This job is exactly what you needed. It can be lonely at times, but it suits you just fine.
-<br /><br />
-[[Control Room|p2]]
-
-:: p2
-
-You enter the control room just as the day crew is wrapping up for the night.
-They pass along pertinent information before eagerly heading out. 
-You notice one operator lingering by the door.
-<br /><br />
-[[Talk to Joe|p3]]<br />
+[[Control Room|p4]]
 
 :: p3
-
+<<set $actions.joe to true>>
 <span class="voiceA">"Hey, Joe."</span> You say as he steps closer to you.<br />
 <span class="voiceB">"Keep a vigilant watch tonight." </span>He pauses. <span class="voiceB">"There might be some mischief going on."</span><br />
 You're confused for just one second then remember the date.<br />
 <span class="voiceA">"Because of Halloween?"</span> You ask.<br />
 <span class="voiceB">"Exactly. Just keep an eye out. You know how kids can be."</span> He states. <br />
-<span class="voiceB">"And don't forget to cw1."</span>
+<span class="voiceB">"And don't forget to pay respects."</span>
 He tilts his head towards the catwalk.<br />
 <span class="voiceA">"Sure, sure. Everything will be fine."</span> You assure him.<br />
 He purses his lips together for a moment, like he doesn't agree, then heads downstairs to leave.<br />
 <br />
-[[Next|p4]]
+[[Control Room|p4]]
 
 
 

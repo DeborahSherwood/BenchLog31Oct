@@ -10,10 +10,10 @@
 }>>
 
 <<set $actions to {
+    owpRead: false,
     respects: false,
     phone: false,
-    startCleaning: false,
-    checkBenchLog: false,
+    joe: false,
     checkSys: false 
 }>>
 

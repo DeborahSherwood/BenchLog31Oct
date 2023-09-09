@@ -1,5 +1,5 @@
 :: Old Water Plant
-
+<<set $actions.owpRead to true>>
 The old brick water plant was built in the early 1950s to provide clean water to the growing city.
 The plant is well maintained and kept clean but it is old. There must be 15 coats of paint on the interior walls.<br />
 <br />

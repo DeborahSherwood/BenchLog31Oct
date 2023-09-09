@@ -38,6 +38,11 @@ body
     font-family: Tahoma, sans-serif;
     font-size: large;
 }
+.title {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 8px;
+}
 .voiceA {
   color: #b09c61;
 }

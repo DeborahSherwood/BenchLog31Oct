@@ -6,6 +6,7 @@ They pass along pertinent information before eagerly heading out.
 <<if $actions.joe is false>>One operator lingers by the door.<</if>>
 <br /><br />
 <<if $actions.joe is false>>[[Talk to Joe|p3]]<br /><</if>>
+<<if $plant.phoneRinging is true>>[[Answer phone|r1]]<br /><</if>>
 [[Duty Phone|dp1]]<br />
 [[Cameras|c1]]<br />
 [[Catwalk|cw1]]<br />

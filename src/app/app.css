@@ -44,10 +44,13 @@ body
   padding-bottom: 8px;
 }
 .voiceA {
-  color: #b09c61;
+  color: #c9b06d;
 }
 .voiceB {
-  color: #c9b06d;
+  color: #b09c61;
+}
+.demon {
+  color: #d75741;
 }
 a {
   color: #d7a241;

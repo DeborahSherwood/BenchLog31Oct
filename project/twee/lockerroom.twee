@@ -1,7 +1,7 @@
 :: lr1
 <<if $actions.joe is true>>
 You head towards the locker room to get changed over but are stopped short when you hear the door open.
-A very large and tall shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.<br />
+A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.<br />
 <br />
 [[Run|lr2]]<br />
 [[Fight|lr3]]<br />
@@ -14,13 +14,13 @@ A very large and tall shape fills the hallway. It reminds you of the Ghost of Ch
 
 :: lr2
 
-Shrieking in fear, you turn to run to the safety of the control room.
-As you round the corner, you hear cackling behind you. Turning, you find your coworker, Scotty. He has lifted the shroud to reveal his face.<br />
-<span class="voiceA">"Jesus, Scotty! You scared the hell out of me."</span> Your heart is still racing. He continues to to cackle.<br />
+Shrieking, you turn to run to the safety of the control room.
+As you round the corner, you hear cackling behind you. Turning, you find your coworker, Scott. He has lifted the shroud to reveal his face.<br />
+<span class="voiceA">"Jesus, Scott! You scared the hell out of me."</span> Your heart is still racing. He continues to to cackle.<br />
 <span class="voiceB">"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change."</span> He explains, still laughing.<br />
 <span class="voiceA">"You could have given me a heads up." </span>You sputter, shaking your head.<br />
-He turns to leave then stops and quickly turns and jumps at you yelling <span class="voiceB">"Boo!"</span><br />
-You crash backwards into the door.
+He lowers his shroud then jumps at you yelling <span class="voiceB">"Boo!"</span><br />
+You crash backwards into a wall.
 <br /><br />
 [[Asshole!|u2][$phrase to 'Asshole!']]<br />
 [[Jerk!|u2][$phrase to 'Jerk!']]<br />
@@ -31,7 +31,7 @@ You crash backwards into the door.
 
 With your bare fists, you start swinging at the imposing figure.
 <span class="voiceB">"Ow!"</span> you hear and take a step back, your fists still at the ready.
-The Reaper lifts his shroud. Underneath, you find the familiar face of your coworker, Scotty. 
+The Reaper lifts his shroud. Underneath, you find the familiar face of your coworker, Scott. 
 He looks slightly peeved that you hit him. <br />
 <br />
 <span class="voiceB">"What the heck did you do that for?"</span> he asks in bewilderment.<br />
@@ -49,18 +49,18 @@ He starts to giggle which then escalates up to a loud cackle.
 
 You chuck the heavy phone towards the creature, making contact right at eye level.<br />
 <span class="voiceB">"Ow!"</span> you hear a muffled sound from under the shroud.
-A moment later, the creature lifts the hood to reveal your co-worker, Scotty.
+A moment later, the creature lifts the hood to reveal your co-worker, Scott.
 He looks slightly peeved that you hit him. <br />
 <br />
 <span class="voiceB">"What the heck did you do that for?" </span> he asks.<br />
 <span class="voiceA">"Are you kidding? Look at you! What are you still doing here?" </span>You voice is higher than usual.<br />
 <br />
 <span class="voiceB">"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." </span>He bends down and picks up the phone.<br />
-<span class="voiceA">"Dang. Sorry man." </span>You take the phone from him.<br />
-<span class="voiceB">"I think the phone is OK." </span>He says, rubbing his forehead.
-<span class="voiceB">"You have a good night." </span>He turns and leaves.
-You feel bad you threw the phone at him but he feels bad he scared you.
-<<set $phrase to 'Have a fun night!'>>
+<span class="voiceA">"Dang. Sorry." </span>You take the phone from him.<br />
+<span class="voiceB">"I think the phone survived." </span>He says, rubbing his forehead.
+<span class="voiceB">"Anyway, I've gotta run. You have a good night." </span>He turns and leaves.
+You feel bad you threw the phone at him and he feels bad he scared you.
+<<set $phrase to 'Have a good night.'>>
 <br /><br />
 [[Locker|u2]]<br />
 [[Exit|e1]]
@@ -68,13 +68,14 @@ You feel bad you threw the phone at him but he feels bad he scared you.
 
 :: u2
 <<if visited() is 1>>
-"<<=$phrase>>" You holler as he creeps out the door. You enter the locker room.
+"<<=$phrase>>" You holler as he creeps down the stairs. You can still hear him laughing. You enter the locker room.
 You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. <<else>>
-You're standing in front of you locker.<</if>>
+You're standing in front of your locker.<</if>>
 <br /><br />
 [[Coveralls|lr5]]<br />
 [[Safety Shoes|lr6]]<br />
 [[Key Card|lr7]]<br />
+[[Closet key|lr14]]<br />
 [[Exit|e1]]
 
 :: lr5
@@ -98,10 +99,12 @@ Summer is over but it's still warm enough to wear your summer coveralls.
 <br /><br />
 [[Safety Shoes|lr6]]<br />
 [[Key Card|lr7]]<br />
+[[Closet key|lr14]]<br />
+[[Exit|e1]]
 
 :: lr6
-<<set $player.shoes to true>>
-<<if $player.shoes is false>>
+
+<<if $player.shoes is false>><<set $player.shoes to true>>
 Lifting your <<set _playerShoes = ["Steel toe Cowboy boots", "Carhartt work boots", "Puma safety sneakers", "Chelsea steel toe boots"]>>
 <<listbox "$player.shoeType" autoselect>>
 	<<optionsfrom _playerShoes>>
@@ -131,10 +134,11 @@ You'll have to go with Plan B for footwear tonight.
 [[Bare feet|lr13]]
 
 :: lr9
-
+<<if $player.shoeType eq 'Steel toe Cowboy boots' or $player.shoeType eq 'Carhartt work boots' or $player.shoeType eq 'Chelsea steel toe boots'>>
+	<<set $player.shoeType to "boot">><<else>><<set $player.shoeType to "sneaker">><</if>>
 You launch the <<= $player.shoeType>> across the room. You hate spiders and can't stand the sight of the them.
-The shoe comes to stop near the door. You watch in horror, as a large spider emerges from your <<= $player.shoeType>> and slips under the door to the hall.
-Trembling, you quickly toss your other <<= $player.shoeType>> across the room. You are not about to risk a spider encounter while putting on shoes.
+The <<= $player.shoeType>> comes to stop near the door. You watch in horror, as a large spider emerges from your <<= $player.shoeType>> and slips under the door to the hall.
+Trembling, you quickly toss your other <<= $player.shoeType>> across the room.
 You'll have to go with Plan B for footwear tonight.
 <br /><br />
 [[Socks|lr11]]<br />
@@ -145,14 +149,18 @@ You'll have to go with Plan B for footwear tonight.
 
 You decide to go shoeless, wearing socks only. The floor seems a little slippery.
 <br /><br />
-[[Locker|u2]]<br />
+[[Coveralls|lr5]]<br />
+[[Key Card|lr7]]<br />
+[[Closet key|lr14]]<br />
 [[Exit|e1]]
 
 :: lr12
 
 Putting on your well-worn crocs, you somehow feel vulnerable. But at least you can work in comfort.
 <br /><br />
-[[Locker|u2]]<br />
+[[Coveralls|lr5]]<br />
+[[Key Card|lr7]]<br />
+[[Closet key|lr14]]<br />
 [[Exit|e1]]
 
 :: lr13
@@ -160,23 +168,41 @@ Putting on your well-worn crocs, you somehow feel vulnerable. But at least you c
 You remove your socks.
 The floor is cool against your bare feet, which is actually kind of nice.
 <br /><br />
-[[Locker|u2]]<br />
+[[Coveralls|lr5]]<br />
+[[Key Card|lr7]]<br />
+[[Closet key|lr14]]<br />
 [[Exit|e1]]
 
 
 :: lr7
-<<set $player.key to true>>
-<<if $player.key is false>>
+
+<<if $player.key is false>><<set $player.key to true>>
 You keep your key card then put your other personal items in the locker.
 Your key card is also your ID card. All the exterior doors can be opened by swiping your card.
+You attach the card to a retractable key holder then clip it to your side pocket.
 <br /><br />
 [[Coveralls|lr5]]<br />
 [[Safety Shoes|lr6]]<br />
+[[Closet key|lr14]]<br />
 [[Exit|e1]]<<else>>
 	You're all set.
 	<br /><br />
-	[[Continue|previous()]]
+	[[Coveralls|lr5]]<br />
+[[Safety Shoes|lr6]]<br />
+[[Closet key|lr14]]<br />
+[[Exit|e1]]
 	<</if>>
+
+:: lr14
+<<set $player.closetKey to true>>
+The closet key hangs from a magnetic hook on the inside of door. 
+This key will open the cleaning supplies closet. You put the key in your pocket.
+<br />
+<br />
+[[Coveralls|lr5]]<br />
+[[Safety Shoes|lr6]]<br />
+[[Key Card|lr7]]<br />
+[[Exit|e1]]
 
 :: e1
 <<set $plant.lights to true>>
@@ -187,6 +213,7 @@ After a minute, power flickers on but the lights don't seem to have enough volta
 The normally bright light is now a putrid green, casting eerie shadows about the plant.
 The phone starts to ring.<<set $plant.phoneRinging to true>>
 <br /><br />
+<<if $player.phone is true>>[[Answer Duty Phone|r1]]<br /><</if>>
 [[Control Room|p4]]
 
     

@@ -1,65 +1,45 @@
 :: cw1
-<<if visited() is 1>>
+<<if $actions.joe is false>>You'd better get checked in first.<br />
+    <br />
+    [[Continue|previous()]]
+    <<else>>
+<<if $actions.respects is false>>
 "Paying Respects" means a walk down a narrow catwalk from the control room towards the back of the plant.
 The catwalk is suspended above several chemical tanks.
 About half way down the walk, there is a memorial to the only operator ever killed while on duty at the plant.
 <br /><br />
 [[Next|cw2]]<<else>>
-    You've already paid your respects.
+    You've already paid your respects. There's nothing to do on the catwalk right now.
     <br /><br />
     [[Control Room|p4]]
+<</if>>
 <</if>>
 
 :: cw2
 
-Bobby Murphy had been on the job for about a year. He was young and energetic and picked up things quickly.
-He got the job right out of high school and had settled into a blue-collar life with his high school sweetheart by his side.
-<br /><br />
-[[Next|cw3]]
-
-:: cw3
-
-The story goes that Bobby was always in a hurry, even when he didn't need to be.
-The Lead Operator constantly counseled Bobby on safety and to slow down and take his time.
-But Bobby just couldn't. It wasn't in his nature.
-
-<br /><br />
-[[Next|cw4]]
-
-:: cw4 
-
-Back in those days, the chemical tanks had lids that could be removed for easier cleaning.
-One tank was being drained so it could be cleaned. The lid was off and it was nearly empty when Bobby decided to start the chore of cleaning it.
-<br /><br />
-[[Next|cw5]]
-
-:: cw5
-
+When the plant was first built, the chemical tanks had lids that could be removed for easier cleaning.
+20 years ago, those old tanks were still in use.
+One operator, Bobby, had been assigned the chore of cleaning the tanks during his shift.
 He dashed out of the control room and started along the catwalk, moving too fast. He tripped and sailed head-long over the side rail and straight into the tank.
 <br /><br />
 [[Next|cw6]]
 
 :: cw6
 
-Tragically, this tank still had about six inches of Sulfuric Acid (H2sO4) in it. When Bobby landed, he panicked because he had been made well aware of how dangerous this chemical was.
-He gulped in a big swallow as his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank, making his injuries worse. 
+The tank still had about six inches of Sulfuric Acid (H2sO4) in it.
+As soon as he landed, his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank. 
 He had no way to climb out.
 His eyeballs would dissolve first, followed by his tongue and the soft tissue in his nose and throat. 
 Painfully, Bobby succumbed to the acid.
-His lungs and skin would be completely dissolved before the fire department arrived.<br />
+His clothes and skin would be completely dissolved before the fire department arrived.<br />
 
 <br /><br />
 [[Next|cw7]]
 
 :: cw7
-
+<<set $actions.respects to true>>
 The plant was shutdown for three days while crews removed what was left of Bobby's body.
 The tank was disassembled and removed. It was replaced by two modern tanks that are completely enclosed with only fill and release valves.
 "Paying Respects" is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back to the control room.
 <br /><br />
 [[Control Room|p4]]
-
-
-
-
-

@@ -1,7 +1,7 @@
 :: dp1
 <<if visited() is 1 and $player.phone is false>>
-The duty phone must be carried by any operator who leaves the control room desk. 
-It is an old, wireless set that is the same size and weight of a masonry brick.
+The duty phone must be carried if the operator on duty leaves the control room desk. 
+It is an old wireless set that is the same size and weight of a masonry brick.
 The ringer volume is set to blaring loud and can't be changed, which is great for 
 day shift but annoying during the quiet hours of night shift.<<else>>
 The heavy phone probably needs to be recharged.

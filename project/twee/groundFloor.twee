@@ -1,25 +1,53 @@
 :: gf1
 
-The ground floor is just a room with the entry to the plant floor and the front door entry.
-It's always 10 degrees cooler than the control room upstairs.
+On the ground floor you have the entry to the plant floor, stairs to the second floor and the front door.
+It's always 10 degrees cooler than the second level.
 <br /><br />
 [[Front door|gf2]]<br />
-[[Plant floor|gf3]]
+[[Plant floor|gf3]]<br />
+[[Stairs to second level|sf1]]
 
 :: gf2
 
-The front door is locked from the outside and requires your badge to enter. 
-To exit, just push the panic bar.
+The front door is self locking with a badge swipe on the outside of the door and a panic bar on the inside.
+You're currently inside the plant.
 <br /><br />
-[[Exit|gf4]]
+[[Exit|gf4]]<br />
+[[Plant floor|gf3]]<br />
+[[Stairs to second level|sf1]]
 
 :: gf3
 
-The plant floor has grates over 36 inch pipes that carry water throughout the treatment process.
-The trains as they are called, are nano filtration filters.
+The plant floor has grates over large pipes that carry water throughout the treatment process.
+There are eight very large nano filtration filters to your right. 
+Chemical tanks are to your left with the catwalk suspended above them.
+From here, you can return to the ground floor entry.
+<br /><br />
+[[Ground Floor|gf1]]<br />
 
 :: gf4
 
 Exiting the plant, you hear the door lock behind you. 
-To the left is the parking lot and directly in front of you is the plant sign and lighted flag pole.
+In front of you is signage and lighted flag pole. The landscaping includes tall grasses and knockout rose bushes.
 <br /><br />
+[[Signage|gf6]]<br />
+[[Flag pole|gf7]]<br />
+[[Front Door|gf2]]
+
+
+:: gf6
+
+The brick monument sign includes the date the plant was built and the names of government leadership at the time.
+You've been told they're all dead now.
+<br /><br />
+[[Flag pole|gf7]]<br />
+[[Front Door|gf2]]
+
+:: gf7
+
+The sturdy flagpole has your country flag at the very top and your state flag, slightly smaller in size, hoisted underneath.
+The flags are flooded in light. From the looks of drooping flags, it is a windless night.
+<br /><br />
+[[Signage|gf6]]<br />
+[[Flag pole|gf7]]<br />
+[[Front Door|gf2]]

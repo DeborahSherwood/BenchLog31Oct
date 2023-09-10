@@ -13,12 +13,11 @@
     owpRead: false,
     respects: false,
     phone: false,
-    joe: false,
-    checkSys: false 
+    joe: false
 }>>
 
 <<set $player to {
-    
+    loc: '',
     coveralls: false,
     cType: '',
     shoes: false,

@@ -13,13 +13,27 @@ Bench Log 31 Oct
 
 :: Introduction
 
-You're an Operator in Training at the old water plant. You work the night shift. 
-Your job is to monitor the plant and well systems, clean, and answer the phone in case of emergencies.
+You're an Operator in Training at the old water treatment plant. You work the night shift. 
+Your job is to monitor the plant and well systems, tidy up, and answer the phone in case of emergencies.
 This is your second week on the job.
 <br /><br />
 [[About]]<br />
-[[Old Water Plant]]<br />
-[[Control Room|p4]]
+[[Old Water Plant|owp]]<br />
+[[Second Floor|sf1]]
+
+
+:: sf1
+
+On the second floor you find a entrance to a catwalk, 
+the control room and down the hall, a cleaning supplies closet and locker room.
+There is also a stairway down to the ground floor.
+<br /><br />
+
+[[Control Room|p4]]<br />
+[[Catwalk|cw1]]<br />
+[[Cleaning supplies|jc1]]<br />
+[[Locker Room|lr1]]<br />
+[[Ground Floor|gf1]]
 
 :: p3
 <<set $actions.joe to true>>
@@ -33,7 +47,7 @@ He tilts his head towards the catwalk.<br />
 <span class="voiceA">"Sure, sure. Everything will be fine."</span> You assure him.<br />
 He purses his lips together for a moment, like he doesn't agree, then heads downstairs to leave.<br />
 <br />
-[[Control Room|p4]]
+[[Continue|p4]]
 
 
 

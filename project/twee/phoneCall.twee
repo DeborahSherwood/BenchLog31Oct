@@ -1,6 +1,6 @@
-:: Ring1
+:: r1
 
-The phone starts to ring. Policy states the phone must be answered by the third ring.
+Policy states the phone must be answered by the third ring.
 You race towards the control room, 
 <<if $player.shoeType eq 'Crocs'>>squishing your way around the corner.
     <<elseif $player.shoeType eq 'Socks'>>sliding your way around the corner.
@@ -16,11 +16,11 @@ The caller hangs up. You stand in shock for a moment. Looking over at the camera
 <br /><br />
 [[Continue|p4]]
 
-:: Ring2
+:: r2
 
 The phone rings, causing you to jump.<br />
 "Water Treatment Plant. Can I help you?" You ask hesitantly.<br />
-"I mean, do you want company tonight?" The Demi-Demon voice almost demands.<br />
+"I mean, do you want company tonight?" The Demi-Demon voice queries.<br />
 You hang up quickly and walk around the control room, trying to calm your nerves.
 <br /><br />
 [[Continue|p4]]
@@ -38,9 +38,17 @@ You wait until the very end of the the second ring to answer.<br />
 [[No thanks|r5]]
 
 
+:: r4
+
+<span class="voiceA">"Sound great!"</span> Not only is your mouth watering over the thought a chili dogs and funnel cakes, but you could really use some company.
+<span class="voiceB">"I'll be right over."</span> He hangs up. You can't wait.
+<br /><br />
+
+
+
 :: r5
 
-<span class="voiceA">"Um, no but thanks. My doctor would not be very happy with me."</span> <br />
+<span class="voiceA">"Um, no but thanks. My doctor would'nt be very happy with me."</span> <br />
 You hear a sigh then he hangs up.
 <br /><br />
 [[Control Room| p4]]

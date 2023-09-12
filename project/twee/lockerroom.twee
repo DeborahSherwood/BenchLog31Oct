@@ -1,7 +1,7 @@
 :: lr1
 <<if $actions.joe is true>>
 You head towards the locker room to get changed over but are stopped short when you hear the door open.
-A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol.<br />
+A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol. You gasp.<br />
 <br />
 [[Run|lr2]]<br />
 [[Fight|lr3]]<br />

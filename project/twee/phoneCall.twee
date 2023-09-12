@@ -9,7 +9,7 @@ You race towards the control room,
 <</if>>
 <span class="voiceA">"Water Treatment Plant. How can I help you?"</span><br />
 <span class="demon">"Are you there alone?"</span> A raspy voice asks. The voice sounds like Demi Moore only much deeper.<br />
-<<set _options to ['<span class="voiceA">"I, I. Pardon me?"</span> You not sure you heard that right.', '<span class="voiceA">"Of course not. We\'re fully staffed at the moment."</span> You lie.', '<span class="voiceA">"Yes I am, why?"</span>']>>
+<<set _options to ["I, I. Pardon me?", "Of course not. We're fully staffed at the moment.", "Yes I am, why?"]>>
 <<listbox "$phrase" autoselect>>
 	<<optionsfrom _options>>
 <</listbox>> 
@@ -19,10 +19,12 @@ You race towards the control room,
 :: r1a
 
 <<= $phrase>><br />
-<<if $phrase eq '<span class="voiceA">"I, I. Pardon me?"</span>'>><span class="demon">"You know, by yourself."</span> The Demi-Demon voice sounds sincere.
-    <<elseif $phrase eq '<span class="voiceA">"Of course not. We\'re fully staffed at the moment."</span> You lie.'>>
-    <span class="demon">"OK, sure you are."</span> The Demi-Demon replies and hangs up.
-    <<else>><span class="demon">"Would you like some company?"</span> The Demi-Demon voice sounds sincere.
+<<if $phrase eq "I, I. Pardon me?">>
+    <span class="demon"></span>
+    <<elseif $phrase eq "Of course not. We're fully staffed at the moment.">>
+   
+    <<else>>
+        "Would you like some company?">>
 <</if>>
 
 :: r2

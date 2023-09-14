@@ -1,8 +1,20 @@
 :: About
 
-A flirtatious demon, an well-meaning co-worker 
+A flirtatious demon, a visitor from the past 
 and a night of near misses make for a fun
 adventure at the old water treatment plant.
 <br /><br />
+[[About You|ay1]]<br />
 [[Old Water Plant|owp]]<br />
-[[Begin|sf1]]
+[[Begin| bg1]]
+
+:: ay1
+
+After 25 years in your chosen profession, you retired but found yourself with too much free time on your hands.
+You decided you wanted to do something easy and stress free.
+<br /><br />
+This job is exactly what you needed. It can be lonely at times, but it suits you just fine. 
+<br /><br />
+[[About]]<br />
+[[Old Water Plant|owp]]<br />
+[[Begin|bg1]]

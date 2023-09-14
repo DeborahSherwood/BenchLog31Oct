@@ -1,7 +1,7 @@
 :: lr1
 <<if $actions.joe is true>>
-You head towards the locker room to get changed over but are stopped short when you hear the door open.
-A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come from A Christmas Carol. You gasp.<br />
+You head towards the restroom to get changed over but are stopped short when you hear the door open.
+A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come.<br />
 <br />
 [[Run|lr2]]<br />
 [[Fight|lr3]]<br />
@@ -57,7 +57,7 @@ He looks slightly peeved that you hit him. <br />
 <br />
 <span class="voiceB">"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." </span>He bends down and picks up the phone.<br />
 <span class="voiceA">"Dang. Sorry." </span>You take the phone from him.<br />
-<span class="voiceB">"I think the phone survived." </span>He says, rubbing his forehead.
+<span class="voiceB">"I don't think the phone survived." </span>He says, rubbing his forehead.
 <span class="voiceB">"Anyway, I've gotta run. You have a good night." </span>He turns and leaves.
 You feel bad you threw the phone at him and he feels bad he scared you.
 <<set $phrase to 'Have a good night.'>>
@@ -68,8 +68,9 @@ You feel bad you threw the phone at him and he feels bad he scared you.
 
 :: u2
 <<if visited() is 1>>
-"<<=$phrase>>" You holler as he creeps down the stairs. You can still hear him laughing. You enter the locker room.
-You have an assigned locker in the restroom where you keep issued coveralls, your safety shoes and other personal items. <<else>>
+<span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he descends. 
+You enter the restroom.
+You have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
 You're standing in front of your locker.<</if>>
 <br /><br />
 [[Coveralls|lr5]]<br />

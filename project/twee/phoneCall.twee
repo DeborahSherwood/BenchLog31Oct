@@ -1,5 +1,6 @@
 :: r1
-<<if $player.phone is false>>
+<<if $player.phone is true>>You try to answer the call on the duty phone but your hear static then a pop then the phone crumbles into several pieces.
+    <<else>>
 Policy states the phone must be answered by the third ring.
 You race towards the control room, 
 <<if $player.shoeType eq 'Crocs'>>squishing your way around the corner.
@@ -9,7 +10,7 @@ You race towards the control room,
 <</if>>
 <span class="voiceA">"Water Treatment Plant. How can I help you?"</span><br />
 <span class="demon">"Are you there alone?"</span> A raspy voice asks. The voice sounds like Demi Moore only much deeper.<br />
-<<set _options to ["I, I. Pardon me?", "Of course not. We're fully staffed at the moment.", "Yes I am, why?"]>>
+<<set _options to ['\"I, I. Pardon me?\"', '\"Of course not. We\'re fully staffed at the moment.\"', '\"Yes I am, why?\"']>>
 <<listbox "$phrase" autoselect>>
 	<<optionsfrom _options>>
 <</listbox>> 
@@ -20,12 +21,15 @@ You race towards the control room,
 
 <<= $phrase>><br />
 <<if $phrase eq "I, I. Pardon me?">>
-    <span class="demon"></span>
+    <span class="demon">"You're not alone, are you?"</span><br />
     <<elseif $phrase eq "Of course not. We're fully staffed at the moment.">>
-   
+   <span class="demon">"Liar."</span>  The Demi-Demon declares.<br />
     <<else>>
-        "Would you like some company?">>
+        <span class="demon">"How about some company?"</span><br />
 <</if>>
+You're not sure how to respond so you hang up. That is no emergency, you say to yourself.<br />
+You turn and find a puddle of water near the control desk that wasn't there before.
+
 
 :: r2
 
@@ -41,7 +45,7 @@ You hang up quickly and walk around the control room, trying to calm your nerves
 You really don't want to answer the phone, but it is part of your job. Policy states it must be answered by the third ring.
 You wait until the very end of the the second ring to answer.<br />
 <span class="voiceA">"Water Treatment Plant."</span> You just blurt it out, not trying to sound nice or professional.<br />
-<span class="voiceB">"Hey! Ya hungry?"</span> It's Scotty. You breath a sigh of relief.<br />
+<span class="voiceB">"Hey! Ya hungry?"</span> It's Scott. You breath a sigh of relief.<br />
 <span class="voiceB">"I'm on break. They have amazing chili dogs and funnel cakes here!"</span> He can't contain his enthusiasm.
 <span class="voiceB">"I can bring you some if you'd like."</span>
 <br /><br />
@@ -59,7 +63,7 @@ You wait until the very end of the the second ring to answer.<br />
 
 :: r5
 
-<span class="voiceA">"Um, no but thanks. My doctor would'nt be very happy with me."</span> <br />
+<span class="voiceA">"Um, no but thanks. My doctor wouldn't be very happy with me."</span> <br />
 You hear a sigh then he hangs up.
 <br /><br />
 [[Control Room| p4]]

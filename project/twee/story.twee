@@ -15,24 +15,33 @@ Bench Log 31 Oct
 
 You're an Operator in Training at the old water treatment plant. You work the night shift. 
 Your job is to monitor the plant and well systems, tidy up, and answer the phone in case of emergencies.
-This is your second week on the job. You've entered the plant and climbed the steps to the second floor.
+This is your second week on the job.
 <br /><br />
 [[About]]<br />
+[[About You|ay1]]<br />
 [[Old Water Plant|owp]]<br />
-[[Second Floor|sf1]]
+[[Begin| bg1]]
+
+:: bg1 
+
+You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
+Swiping again to unlock the side door then making your way up to the second deck.
+<br /><br />
+[[Second floor|sf1]]<br />
 
 
 :: sf1
 
-On the second floor you find a entrance to a catwalk, 
-the control room and down the hall, a cleaning supplies closet and locker room.
-There is also a stairway down to the ground floor.
+<<if visited() is 1>>On the second floor you find a entrance to a catwalk, 
+the control room and down the hall, a cleaning supplies closet and a restroom.
+There is also a stairway down to the ground floor.<<else>>
+    You're on the second deck. <</if>>
 <br /><br />
 
 [[Control Room|p4]]<br />
 [[Catwalk|cw1]]<br />
 [[Cleaning supplies|jc1]]<br />
-[[Locker Room|lr1]]<br />
+[[Restroom|lr1]]<br />
 [[Ground Floor|gf1]]
 
 :: p3

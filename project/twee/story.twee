@@ -38,7 +38,7 @@ There is also a stairway down to the ground floor.
 :: p3
 <<set $actions.joe to true>>
 <span class="voiceA">"Hey, Joe."</span> You say as he steps closer to you.<br />
-<span class="voiceB">"Keep a vigilant watch tonight." </span>He pauses. <span class="voiceB">"There might be some mischief going on."</span><br />
+<span class="voiceB">"Keep a vigilant watch tonight." </span>He pauses. <span class="voiceB">"There might be some buffoonery going on."</span><br />
 You're confused for just one second then remember the date.<br />
 <span class="voiceA">"Because of Halloween?"</span> You ask.<br />
 <span class="voiceB">"Exactly. Just keep an eye out. You know how kids can be."</span> He states. <br />

@@ -1,15 +1,16 @@
 :: gf1
 
-On the ground floor you have the entry to the plant floor, stairs to the second floor and the front door.
+On the ground floor you can enter the plant floor, take the stairs to the second floor, or exit the front door.
 It's always 10 degrees cooler than the second level.
 <br /><br />
-[[Front door|gf2]]<br />
+
 [[Plant floor|gf3]]<br />
-[[Stairs to second level|sf1]]
+[[Stairs to second level|sf1]]<br />
+[[Front door|gf2]]<br />
 
 :: gf2
 
-The front door is self locking with a badge swipe on the outside of the door and a panic bar on the inside.
+The front door is self locking with a badge swipe on the outside of the door and a push bar on the inside.
 You're currently inside the plant.
 <br /><br />
 [[Exit|gf4]]<br />
@@ -41,7 +42,7 @@ The crane is positioned all the way to the back of the plant against the wall.<b
 :: gf4
 
 Exiting the plant, you hear the door lock behind you. 
-In front of you is signage and lighted flag pole. The landscaping includes tall grasses and knockout rose bushes.
+In front of you is signage and a lighted flag pole. The landscaping includes tall grasses and knockout rose bushes.
 <br /><br />
 [[Signage|gf6]]<br />
 [[Flag pole|gf7]]<br />

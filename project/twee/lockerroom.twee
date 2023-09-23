@@ -1,7 +1,7 @@
 :: lr1
 <<if $actions.joe is true>>
-You head towards the restroom to get changed over but are stopped short when you hear the door open.
-A very large and dark shape fills the hallway. It reminds you of the Ghost of Christmas Yet to Come.<br />
+You head towards the locker room to get changed over but are stopped short when you hear the door open.
+A very large and dark shape fills the hallway. It's the Grim Reaper. You gasp.<br />
 <br />
 [[Run|lr2]]<br />
 [[Fight|lr3]]<br />
@@ -56,10 +56,9 @@ He looks slightly peeved that you hit him. <br />
 <span class="voiceA">"Are you kidding? Look at you! What are you still doing here?" </span>You voice is higher than usual.<br />
 <br />
 <span class="voiceB">"I'm working the Haunted Hog Farm tonight and didn't have time to go home to change." </span>He bends down and picks up the phone.<br />
-<span class="voiceA">"Dang. Sorry." </span>You take the phone from him.<br />
-<span class="voiceB">"I don't think the phone survived." </span>He says, rubbing his forehead.
-<span class="voiceB">"Anyway, I've gotta run. You have a good night." </span>He turns and leaves.
-You feel bad you threw the phone at him and he feels bad he scared you.
+<span class="voiceB">"I don't think the phone survived." </span>He says, rubbing his forehead. He hands you the phone now in about five pieces.
+<span class="voiceB">"Anyway, I've got to run. You have a good night." </span>He heads towards the stairs, turning sideways to pass by you.
+You feel bad you threw the phone at him and you hope he feels bad for scaring you.
 <<set $phrase to 'Have a good night.'>>
 <br /><br />
 [[Locker|u2]]<br />
@@ -68,9 +67,8 @@ You feel bad you threw the phone at him and he feels bad he scared you.
 
 :: u2
 <<if visited() is 1>>
-<span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he descends. 
-You enter the restroom.
-You have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
+<span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs.
+In the locker room, you have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
 You're standing in front of your locker.<</if>>
 <br /><br />
 [[Coveralls|lr5]]<br />
@@ -106,10 +104,10 @@ Summer is over but it's still warm enough to wear your summer coveralls.
 :: lr6
 
 <<if $player.shoes is false>><<set $player.shoes to true>>
-Lifting your <<set _playerShoes = ["Steel toe Cowboy boots", "Carhartt work boots", "Puma safety sneakers", "Chelsea steel toe boots"]>>
+Lifting your <<set _playerShoes = ["Steel toe Cowboy boots", "Carhartt work boots", "Puma safety sneakers", "Steel toe Chelsea boots"]>>
 <<listbox "$player.shoeType" autoselect>>
 	<<optionsfrom _playerShoes>>
-<</listbox>>  from the bottom of your locker, you plop down on the bench.<br />
+<</listbox>>  from the bottom of your locker, you plop down on the bench to put them on.
 
 The shoes hurt your feet but are required by OSHA. 
 You're about to slip your right foot in when you notice a cobweb draped across the vamp of the shoe.
@@ -123,7 +121,7 @@ You're about to slip your right foot in when you notice a cobweb draped across t
 
 
 :: lr8
-<<if $player.shoeType eq 'Steel toe Cowboy boots' or $player.shoeType eq 'Carhartt work boots' or $player.shoeType eq 'Chelsea steel toe boots'>>
+<<if $player.shoeType eq 'Steel toe Cowboy boots' or $player.shoeType eq 'Carhartt work boots' or $player.shoeType eq 'Steel toe Chelsea boots'>>
 	<<set $player.shoeType to "boot">><<else>><<set $player.shoeType to "sneaker">><</if>>
 You mindlessly brush off the web and start to put on the <<= $player.shoeType>>. This building is over 70 years old, it has spiders.
 But before your big toe reaches the opening, you see a spider tucked into the heel cup, ready to pounce.

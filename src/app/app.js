@@ -20,6 +20,3 @@ curTime.toLocaleString('en-US', { hour12: false,});
 State.variables.curDateTime = dateTime;
 State.variables.curTime = curTime;
   
-
-
-

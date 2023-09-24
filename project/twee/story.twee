@@ -32,8 +32,8 @@ Swiping again to unlock the side door then making your way up to the second deck
 
 :: sf1
 
-<<if visited() is 1>>On the second floor you find a entrance to a catwalk, 
-the control room and down the hall, a cleaning supplies closet and a restroom.
+<<if visited() is 1>>On the second floor there is an entrance to a catwalk, the supervisor's office,
+the control room, a cleaning supplies closet, and a locker room.
 There is also a stairway down to the ground floor.<<else>>
     You're on the second deck. <</if>>
 <br /><br />
@@ -41,8 +41,10 @@ There is also a stairway down to the ground floor.<<else>>
 [[Control Room|p4]]<br />
 [[Catwalk|cw1]]<br />
 [[Cleaning supplies|jc1]]<br />
+[[Ground Floor|gf1]]<br />
 [[Restroom|lr1]]<br />
-[[Ground Floor|gf1]]
+[[Supervisor Office|so1]]
+
 
 :: p3
 <<set $actions.joe to true>>
@@ -50,7 +52,7 @@ There is also a stairway down to the ground floor.<<else>>
 <span class="voiceB">"Keep a vigilant watch tonight." </span>He pauses. <span class="voiceB">"There might be some mischief going on."</span><br />
 You're confused for just one second then remember the date.<br />
 <span class="voiceA">"Because of Halloween?"</span> You ask.<br />
-<span class="voiceB">"Exactly. Just keep an eye out. You know how kids can get."</span> He states. <br />
+<span class="voiceB">"Exactly. Just keep an eye out. You know how kids can get."</span> He fidgets with his car keys. <br />
 <span class="voiceB">"And don't forget to pay respects."</span>
 He tilts his head towards the catwalk.<br />
 <span class="voiceA">"Sure, sure. Everything will be fine."</span> You assure him.<br />

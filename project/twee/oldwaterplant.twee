@@ -2,9 +2,7 @@
 <<set $actions.owpRead to true>>
 The old brick water treatment plant was built in the early 1950s to provide clean water to the growing city.
 The plant is well maintained and kept clean but it is old. There must be twelve coats of paint on the interior walls.<br />
-<br />
-You take great pride in keeping the floors cleaned and polished; the thick windows crystal clear and the walls and doors smudge free.<br />
-<br />
+You take great pride in keeping the floors cleaned and polished; the thick windows crystal clear and the walls and doors smudge free.
 <br /><br />
 [[About]]<br />
 [[Begin| bg1]]

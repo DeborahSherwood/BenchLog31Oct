@@ -32,7 +32,7 @@ Swiping again to unlock the side door then making your way up to the second deck
 
 :: sf1
 
-<<if visited() is 1>>On the second floor there is an entrance to a catwalk, the supervisor's office,
+<<if visited() is 1>>On the second floor is an entrance to a catwalk, the supervisor's office,
 the control room, a cleaning supplies closet, and a locker room.
 There is also a stairway down to the ground floor.<<else>>
     You're on the second deck. <</if>>

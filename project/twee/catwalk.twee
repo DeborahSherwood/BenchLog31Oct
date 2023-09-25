@@ -20,14 +20,14 @@ About half way down the walk, there is a memorial to the only operator ever kill
 When the plant was first built, the chemical tanks had lids that could be removed for easier cleaning.
 20 years ago, those old tanks were still in use.
 One operator, Bobby, had been assigned the chore of cleaning the tanks.
-During his shift, he dashed out of the control room and started along the catwalk, moving way too fast. He tripped and sailed head-long over the side rail and straight into the tank.
+During his shift, he dashed out of the control room and started along the catwalk, moving way too fast. He tripped and sailed head-long over the side rail and straight into a tank.
 <br /><br />
 [[Next|cw6]]
 
 :: cw6
 
 The tank still had about six inches of Sulfuric Acid (H2sO4) in it.
-As soon as he landed, his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank and had no way to climb out.
+As soon as he landed, his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank. He had no way to get clear of the acid.
 His eyeballs would dissolve first, followed by his tongue and the soft tissue in his nose and throat. 
 Painfully, Bobby succumbed to the acid.
 His clothes and skin would be completely dissolved before the fire department arrived.
@@ -39,6 +39,6 @@ His clothes and skin would be completely dissolved before the fire department ar
 <<set $actions.respects to true>>
 The plant was shutdown for three days while crews removed what was left of Bobby's body.
 The tank was disassembled and removed. It was replaced by two modern tanks that are completely enclosed with only fill and release valves.
-"Paying Respects" is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back to the control room.
+"Paying Respects" is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back down the catwalk.
 <br /><br />
-[[Control Room|p4]]
+[[Second floor landing|sf1]]<br />

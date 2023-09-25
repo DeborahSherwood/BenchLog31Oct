@@ -67,8 +67,9 @@ You feel bad you threw the phone at him and you hope he feels bad for scaring yo
 
 :: u2
 <<if visited() is 1>>
-<span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs.
-In the locker room, you have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
+<span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he heads out.
+You enter the locker room.
+You have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
 You're standing in front of your locker.<</if>>
 <br /><br />
 [[Coveralls|lr5]]<br />

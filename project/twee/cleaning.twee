@@ -1,14 +1,14 @@
 :: jc1
 
 The door to the cleaning and supplies closet door is closed and locked. 
-Management started locking the door when they noticed large amounts of toilet paper went missing during COVID 19.
+Management started locking the door when they noticed large amounts of toilet paper went missing during COVID-19.
 <br /><br />
 [[Unlock closet|jc2]]<br />
 
 :: jc2
 
 <<if $player.closetKey is true>>
-
+You remove the small key from your pocket and struggle with the door knob. It's as old as the plant.
 <<else>>
-    
+You'll need to get the key from your locker. 
 <</if>>

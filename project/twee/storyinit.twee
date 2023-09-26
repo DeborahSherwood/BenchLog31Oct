@@ -22,6 +22,7 @@
     shoeType: '',
     phone: false,
     closetKey: false,
-    key: false
+    key: false,
+    interest: 'female'
 }>>
 <</nobr>>

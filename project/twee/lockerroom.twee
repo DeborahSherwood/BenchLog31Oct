@@ -22,9 +22,9 @@ As you round the corner, you hear cackling behind you. Turning, you find your co
 He lowers his shroud then jumps at you yelling <span class="voiceB">"Boo!"</span><br />
 You crash backwards into a wall.
 <br /><br />
-[[Asshole!|u2][$phrase to 'Asshole!']]<br />
-[[Jerk!|u2][$phrase to 'Jerk!']]<br />
-[[Dickhead!|u2][$phrase to 'Dickhead!']]<br />
+[[Asshole!|h1][$phrase to 'Asshole!']]<br />
+[[Jerk!|h1][$phrase to 'Jerk!']]<br />
+[[Dickhead!|h1][$phrase to 'Dickhead!']]<br />
 
 
 :: lr3
@@ -41,9 +41,9 @@ He looks slightly peeved that you hit him. <br />
 He starts to giggle which then escalates up to a loud cackle.
 <span class="voiceB">"I guess my costume is believable then."</span> He pats you on the shoulder and turns to leave, still laughing.
 <br /><br />
-[[Asshole!|u2][$phrase to 'Asshole!']]<br />
-[[Jerk!|u2][$phrase to 'Jerk!']]<br />
-[[Dickhead!|u2][$phrase to 'Dickhead!']]<br />
+[[Asshole!|h1][$phrase to 'Asshole!']]<br />
+[[Jerk!|h1][$phrase to 'Jerk!']]<br />
+[[Dickhead!|h1][$phrase to 'Dickhead!']]<br />
 
 :: lr4
 
@@ -61,16 +61,21 @@ He looks slightly peeved that you hit him. <br />
 You feel bad you threw the phone at him and you hope he feels bad for scaring you.
 <<set $phrase to 'Have a good night.'>>
 <br /><br />
-[[Locker|u2]]<br />
+[[Locker room|h1]]<br />
 [[Exit|e1]]
 
 
-:: u2
-<<if visited() is 1>>
+:: h1
+
 <span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he heads out.
-You enter the locker room.
-You have an assigned locker where you keep coveralls, safety shoes and other personal items. <<else>>
-You're standing in front of your locker.<</if>>
+From the hallway you can enter the locker room.
+<br /><br />
+[[Locker room|u1]]<br />
+[[Exit|e1]]
+
+:: u1
+
+You have an assigned locker where you keep coveralls, safety shoes and other personal items. 
 <br /><br />
 [[Coveralls|lr5]]<br />
 [[Safety Shoes|lr6]]<br />
@@ -80,7 +85,7 @@ You're standing in front of your locker.<</if>>
 
 :: lr5
 <<if $player.coveralls is false>>
-You have two sets of two coveralls. Two for winter and two for summer.
+You have two types coveralls. A winter style that is lined for warmth and a lightweight version for summer.
 Summer is over but it's still warm enough to wear your summer coveralls.
 <br /><br />
 [[Wear over clothes|style][$style to 'a']]<br />
@@ -206,7 +211,7 @@ This key will open the cleaning supplies closet. You put the key in your pocket.
 
 :: e1
 <<set $plant.lights to true>>
-As you leave the restroom, the power goes out.
+As you leave the locker room, the power goes out.
 You wait in the darkened hallway, hoping the generator will kick on soon.
 The silence is deafening.
 After a minute, power flickers on but the lights don't seem to have enough voltage.

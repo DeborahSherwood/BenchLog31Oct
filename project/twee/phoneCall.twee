@@ -54,7 +54,6 @@ You wait until the very end of the the second ring to answer.<br />
 <span class="voiceA">"Water Treatment Plant."</span> You just blurt it out, not trying to sound nice or professional.<br />
 <span class="voiceB">"Hey! Ya hungry?"</span> It's Scott. You breath a sigh of relief.<br />
 <span class="voiceB">"I'm on break. They have amazing chili dogs and funnel cakes here!"</span> He can't contain his enthusiasm.
-<span class="voiceB">"I can bring you some if you'd like."</span>
 <br /><br />
 [[Sounds great|r5]]<br />
 [[No thanks|r6]]
@@ -78,6 +77,7 @@ You hear a sigh then he hangs up.
 :: r1r
 
 Standing over the puddle, you furrow your brow. Now you'll have to get out the mop and bucket and clean that mess up.
+An alarm starts to sound on the monitoring console.
 <br /><br />
 [[Cleaning supplies|jc1]]<br />
 

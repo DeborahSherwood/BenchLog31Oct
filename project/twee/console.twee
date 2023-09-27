@@ -1,0 +1,15 @@
+:: mc1
+<<if visited() is 1>>
+The monitoring console is your eyes and ears to the plant and well sites.
+If anything goes out of range, an alarm notification sounds.<<else>>
+Everything looks normal on the console at the moment.<</if>>
+<br /><br />
+[[Control Room|p4]]
+
+:: mca1
+
+An alarm is sounding. Looking at the display, you see "Intrusion: Mixing Tank" in red.
+You acknowledge the alarm but become concerned. There shouldn't be anyone near the Mixing Tank at this hour.
+<br /><br />
+
+

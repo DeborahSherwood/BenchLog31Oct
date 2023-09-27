@@ -18,8 +18,3 @@ This job is exactly what you needed. It can be lonely at times, but it suits you
 [[About]]<br />
 [[Old Water Plant|owp]]<br />
 [[Begin| bg1]]
-
-<<set _playerInt = ["Female", "Male", "Non-Binary", "Steel toe Chelsea boots"]>>
-<<listbox "$player.interest" autoselect>>
-	<<optionsfrom _playerInt>>
-<</listbox>>

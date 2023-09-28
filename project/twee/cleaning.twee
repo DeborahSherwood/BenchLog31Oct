@@ -1,7 +1,7 @@
 :: jc1
 
-The door to the cleaning and supplies closet is closed and locked. 
-Management started locking the door when they noticed large amounts of toilet paper went missing during COVID-19.
+The door to the supplies closet is closed and locked. 
+Management started locking the door when they noticed large amounts of toilet paper missing during COVID-19.
 <br /><br />
 [[Unlock closet|jc2]]<br />
 
@@ -11,7 +11,7 @@ Management started locking the door when they noticed large amounts of toilet pa
 You remove the small key from your pocket and struggle with the door knob. It's as old as the plant.
 You finally get it to twist open.
 <br /><br />
-[[Cleaning Supplies|jc3]]
+[[Supplies|jc3]]
 <<else>>
 You'll need to get the key from your locker.
 <br /><br />
@@ -22,7 +22,19 @@ You'll need to get the key from your locker.
 
 The small closet has a large drain in the floor and a faucet with both hot and cold water valves.
 To your left is a bucket on wheels. Hanging from hooks along the wall are a mop, a broom and a dustpan.
-The shelves are stocked with floor cleaner and wax, trash bags, paper towels and glass cleaner. 
-There is also an old fashioned feather duster along side some containers of disposable cleaning cloths.
+The shelves are stocked with floor cleaner and polish, trash bags, paper towels, glass cleaner
+toilet paper, hand soap and disposable hand towels. 
+
 <br /><br />
-[[]]
+[[Bucket|d1]]<br />
+[[Mop|d1]]<br />
+[[Broom|d1]]<br />
+[[Dustpan|d1]]<br />
+[[Floor Cleaner|d1]]<br />
+[[Floor Polish|d1]]<br />
+[[Trash Bags|d1]]<br />
+[[Paper Towels|d1]]<br />
+[[Glass Cleaner|d1]]<br />
+[[Hand Soap|d1]]<br />
+[[Hand Towels|d1]]<br />
+[[Toilet Paper|d1]]<br />

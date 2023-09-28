@@ -41,9 +41,9 @@ You turn and find a puddle of water near the control desk that wasn't there befo
 :: r3
 
 The phone rings, causing you to jump.<br />
-"Water Treatment Plant. Can I help you?" You ask hesitantly.<br />
-"I mean, do you want company tonight?" The Demi-Demon voice queries.<br />
-You hang up quickly and walk around the control room, trying to calm your nerves.
+<span class="voiceA">"Water Treatment Plant. Can I help you?"</span> You ask hesitantly.<br />
+ <span class="demon">"I mean, do you want company tonight?"</span> The Demi-Demon voice queries.<br />
+You hang up quickly and walk around in circles in the control room, trying to calm your nerves.
 <br /><br />
 [[Continue|p4]]
 
@@ -64,7 +64,7 @@ You wait until the very end of the the second ring to answer.<br />
 <span class="voiceA">"Sounds great!"</span> Not only is your mouth watering over the thought a chili dogs and funnel cakes, but you could really use some company.
 <span class="voiceB">"I'll be right over."</span> He hangs up. You can't wait.
 <br /><br />
-[[Control Room| p4]]
+[[Continue|p4]]
 
 
 :: r6
@@ -72,14 +72,15 @@ You wait until the very end of the the second ring to answer.<br />
 <span class="voiceA">"Um, no but thanks. My doctor would be very disappointed with me."</span> <br />
 You hear a sigh then he hangs up.
 <br /><br />
-[[Control Room| p4]]
+[[Continue|p4]]
 
 :: r1r
 
 Standing over the puddle, you furrow your brow. Now you'll have to get out the mop and bucket and clean that mess up.
-An alarm starts to sound on the monitoring console.
+An alarm starts to sound on the monitoring console. DING DING DING.
 <br /><br />
-[[Cleaning supplies|jc1]]<br />
+[[Continue|a1]]
+
 
 
 

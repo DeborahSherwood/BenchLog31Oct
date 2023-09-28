@@ -27,22 +27,22 @@ This is your second week on the job.
 You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
 Swiping again to unlock the side door then making your way up to the second deck.
 <br /><br />
-[[Second floor|sf1]]<br />
+[[Second Deck|sf1]]<br />
 
 
 :: sf1
 
-<<if visited() is 1>>On the second floor is an entrance to a catwalk, the supervisor's office,
-the control room, a cleaning supplies closet, and a locker room.
+<<if visited() is 1>>On the second deck is an entrance to a catwalk, the supervisor's office,
+the control room, a supplies closet, and a locker room.
 There is also a stairway down to the ground floor.<<else>>
     You're on the second deck. <</if>>
 <br /><br />
 
 [[Control Room|p4]]<br />
 [[Catwalk|cw1]]<br />
-[[Cleaning supplies|jc1]]<br />
 [[Ground Floor|gf1]]<br />
-[[Locker room|lr1]]<br />
+[[Supplies Closet|jc1]]<br />
+[[Locker Room|lr1]]<br />
 [[Supervisor Office|so1]]
 
 

@@ -19,14 +19,15 @@ You're currently inside the plant.
 
 :: gf3
 
-The plant floor has grates set over large pits. The pits have large pipes that carry water throughout the treatment process in them.
+The plant floor has grates set over large pits. The pits have large pipes that carry water throughout the treatment process.
 There are eight very large nano filtration filters to your right. 
 Chemical tanks are to your left with the catwalk suspended above them.
-At the far end of the building, you see a control panel for a Gantry crane.
+At the far end of the building, you see a control panel for a Gantry crane along with a back door to the mixing tank.
 From here, you can return to the ground floor entry.
 <br /><br />
 [[Ground Floor|gf1]]<br />
-[[Control Panel|gf8]]
+[[Control Panel|gf8]]<br />
+[[Mixing Tank|mt1]]
 
 :: gf8
 

@@ -19,7 +19,6 @@ This is your second week on the job.
 <br /><br />
 [[About]]<br />
 [[About You|ay1]]<br />
-[[Old Water Plant|owp]]<br />
 [[Begin| bg1]]
 
 :: bg1 
@@ -32,7 +31,7 @@ Swiping again to unlock the side door then making your way up to the second deck
 
 :: sf1
 
-<<if visited() is 1>>On the second deck is an entrance to a catwalk, the supervisor's office,
+<<if visited() is 1>>On the second deck is an entrance to a catwalk, 
 the control room, a supplies closet, and a locker room.
 There is also a stairway down to the ground floor.<<else>>
     You're on the second deck. <</if>>
@@ -43,7 +42,6 @@ There is also a stairway down to the ground floor.<<else>>
 [[Ground Floor|gf1]]<br />
 [[Supplies Closet|jc1]]<br />
 [[Locker Room|lr1]]<br />
-[[Supervisor Office|so1]]
 
 
 :: p3

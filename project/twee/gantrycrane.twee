@@ -21,7 +21,7 @@ The crane is now <<= $gc.state>>.
 :: gct2
 <<if $gc.state is "on">>
 <<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
-The hook begins to move to the <<= $gc.hook>> position.<<else>>
+The hook moves to the <<= $gc.hook>> position then stops.<<else>>
     The crane needs power first.
     <</if>>
 <br /><br />
@@ -34,9 +34,9 @@ The hook begins to move to the <<= $gc.hook>> position.<<else>>
 :: gc3
 <<if $gc.state eq "on">>
 <<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
-<<elseif $gc.pos eq "mid" and $gc.start eq "back">><<set $gc.pos to "front">>
-<<elseif $gc.pos eq "mid" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
-The crane begins to move towards the <<= $gc.pos>> of the plant floor.<<else>>
+<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+The crane moves to the <<= $gc.pos>> of the plant floor, along the rails.<<else>>
     The crane needs power first.<</if>>
 <br /><br />
 [[On/Off Toggle|gct1]]<br />
@@ -46,7 +46,7 @@ The crane begins to move towards the <<= $gc.pos>> of the plant floor.<<else>>
 
 :: gc4
 
-The loading cart can be used with the Gantry crane to move loads around the plant.
+The loading cart can be used with the Gantry crane to move loads from the front to the back of the plant floor.
 <br /><br />
 <<if $gc.cart is false>>
 [[Attach Cart|gc5]]<br /><<else>>
@@ -81,11 +81,11 @@ The hook begins to <<if $gc.hook eq "catwalk">>hoist<<else>>lower<</if>> the car
 
 :: gc8
 <<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
-<<elseif $gc.pos eq "mid" and $gc.start eq "back">><<set $gc.pos to "front">>
-<<elseif $gc.pos eq "mid" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
-The crane moves to the <<= $gc.pos>> of the plant floor then stops.
+<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+The crane moves to the <<= $gc.pos>> of the plant floor along the rails then stops.
 <br /><br />
-<<if $gc.pos eq "mid">>[[Exit to Catwalk]]<</if>>
+<<if $gc.pos eq "middle" and $gc.ride is true>>[[Exit to Catwalk]]<br /><</if>>
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
 
@@ -93,7 +93,7 @@ The crane moves to the <<= $gc.pos>> of the plant floor then stops.
 
 You step back onto the loading cart.
 <br /><br />
-<<if $gc.pos eq "mid">>[[Exit to Catwalk]]<</if>>
+<<if $gc.pos eq "middle">>[[Exit to Catwalk]]<</if>>
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
 

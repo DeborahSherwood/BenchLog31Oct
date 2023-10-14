@@ -269,7 +269,7 @@ The crane is now &lt;&lt;= $gc.state&gt;&gt;.
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
 [[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="26" name="gct2" tags="" position="725,350" size="100,100">&lt;&lt;if $gc.state is &quot;on&quot;&gt;&gt;
 &lt;&lt;if $gc.hook eq &quot;floor&quot;&gt;&gt;&lt;&lt;set $gc.hook to &quot;catwalk&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.hook to &quot;floor&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-The hook begins to move to the &lt;&lt;= $gc.hook&gt;&gt; position.&lt;&lt;else&gt;&gt;
+The hook moves to the &lt;&lt;= $gc.hook&gt;&gt; position then stops.&lt;&lt;else&gt;&gt;
     The crane needs power first.
     &lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
@@ -279,15 +279,15 @@ The hook begins to move to the &lt;&lt;= $gc.hook&gt;&gt; position.&lt;&lt;else&
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
 [[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="27" name="gc3" tags="" position="850,350" size="100,100">&lt;&lt;if $gc.state eq &quot;on&quot;&gt;&gt;
 &lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;mid&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;mid&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;mid&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-The crane begins to move towards the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor.&lt;&lt;else&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor, along the rails.&lt;&lt;else&gt;&gt;
     The crane needs power first.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[On/Off Toggle|gct1]]&lt;br /&gt;
 [[Up/Down Toggle|gct2]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
-[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="28" name="gc4" tags="" position="975,350" size="100,100">The loading cart can be used with the Gantry crane to move loads around the plant.
+[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="28" name="gc4" tags="" position="975,350" size="100,100">The loading cart can be used with the Gantry crane to move loads from the front to the back of the plant floor.
 &lt;br /&gt;&lt;br /&gt;
 &lt;&lt;if $gc.cart is false&gt;&gt;
 [[Attach Cart|gc5]]&lt;br /&gt;&lt;&lt;else&gt;&gt;
@@ -307,15 +307,15 @@ The hook begins to &lt;&lt;if $gc.hook eq &quot;catwalk&quot;&gt;&gt;hoist&lt;&l
 &lt;&lt;if $gc.ride is true&gt;&gt;[[Exit Cart]]&lt;&lt;/if&gt;&gt;
 [[Up/Down Toggle|gct7]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="32" name="gc8" tags="" position="225,475" size="100,100">&lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;mid&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;mid&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;mid&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor then stops.
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor along the rails then stops.
 &lt;br /&gt;&lt;br /&gt;
-&lt;&lt;if $gc.pos eq &quot;mid&quot;&gt;&gt;[[Exit to Catwalk]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.pos eq &quot;middle&quot; and $gc.ride is true&gt;&gt;[[Exit to Catwalk]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
 [[Up/Down Toggle|gct7]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="33" name="gc10" tags="" position="350,475" size="100,100">You step back onto the loading cart.
 &lt;br /&gt;&lt;br /&gt;
-&lt;&lt;if $gc.pos eq &quot;mid&quot;&gt;&gt;[[Exit to Catwalk]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.pos eq &quot;middle&quot;&gt;&gt;[[Exit to Catwalk]]&lt;&lt;/if&gt;&gt;
 [[Up/Down Toggle|gct7]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="34" name="crane" tags="widget" position="475,475" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;widget &quot;craneWidget&quot;&gt;&gt;

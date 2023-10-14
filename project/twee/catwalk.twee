@@ -42,3 +42,15 @@ The tank was disassembled and removed. It was replaced by two modern tanks that 
 "Paying Respects" is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back down the catwalk.
 <br /><br />
 [[Second floor landing|sf1]]<br />
+
+:: cw8
+
+You exit the loading cart and are now at the Memorial on the catwalk.
+You can go to the second floor landing, down the stairs to the back door or get back in the loading cart.
+<<if $demon.scare is true>>Something from the Memorial catches your eye.<</if>>
+<br /><br />
+[[Memorial|cw9]]<br />
+[[Back Door|bd1]]<br />
+[[Second floor landing|sf1]]<br />
+[[Loading Cart|gc10]]<br />
+

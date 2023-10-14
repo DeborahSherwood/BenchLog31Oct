@@ -18,27 +18,15 @@ You're currently inside the plant.
 [[Stairs to second level|sf1]]
 
 :: gf3
-
+<<if visited() is 1>>
 The plant floor has grates set over large pits. The pits have large pipes that carry water throughout the treatment process.
 There are eight very large nano filtration filters to your right. 
 Chemical tanks are to your left with the catwalk suspended above them.
-At the far end of the building, you see a control panel for a Gantry crane along with a back door to the mixing tank.
-From here, you can return to the ground floor entry.
+At the far end of the plant, you see a control panel for a Gantry crane next to the back door.<<else>>
+From here, you can go to the ground floor entry or walk over the grates to the back door of the plant.<</if>>
 <br /><br />
 [[Ground Floor|gf1]]<br />
-[[Control Panel|gf8]]<br />
-[[Mixing Tank|mt1]]
-
-:: gf8
-
-The control panel has 3 buttons. 
-The crane is currently off with the hook locked at the top of the girder. 
-The crane is positioned all the way to the back of the plant against the wall.<br />
-<br />
-[[On/Off Toggle]]<br />
-[[Up/Down Toggle]]<br />
-[[Forward/Reverse Toggle]]<br />
-[[Ground Floor|gf3]]<br />
+[[Back Door|bd1]]
 
 :: gf4
 

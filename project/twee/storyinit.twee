@@ -25,4 +25,13 @@
     key: false,
     interest: 'female'
 }>>
+
+<<set $gc to {
+    state: "off",
+    hook: "catwalk",
+    pos: "back",
+    cart: false,
+    ride: true,
+    start: "back"
+}>>
 <</nobr>>

@@ -1,0 +1,108 @@
+:: gc1
+<<set $player.loc to "back">>
+<<if visited() is 1>>The control panel has three buttons.<</if>> 
+The crane is currently <<= $gc.state>> with the hook at the <<= $gc.hook>> of the girder. 
+The crane is positioned at the <<= $gc.pos>> of the plant floor.
+<br /><br />
+[[On/Off Toggle|gct1]]<br />
+[[Up/Down Toggle|gct2]]<br />
+[[Forward/Reverse Toggle|gc3]]<br />
+[[Back door|bd1]]<br />
+
+:: gct1
+<<if $gc.state eq "off">><<set $gc.state to "on">><<else>><<set $gc.state to "off">><</if>>
+The crane is now <<= $gc.state>>.
+<br /><br />
+[[On/Off Toggle|gct1]]<br />
+[[Up/Down Toggle|gct2]]<br />
+[[Forward/Reverse Toggle|gc3]]<br />
+[[Back door|bd1]]<br />
+
+:: gct2
+<<if $gc.state is "on">>
+<<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
+The hook begins to move to the <<= $gc.hook>> position.<<else>>
+    The crane needs power first.
+    <</if>>
+<br /><br />
+[[On/Off Toggle|gct1]]<br />
+[[Up/Down Toggle|gct2]]<br />
+<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><</if>>
+[[Forward/Reverse Toggle|gc3]]<br />
+[[Back door|bd1]]<br />
+
+:: gc3
+<<if $gc.state eq "on">>
+<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
+<<elseif $gc.pos eq "mid" and $gc.start eq "back">><<set $gc.pos to "front">>
+<<elseif $gc.pos eq "mid" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+The crane begins to move towards the <<= $gc.pos>> of the plant floor.<<else>>
+    The crane needs power first.<</if>>
+<br /><br />
+[[On/Off Toggle|gct1]]<br />
+[[Up/Down Toggle|gct2]]<br />
+[[Forward/Reverse Toggle|gc3]]<br />
+[[Back door|bd1]]<br />
+
+:: gc4
+
+The loading cart can be used with the Gantry crane to move loads around the plant.
+<br /><br />
+<<if $gc.cart is false>>
+[[Attach Cart|gc5]]<br /><<else>>
+[[Remove Cart|gc6]]<br /><</if>>
+[[Control Panel|gc1]]<br />
+
+:: gc5
+
+<<if $gc.hook eq "floor" and $player.loc eq $gc.pos>><<set $gc.cart to true>>
+    You attach the heavy chain from the cart onto the Gantry hook.<<else>>
+    The Gantry hook needs to be lowered first.<</if>>
+<br /><br />
+<<craneWidget>>
+[[Control Panel|gc1]]<br />
+
+:: gc6
+<<set $gc.ride to true>>
+You climb into the loading cart. There is a small box with two buttons and a long extension cord.
+<br /><br />
+[[Up/Down Toggle|gct7]]<br />
+[[Forward/Reverse Toggle|gc8]]<br />
+
+:: gct7
+
+<<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
+The hook begins to <<if $gc.hook eq "catwalk">>hoist<<else>>lower<</if>> the cart to the <<= $gc.hook>> position.
+<br /><br />
+<<if $gc.ride is true>>[[Exit Cart]]<</if>>
+[[Up/Down Toggle|gct7]]<br />
+[[Forward/Reverse Toggle|gc8]]<br />
+  
+
+:: gc8
+<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
+<<elseif $gc.pos eq "mid" and $gc.start eq "back">><<set $gc.pos to "front">>
+<<elseif $gc.pos eq "mid" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+The crane moves to the <<= $gc.pos>> of the plant floor then stops.
+<br /><br />
+<<if $gc.pos eq "mid">>[[Exit to Catwalk]]<</if>>
+[[Up/Down Toggle|gct7]]<br />
+[[Forward/Reverse Toggle|gc8]]<br />
+
+:: gc10
+
+You step back onto the loading cart.
+<br /><br />
+<<if $gc.pos eq "mid">>[[Exit to Catwalk]]<</if>>
+[[Up/Down Toggle|gct7]]<br />
+[[Forward/Reverse Toggle|gc8]]<br />
+
+:: crane [widget]
+<<nobr>>
+<<widget "craneWidget">>
+<<if $gc.hook eq "floor" and $gc.pos eq $player.loc and $gc.cart is true>>
+    [[Climb into cart|gc6]]<br />
+
+<</if>>
+<</widget>>
+<</nobr>>

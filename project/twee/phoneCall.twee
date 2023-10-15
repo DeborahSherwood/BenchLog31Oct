@@ -14,7 +14,7 @@ You race towards the control room,
 :: r2
 
 <span class="voiceA">"Water Treatment Plant. How can I help you?"</span>You answer, breathlessly.<br />
-<span class="demon">"Are you there alone?"</span> A raspy voice asks. The voice sounds like Demi Moore only much deeper.<br />
+<span class="demon">"Are you there alone?"</span> A raspy voice asks. The voice sounds like Demi Moore only slightly deeper.<br />
 <<set _options to ['\"I, I. Pardon me?\"', '\"Of course not. We\'re fully staffed at the moment.\"', '\"Yes I am, why?\"']>>
 <<listbox "$phrase" autoselect>>
 	<<optionsfrom _options>>
@@ -33,9 +33,8 @@ You race towards the control room,
         <span class="demon">"How about some company?"</span><br />
 <</if>>
 You're not sure how to respond so you hang up. That is no emergency, you say to yourself.<br />
-You turn and find a puddle of water near the control desk that wasn't there before.
 <br /><br />
-[[Continue|r1r]]
+[[Continue|p4]]
 
 
 :: r3
@@ -52,31 +51,17 @@ You hang up quickly and walk around in circles in the control room, trying to ca
 You really don't want to answer the phone, but it is part of your job. Policy states it must be answered by the third ring.
 You wait until the very end of the the second ring to answer.<br />
 <span class="voiceA">"Water Treatment Plant."</span> You just blurt it out, not trying to sound nice or professional.<br />
-<span class="voiceB">"Hey! Ya hungry?"</span> It's Scott. You breath a sigh of relief.<br />
-<span class="voiceB">"I'm on break. They have amazing chili dogs and funnel cakes here!"</span> He can't contain his enthusiasm.
+<span class="voiceB">"Gurgle muck gurgle ugh"</span> It sounds like a person trying to talk while under water.<br />
+You hang up and start rubbing your temples. 
+After a minute you rise to find a puddle of water near the control desk that wasn't there before.
 <br /><br />
-[[Sounds great|r5]]<br />
-[[No thanks|r6]]
+[[Continue|r1r]]
 
 
-:: r5
-
-<span class="voiceA">"Sounds great!"</span> Not only is your mouth watering over the thought a chili dogs and funnel cakes, but you could really use some company.
-<span class="voiceB">"I'll be right over."</span> He hangs up. You can't wait.
-<br /><br />
-[[Continue|p4]]
-
-
-:: r6
-
-<span class="voiceA">"Um, no but thanks. My doctor would be very disappointed with me."</span> <br />
-You hear a sigh then he hangs up.
-<br /><br />
-[[Continue|p4]]
 
 :: r1r
 
-Standing over the puddle, you furrow your brow. Now you'll have to get out the mop and bucket and clean that mess up.
+You furrow your brow. Now you'll have to get out the mop and bucket and clean that mess up.
 An alarm starts to sound on the monitoring console. DING DING DING.
 <br /><br />
 [[Continue|a1]]

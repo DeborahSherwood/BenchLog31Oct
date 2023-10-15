@@ -99,7 +99,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="69" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
+	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="67" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
 #ui-bar{background-color:#1f1b1a}.low{text-transform:lowercase}.tra{text-transform:capitalize}#passages{margin-left:3px}.passage{max-width:80ex;margin-left:3px}body{background:#1f1b1a;color:#8b957c;font-family:Tahoma,sans-serif;font-size:large}.title{font-weight:700;text-decoration:underline;padding-bottom:8px}.voiceA{color:#c9b06d}.voiceB{color:#b09c61}.demon{color:#d75741}a{color:#d7a241}a:hover{color:#d7a241;text-decoration:underline}a.link-visited{color:#c58136}
 /* twine-user-stylesheet #2: "deftone stylus.ttf" */
 @font-face {
@@ -108,6 +108,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">"use strict";var testvar=444,today=(config.addVisitedLinkClass=!0,Config.passages.nobr=!0,new Date),date=today.getMonth()+1+"-"+today.getDate()+"-"+today.getFullYear(),time=today.getHours()+":"+today.getMinutes(),dateTime=date+" "+time,curTime=time;curTime.toLocaleString("en-US",{hour12:!1}),State.variables.curDateTime=dateTime,State.variables.curTime=curTime;</script><tw-passagedata pid="1" name="About" tags="" position="100,100" size="100,100">A flirtatious demon, a visitor from the past 
 and a night of near misses make for a fun
 adventure at the old water treatment plant.
+You&#39;ve got to defend your soul and help save another.
 &lt;br /&gt;&lt;br /&gt;
 [[About You|ay1]]&lt;br /&gt;
 [[Begin| bg1]]</tw-passagedata><tw-passagedata pid="2" name="ay1" tags="" position="225,100" size="100,100">After 25 years in your chosen profession, you retired but found yourself with too much free time on your hands.
@@ -116,24 +117,19 @@ You decided you wanted to do something easy and stress free.
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine. 
 &lt;br /&gt;&lt;br /&gt;
 [[About]]&lt;br /&gt;
-[[Begin| bg1]]</tw-passagedata><tw-passagedata pid="3" name="bd1" tags="" position="350,100" size="100,100">You&#39;re at the back door. You can exit to the rear exterior of the plant.
-The Gantry crane control panel is here next to stairs leading up to the catwalk.
-There is an empty loading cart here. You can also return to the ground floor entry.
+[[Begin| bg1]]</tw-passagedata><tw-passagedata pid="3" name="bd1" tags="" position="350,100" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;
+You&#39;re at the back door. You can exit to the rear exterior of the plant or return to the ground floor entry.
+There is a Gantry crane control panel here and an empty loading cart leaning against the back wall.&lt;&lt;else&gt;&gt;
+    You&#39;re at the back door.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Exterior]]&lt;br /&gt;
-[[Catwalk|cw1]]&lt;br /&gt;
 [[Control Panel|gc1]]&lt;br /&gt;
-[[Loading Cart|gc4]]&lt;br /&gt;
-[[Ground Floor|gf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="4" name="bby1" tags="" position="475,100" size="100,100">&quot;I didn&#39;t trip.&quot; You hear a voice in your head.
-&quot;I was murdered.&quot;
-
-Looking at the picture of the normally smiling young Bobby, the face is now haggard and his eyes are full of worry.
-You look away quickly, shaking your head in disbelief.
-&lt;span class=&quot;voiceA&quot;&gt;&quot;Gah, what&#39;s going on here.&quot;&lt;/span&gt; You question your own self.</tw-passagedata><tw-passagedata pid="5" name="c1" tags="" position="600,100" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;The control room has a wall of monitors. Camera feeds from the plant, well sites and water towers appear on the monitors.&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.cart is false&gt;&gt;[[Loading Cart|gc4]]&lt;br /&gt;&lt;&lt;elseif $gc.loc eq &quot;back&quot; and $gc.hook eq &quot;floor&quot;&gt;&gt;[[Climb into cart|gc6]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+[[Ground Floor|gf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="4" name="c1" tags="" position="475,100" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;The control room has a wall of monitors. Camera feeds from the plant, well sites and water towers appear on the monitors.&lt;&lt;/if&gt;&gt;
 You take a moment to study the feeds. All looks good for now.
 &lt;br /&gt;
 &lt;br /&gt;
-[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="6" name="cw1" tags="" position="725,100" size="100,100">&lt;&lt;if $actions.joe is false&gt;&gt;You&#39;d better get checked in first.&lt;br /&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="5" name="cw1" tags="" position="600,100" size="100,100">&lt;&lt;if $actions.joe is false&gt;&gt;You&#39;d better get checked in first.&lt;br /&gt;
     &lt;br /&gt;
     [[Continue|previous()]]
     &lt;&lt;else&gt;&gt;
@@ -147,34 +143,42 @@ About half way down the walk, there is a memorial to the only operator ever kill
     &lt;br /&gt;&lt;br /&gt;
     [[Control Room|p4]]
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="cw2" tags="" position="850,100" size="100,100">When the plant was first built, the chemical tanks had lids that could be removed for easier cleaning.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="cw2" tags="" position="725,100" size="100,100">When the plant was first built, the chemical tanks had lids that could be removed for easier cleaning.
 20 years ago, those old tanks were still in use.
 One operator, Bobby, had been assigned the chore of cleaning the tanks.
 During his shift, he dashed out of the control room and started along the catwalk, moving way too fast. He tripped and sailed head-long over the side rail and straight into a tank.
 &lt;br /&gt;&lt;br /&gt;
-[[Next|cw6]]</tw-passagedata><tw-passagedata pid="8" name="cw6" tags="" position="975,100" size="100,100">The tank still had about six inches of Sulfuric Acid (H2sO4) in it.
+[[Next|cw6]]</tw-passagedata><tw-passagedata pid="7" name="cw6" tags="" position="850,100" size="100,100">The tank still had about six inches of Sulfuric Acid (H2sO4) in it.
 As soon as he landed, his skin began to burn. The searing pain caused him to cry out and flail inside the deep tank. He had no way to get clear of the acid.
 His eyeballs would dissolve first, followed by his tongue and the soft tissue in his nose and throat. 
 Painfully, Bobby succumbed to the acid.
 His clothes and skin would be completely dissolved before the fire department arrived.
 
 &lt;br /&gt;&lt;br /&gt;
-[[Next|cw7]]</tw-passagedata><tw-passagedata pid="9" name="cw7" tags="" position="1100,100" size="100,100">&lt;&lt;set $actions.respects to true&gt;&gt;
+[[Next|cw7]]</tw-passagedata><tw-passagedata pid="8" name="cw7" tags="" position="975,100" size="100,100">&lt;&lt;set $actions.respects to true&gt;&gt;
 The plant was shutdown for three days while crews removed what was left of Bobby&#39;s body.
 The tank was disassembled and removed. It was replaced by two modern tanks that are completely enclosed with only fill and release valves.
 &quot;Paying Respects&quot; is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back down the catwalk.
 &lt;br /&gt;&lt;br /&gt;
-[[Second floor landing|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="10" name="cw8" tags="" position="1225,100" size="100,100">You exit the loading cart and are now at the Memorial on the catwalk.
-You can go to the second floor landing, down the stairs to the back door or get back in the loading cart.
-&lt;&lt;if $demon.scare is true&gt;&gt;Something from the Memorial catches your eye.&lt;&lt;/if&gt;&gt;
+[[Second floor landing|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="9" name="cw8" tags="" position="1100,100" size="100,100">You are now at the memorial on the catwalk.
+You can go to the second floor landing or get back in the loading cart.
+You hear a strange sound near the memorial.
 &lt;br /&gt;&lt;br /&gt;
 [[Memorial|cw9]]&lt;br /&gt;
-[[Back Door|bd1]]&lt;br /&gt;
 [[Second floor landing|sf1]]&lt;br /&gt;
-[[Loading Cart|gc10]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="11" name="jc1" tags="" position="100,225" size="100,100">The door to the supplies closet is closed and locked. 
+[[Loading Cart|gc10]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="10" name="cw9" tags="" position="1225,100" size="100,100">&lt;span class=&quot;voiceB&quot;&gt;I didn&#39;t trip.&quot;&lt;/span&gt; You hear a gurgling sound.
+&lt;span class=&quot;voiceB&quot;&gt;&quot;I was murdered.&quot;&lt;/span&gt; The gurgling voice is haunting.&lt;br /&gt;
+Looking at the picture of the normally smiling young Bobby, the face is now haggard and his eyes are full of worry.&lt;br /&gt;
+&lt;span class=&quot;voiceA&quot;&gt;&quot;Gah!&quot;&lt;/span&gt; You gasp and run back to the safety of the control room.
+&lt;br /&gt;&lt;br /&gt;
+[[Control Room|p4]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="11" name="jc1" tags="" position="100,225" size="100,100">&lt;&lt;if $actions.joe is false&gt;&gt;You&#39;d better get checked in first.&lt;br /&gt;
+    &lt;br /&gt;
+    [[Continue|previous()]]
+    &lt;&lt;else&gt;&gt;
+The door to the supplies closet is closed and locked. 
 Management started locking the door when they noticed large amounts of toilet paper missing during COVID-19.
 &lt;br /&gt;&lt;br /&gt;
-[[Unlock closet|jc2]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="12" name="jc2" tags="" position="225,225" size="100,100">&lt;&lt;if $player.closetKey is true&gt;&gt;
+[[Unlock closet|jc2]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="jc2" tags="" position="225,225" size="100,100">&lt;&lt;if $player.closetKey is true&gt;&gt;
 You remove the small key from your pocket and struggle with the door knob. It&#39;s as old as the plant.
 You finally get it to twist open.
 &lt;br /&gt;&lt;br /&gt;
@@ -207,7 +211,7 @@ Everything looks normal on the console at the moment.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Control Room|p4]]</tw-passagedata><tw-passagedata pid="15" name="mca1" tags="" position="600,225" size="100,100">An alarm is sounding. Looking at the display, you see &quot;Intrusion: Mixing Tank&quot; in red.
 You acknowledge the alarm but become concerned. There shouldn&#39;t be anyone near the Mixing Tank at this hour.
-&lt;br /&gt;&lt;br /&gt;</tw-passagedata><tw-passagedata pid="16" name="p4" tags="" position="725,225" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;
+&lt;br /&gt;&lt;br /&gt;</tw-passagedata><tw-passagedata pid="16" name="p4" tags="" position="725,225" size="100,100">&lt;&lt;set $player.pos to passage()&gt;&gt;&lt;&lt;if visited() is 1&gt;&gt;
 You enter the control room just as the day crew is wrapping up for the night.
 They pass along pertinent information before eagerly heading out. 
 &lt;&lt;else&gt;&gt;The control room is the epicenter of the plant.&lt;&lt;/if&gt;&gt;
@@ -222,18 +226,18 @@ They pass along pertinent information before eagerly heading out.
 You stick your head out the door and peer down the hall.
 &lt;br /&gt;&lt;br /&gt;
 [[Continue|d2]]</tw-passagedata><tw-passagedata pid="18" name="d2" tags="" position="975,225" size="100,100">Standing before you is the most beautiful creature you have ever seen.
-Glossy black hair, vibrant red skin, tall, shapely and wearing a devilish smile.
+Glossy black, curly hair, vibrant red skin, tall, shapely and wearing a devilish smile.
 You take a deep breath and rise to your full height then step into the hall.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|d3]]</tw-passagedata><tw-passagedata pid="19" name="d3" tags="" position="1100,225" size="100,100">&lt;span class=&quot;demon&quot;&gt;&quot;You don&#39;t need to do that.&quot;&lt;/span&gt; They declare with a dramatic wave of an arm towards the closet.&lt;br /&gt;
-&lt;span class=&quot;voiceA&quot;&gt;&quot;But I need to...&quot;&lt;/span&gt; Your voice trails off. You can&#39;t tear your eyes away from them.
-&lt;span class=&quot;demon&quot;&gt;&quot;What? clean?&quot;&lt;/span&gt; Another dramatic wave of the arm as they move past you into the control room.
-You follow them in, concerned about security protocols and whatnot.
+[[Continue|d3]]</tw-passagedata><tw-passagedata pid="19" name="d3" tags="" position="1100,225" size="100,100">&lt;span class=&quot;demon&quot;&gt;&quot;You don&#39;t need to do that.&quot;&lt;/span&gt; She declares with a dramatic wave of an arm towards the closet.&lt;br /&gt;
+&lt;span class=&quot;voiceA&quot;&gt;&quot;But I need to...&quot;&lt;/span&gt; Your voice trails off. You can&#39;t tear your eyes away from her.
+&lt;span class=&quot;demon&quot;&gt;&quot;What? clean?&quot;&lt;/span&gt; Another dramatic wave of the arm as she moves past you into the control room.
+You follow her in, concerned about security protocols and whatnot.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|d4]]</tw-passagedata><tw-passagedata pid="20" name="d4" tags="" position="1225,225" size="100,100">They make their way to the control desk and sit down, then twist the chair to face you.
-You&#39;ve stopped short because the floor, which needed to be mopped, has not only been mopped but also stripped and wax. It positively shines.
+[[Continue|d4]]</tw-passagedata><tw-passagedata pid="20" name="d4" tags="" position="1225,225" size="100,100">She makes her way to the control desk and sits down, twisting the chair to face you.
+You&#39;ve stopped short because the floor, which needed to be mopped, has not only been mopped but also waxed and polished. It positively shines.
 You stand in disbelief, looking down at the floor.&lt;br /&gt;
-&lt;span class=&quot;demon&quot;&gt;Let&#39;s have some fun.&lt;/span&gt; They smile broadly and quite playfully, looking to you for a response.
+&lt;span class=&quot;demon&quot;&gt;Let&#39;s have some fun.&lt;/span&gt; She smiles broadly and quite playfully, looking to you for a response.
 &lt;br /&gt;&lt;br /&gt;</tw-passagedata><tw-passagedata pid="21" name="dp1" tags="" position="100,350" size="100,100">&lt;&lt;if visited() is 1 and $player.phone is false&gt;&gt;
 The duty phone must be carried if the operator on duty leaves the control room desk. 
 It is an old wireless set that is the same size and weight of a masonry brick.
@@ -253,21 +257,22 @@ You carefully place the phone on the charger. You have to slide the phone back a
 phone begins to charge.
 &lt;br /&gt;
 &lt;br /&gt;
-[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="24" name="gc1" tags="" position="475,350" size="100,100">&lt;&lt;set $player.loc to &quot;back&quot;&gt;&gt;
+[[Control Room|p4]]</tw-passagedata><tw-passagedata pid="24" name="gc1" tags="" position="475,350" size="100,100">&lt;&lt;set $player.pos to &quot;back&quot;&gt;&gt;
 &lt;&lt;if visited() is 1&gt;&gt;The control panel has three buttons.&lt;&lt;/if&gt;&gt; 
-The crane is currently &lt;&lt;= $gc.state&gt;&gt; with the hook at the &lt;&lt;= $gc.hook&gt;&gt; of the girder. 
-The crane is positioned at the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor.
+The crane is currently powered &lt;&lt;= $gc.state&gt;&gt; with the hook at the &lt;&lt;= $gc.hook&gt;&gt; level of the girder. 
+The crane is positioned in the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor. &lt;&lt;if $gc.cart is true&gt;&gt;The loading cart is attached to the hook.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[On/Off Toggle|gct1]]&lt;br /&gt;
 [[Up/Down Toggle|gct2]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
-[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="25" name="gct1" tags="" position="600,350" size="100,100">&lt;&lt;if $gc.state eq &quot;off&quot;&gt;&gt;&lt;&lt;set $gc.state to &quot;on&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.state to &quot;off&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.hook eq &quot;floor&quot; and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Climb into cart|gc6]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="25" name="gct1" tags="" position="600,350" size="100,100">&lt;&lt;set $player.pos to &quot;back&quot;&gt;&gt;&lt;&lt;if $gc.state eq &quot;off&quot;&gt;&gt;&lt;&lt;set $gc.state to &quot;on&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.state to &quot;off&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 The crane is now &lt;&lt;= $gc.state&gt;&gt;.
 &lt;br /&gt;&lt;br /&gt;
 [[On/Off Toggle|gct1]]&lt;br /&gt;
 [[Up/Down Toggle|gct2]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
-[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="26" name="gct2" tags="" position="725,350" size="100,100">&lt;&lt;if $gc.state is &quot;on&quot;&gt;&gt;
+[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="26" name="gct2" tags="" position="725,350" size="100,100">&lt;&lt;set $player.pos to &quot;back&quot;&gt;&gt;&lt;&lt;if $gc.state is &quot;on&quot;&gt;&gt;
 &lt;&lt;if $gc.hook eq &quot;floor&quot;&gt;&gt;&lt;&lt;set $gc.hook to &quot;catwalk&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.hook to &quot;floor&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 The hook moves to the &lt;&lt;= $gc.hook&gt;&gt; position then stops.&lt;&lt;else&gt;&gt;
     The crane needs power first.
@@ -275,75 +280,91 @@ The hook moves to the &lt;&lt;= $gc.hook&gt;&gt; position then stops.&lt;&lt;els
 &lt;br /&gt;&lt;br /&gt;
 [[On/Off Toggle|gct1]]&lt;br /&gt;
 [[Up/Down Toggle|gct2]]&lt;br /&gt;
-&lt;&lt;if $gc.cart is false&gt;&gt;[[Loading Cart|gc4]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
-[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="27" name="gc3" tags="" position="850,350" size="100,100">&lt;&lt;if $gc.state eq &quot;on&quot;&gt;&gt;
-&lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;mid&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.cart is false&gt;&gt;[[Loading Cart|gc4]]&lt;br /&gt;&lt;&lt;elseif $gc.hook eq &quot;floor&quot; and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Climb into cart|gc6]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="27" name="gc3" tags="" position="850,350" size="100,100">&lt;&lt;set $player.pos to &quot;back&quot;&gt;&gt;&lt;&lt;if $gc.state eq &quot;on&quot;&gt;&gt;
+&lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;middle&quot;, $player.pos to &quot;middle&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;, $gc.start to &quot;front&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;, $gc.start to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor, along the rails.&lt;&lt;else&gt;&gt;
     The crane needs power first.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[On/Off Toggle|gct1]]&lt;br /&gt;
 [[Up/Down Toggle|gct2]]&lt;br /&gt;
 [[Forward/Reverse Toggle|gc3]]&lt;br /&gt;
-[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="28" name="gc4" tags="" position="975,350" size="100,100">The loading cart can be used with the Gantry crane to move loads from the front to the back of the plant floor.
+[[Back door|bd1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="28" name="gc4" tags="" position="975,350" size="100,100">The loading cart can be used with the Gantry crane to move loads along the rails in the plant. 
 &lt;br /&gt;&lt;br /&gt;
 &lt;&lt;if $gc.cart is false&gt;&gt;
 [[Attach Cart|gc5]]&lt;br /&gt;&lt;&lt;else&gt;&gt;
 [[Remove Cart|gc6]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
-[[Control Panel|gc1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="29" name="gc5" tags="" position="1100,350" size="100,100">&lt;&lt;if $gc.hook eq &quot;floor&quot; and $player.loc eq $gc.pos&gt;&gt;&lt;&lt;set $gc.cart to true&gt;&gt;
+[[Control Panel|gc1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="29" name="gc5" tags="" position="1100,350" size="100,100">&lt;&lt;set $player.pos to &quot;back&quot;&gt;&gt;
+&lt;&lt;if $gc.hook eq &quot;floor&quot; and $player.pos eq $gc.pos&gt;&gt;&lt;&lt;set $gc.cart to true&gt;&gt;
     You attach the heavy chain from the cart onto the Gantry hook.&lt;&lt;else&gt;&gt;
     The Gantry hook needs to be lowered first.&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
-&lt;&lt;craneWidget&gt;&gt;
+&lt;&lt;if $gc.hook eq &quot;floor&quot; and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Climb into cart|gc6]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
 [[Control Panel|gc1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="30" name="gc6" tags="" position="1225,350" size="100,100">&lt;&lt;set $gc.ride to true&gt;&gt;
-You climb into the loading cart. There is a small box with two buttons and a long extension cord.
+You climb into the loading cart. There is a control box connected by a long extension cord.
 &lt;br /&gt;&lt;br /&gt;
 [[Up/Down Toggle|gct7]]&lt;br /&gt;
-[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="31" name="gct7" tags="" position="100,475" size="100,100">&lt;&lt;if $gc.hook eq &quot;floor&quot;&gt;&gt;&lt;&lt;set $gc.hook to &quot;catwalk&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.hook to &quot;floor&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-The hook begins to &lt;&lt;if $gc.hook eq &quot;catwalk&quot;&gt;&gt;hoist&lt;&lt;else&gt;&gt;lower&lt;&lt;/if&gt;&gt; the cart to the &lt;&lt;= $gc.hook&gt;&gt; position.
+[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;
+&lt;&lt;if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Exit Cart|gc11]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="gct7" tags="" position="100,475" size="100,100">&lt;&lt;if $gc.hook eq &quot;floor&quot;&gt;&gt;&lt;&lt;set $gc.hook to &quot;catwalk&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $gc.hook to &quot;floor&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+The cart is &lt;&lt;if $gc.hook eq &quot;catwalk&quot;&gt;&gt;hoisted&lt;&lt;else&gt;&gt;lowered&lt;&lt;/if&gt;&gt; to the &lt;&lt;= $gc.hook&gt;&gt; position then stops.
 &lt;br /&gt;&lt;br /&gt;
-&lt;&lt;if $gc.ride is true&gt;&gt;[[Exit Cart]]&lt;&lt;/if&gt;&gt;
-[[Up/Down Toggle|gct7]]&lt;br /&gt;
-[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="32" name="gc8" tags="" position="225,475" size="100,100">&lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;mid&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;&gt;&gt;
-&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
-The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor along the rails then stops.
-&lt;br /&gt;&lt;br /&gt;
-&lt;&lt;if $gc.pos eq &quot;middle&quot; and $gc.ride is true&gt;&gt;[[Exit to Catwalk]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
-[[Up/Down Toggle|gct7]]&lt;br /&gt;
-[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="33" name="gc10" tags="" position="350,475" size="100,100">You step back onto the loading cart.
-&lt;br /&gt;&lt;br /&gt;
-&lt;&lt;if $gc.pos eq &quot;middle&quot;&gt;&gt;[[Exit to Catwalk]]&lt;&lt;/if&gt;&gt;
-[[Up/Down Toggle|gct7]]&lt;br /&gt;
-[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="34" name="crane" tags="widget" position="475,475" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;&lt;widget &quot;craneWidget&quot;&gt;&gt;
-&lt;&lt;if $gc.hook eq &quot;floor&quot; and $gc.pos eq $player.loc and $gc.cart is true&gt;&gt;
-    [[Climb into cart|gc6]]&lt;br /&gt;
-
+&lt;&lt;if $gc.ride is true&gt;&gt;
+    &lt;&lt;if $gc.pos eq &quot;middle&quot; and $gc.hook eq &quot;catwalk&quot;&gt;&gt;
+        [[Exit Cart|cw8]]&lt;br /&gt;
+        &lt;&lt;elseif $gc.pos eq &quot;back&quot; or $gc.pos eq &quot;front&quot; and $gc.hook eq &quot;floor&quot;&gt;&gt;
+        [[Exit Cart|gc11]]&lt;br /&gt;
+    &lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/widget&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="gf1" tags="" position="600,475" size="100,100">On the ground floor you can enter the plant floor, take the stairs to the second floor, or exit the front door.
+[[Up/Down Toggle|gct7]]&lt;br /&gt;
+[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="32" name="gc8" tags="" position="225,475" size="100,100">&lt;&lt;if $gc.pos eq &quot;front&quot; or $gc.pos eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;middle&quot;, $player.pos to &quot;middle&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;back&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;front&quot;, $gc.start to &quot;front&quot;, $player.pos to &quot;front&quot;&gt;&gt;
+&lt;&lt;elseif $gc.pos eq &quot;middle&quot; and $gc.start eq &quot;front&quot;&gt;&gt;&lt;&lt;set $gc.pos to &quot;back&quot;, $gc.start to &quot;back&quot;, $player.pos to &quot;front&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+The crane moves to the &lt;&lt;= $gc.pos&gt;&gt; of the plant floor along the rails then stops.
+&lt;&lt;if $gc.pos eq &quot;middle&quot; and $gc.hook eq &quot;floor&quot;&gt;&gt;You cannot exit the cart here.&lt;&lt;/if&gt;&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;&lt;if $gc.ride is true&gt;&gt;
+    &lt;&lt;if $gc.pos eq &quot;middle&quot; and $gc.hook eq &quot;floor&quot;&gt;&gt;
+        &lt;&lt;else&gt;&gt;[[Exit Cart|gc11]]&lt;br /&gt;
+    &lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+[[Up/Down Toggle|gct7]]&lt;br /&gt;
+[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="33" name="gc10" tags="" position="350,475" size="100,100">&lt;&lt;set $gc.ride to true&gt;&gt;
+You step back onto the loading cart.
+&lt;br /&gt;&lt;br /&gt;
+&lt;&lt;if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Exit Cart|gc11]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+[[Up/Down Toggle|gct7]]&lt;br /&gt;
+[[Forward/Reverse Toggle|gc8]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="34" name="gc11" tags="" position="475,475" size="100,100">&lt;&lt;set $player.pos to $gc.pos, $gc.ride to false&gt;&gt;
+You carefully step out of the loading cart.
+&lt;&lt;if $player.pos eq &quot;front&quot;&gt;&gt;&lt;&lt;include &quot;gf3&quot;&gt;&gt;
+    &lt;&lt;elseif $player.pos eq &quot;middle&quot;&gt;&gt;&lt;&lt;include &quot;cw8&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;&lt;&lt;include &quot;bd1&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="gf1" tags="" position="600,475" size="100,100">&lt;&lt;if $actions.joe is false&gt;&gt;You&#39;d better get checked in first.&lt;br /&gt;
+    &lt;br /&gt;
+    [[Continue|previous()]]&lt;&lt;else&gt;&gt;
+On the ground floor you can enter the plant, take the stairs to the second floor, or exit the front door.
 It&#39;s always 10 degrees cooler than the second level.
 &lt;br /&gt;&lt;br /&gt;
 
-[[Plant floor|gf3]]&lt;br /&gt;
+[[Plant|gf3]]&lt;br /&gt;
 [[Stairs to second level|sf1]]&lt;br /&gt;
-[[Front door|gf2]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="36" name="gf2" tags="" position="725,475" size="100,100">The front door is self locking with a badge swipe on the outside of the door and a push bar on the inside.
+[[Front door|gf2]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="gf2" tags="" position="725,475" size="100,100">The front door is self locking with a badge swipe on the outside of the door and a push bar on the inside.
 You&#39;re currently inside the plant.
 &lt;br /&gt;&lt;br /&gt;
-[[Exit|gf4]]&lt;br /&gt;
+[[Front Exit|gf4]]&lt;br /&gt;
 [[Plant floor|gf3]]&lt;br /&gt;
-[[Stairs to second level|sf1]]</tw-passagedata><tw-passagedata pid="37" name="gf3" tags="" position="850,475" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;
-The plant floor has grates set over large pits. The pits have large pipes that carry water throughout the treatment process.
+[[Stairs to second level|sf1]]</tw-passagedata><tw-passagedata pid="37" name="gf3" tags="" position="850,475" size="100,100">&lt;&lt;set $player.pos to &quot;front&quot;&gt;&gt;&lt;&lt;if visited() is 1&gt;&gt;
+The plant has grates set over large pits. The pits have large pipes that carry water throughout the treatment process.
 There are eight very large nano filtration filters to your right. 
 Chemical tanks are to your left with the catwalk suspended above them.
 At the far end of the plant, you see a control panel for a Gantry crane next to the back door.&lt;&lt;else&gt;&gt;
-From here, you can go to the ground floor entry or walk over the grates to the back door of the plant.&lt;&lt;/if&gt;&gt;
+From here, you can go to the ground floor entry or walk over the grates to the back door of the plant. UNLESS THERE IS LAVA&lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
-[[Ground Floor|gf1]]&lt;br /&gt;
-[[Back Door|bd1]]</tw-passagedata><tw-passagedata pid="38" name="gf4" tags="" position="975,475" size="100,100">Exiting the plant, you hear the door lock behind you. 
+&lt;&lt;if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Exit Cart|gc11]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $gc.ride is false and $gc.pos eq $player.pos and $gc.cart is true&gt;&gt;[[Climb into Cart|gc10]]&lt;br /&gt;&lt;&lt;/if&gt;&gt;
+[[Back Door|bd1]]&lt;br /&gt;
+[[Ground Floor|gf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="38" name="gf4" tags="" position="975,475" size="100,100">Exiting the plant, you hear the door lock behind you. 
 In front of you is signage and a lighted flag pole. The landscaping includes tall grasses and knockout rose bushes.
 &lt;br /&gt;&lt;br /&gt;
 [[Signage|gf6]]&lt;br /&gt;
@@ -534,7 +555,7 @@ You race towards the control room,
 &lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
 [[Continue|r2]]</tw-passagedata><tw-passagedata pid="61" name="r2" tags="" position="100,850" size="100,100">&lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant. How can I help you?&quot;&lt;/span&gt;You answer, breathlessly.&lt;br /&gt;
-&lt;span class=&quot;demon&quot;&gt;&quot;Are you there alone?&quot;&lt;/span&gt; A raspy voice asks. The voice sounds like Demi Moore only much deeper.&lt;br /&gt;
+&lt;span class=&quot;demon&quot;&gt;&quot;Are you there alone?&quot;&lt;/span&gt; A raspy voice asks. The voice sounds like Demi Moore only slightly deeper.&lt;br /&gt;
 &lt;&lt;set _options to [&#39;\&quot;I, I. Pardon me?\&quot;&#39;, &#39;\&quot;Of course not. We\&#39;re fully staffed at the moment.\&quot;&#39;, &#39;\&quot;Yes I am, why?\&quot;&#39;]&gt;&gt;
 &lt;&lt;listbox &quot;$phrase&quot; autoselect&gt;&gt;
 	&lt;&lt;optionsfrom _options&gt;&gt;
@@ -549,9 +570,8 @@ You race towards the control room,
         &lt;span class=&quot;demon&quot;&gt;&quot;How about some company?&quot;&lt;/span&gt;&lt;br /&gt;
 &lt;&lt;/if&gt;&gt;
 You&#39;re not sure how to respond so you hang up. That is no emergency, you say to yourself.&lt;br /&gt;
-You turn and find a puddle of water near the control desk that wasn&#39;t there before.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|r1r]]</tw-passagedata><tw-passagedata pid="63" name="r3" tags="" position="350,850" size="100,100">The phone rings, causing you to jump.&lt;br /&gt;
+[[Continue|p4]]</tw-passagedata><tw-passagedata pid="63" name="r3" tags="" position="350,850" size="100,100">The phone rings, causing you to jump.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant. Can I help you?&quot;&lt;/span&gt; You ask hesitantly.&lt;br /&gt;
  &lt;span class=&quot;demon&quot;&gt;&quot;I mean, do you want company tonight?&quot;&lt;/span&gt; The Demi-Demon voice queries.&lt;br /&gt;
 You hang up quickly and walk around in circles in the control room, trying to calm your nerves.
@@ -559,32 +579,26 @@ You hang up quickly and walk around in circles in the control room, trying to ca
 [[Continue|p4]]</tw-passagedata><tw-passagedata pid="64" name="r4" tags="" position="475,850" size="100,100">You really don&#39;t want to answer the phone, but it is part of your job. Policy states it must be answered by the third ring.
 You wait until the very end of the the second ring to answer.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant.&quot;&lt;/span&gt; You just blurt it out, not trying to sound nice or professional.&lt;br /&gt;
-&lt;span class=&quot;voiceB&quot;&gt;&quot;Hey! Ya hungry?&quot;&lt;/span&gt; It&#39;s Scott. You breath a sigh of relief.&lt;br /&gt;
-&lt;span class=&quot;voiceB&quot;&gt;&quot;I&#39;m on break. They have amazing chili dogs and funnel cakes here!&quot;&lt;/span&gt; He can&#39;t contain his enthusiasm.
+&lt;span class=&quot;voiceB&quot;&gt;&quot;Gurgle muck gurgle ugh&quot;&lt;/span&gt; It sounds like a person trying to talk while under water.&lt;br /&gt;
+You hang up and start rubbing your temples. 
+After a minute you rise to find a puddle of water near the control desk that wasn&#39;t there before.
 &lt;br /&gt;&lt;br /&gt;
-[[Sounds great|r5]]&lt;br /&gt;
-[[No thanks|r6]]</tw-passagedata><tw-passagedata pid="65" name="r5" tags="" position="600,850" size="100,100">&lt;span class=&quot;voiceA&quot;&gt;&quot;Sounds great!&quot;&lt;/span&gt; Not only is your mouth watering over the thought a chili dogs and funnel cakes, but you could really use some company.
-&lt;span class=&quot;voiceB&quot;&gt;&quot;I&#39;ll be right over.&quot;&lt;/span&gt; He hangs up. You can&#39;t wait.
-&lt;br /&gt;&lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="66" name="r6" tags="" position="725,850" size="100,100">&lt;span class=&quot;voiceA&quot;&gt;&quot;Um, no but thanks. My doctor would be very disappointed with me.&quot;&lt;/span&gt; &lt;br /&gt;
-You hear a sigh then he hangs up.
-&lt;br /&gt;&lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="67" name="r1r" tags="" position="850,850" size="100,100">Standing over the puddle, you furrow your brow. Now you&#39;ll have to get out the mop and bucket and clean that mess up.
+[[Continue|r1r]]</tw-passagedata><tw-passagedata pid="65" name="r1r" tags="" position="600,850" size="100,100">You furrow your brow. Now you&#39;ll have to get out the mop and bucket and clean that mess up.
 An alarm starts to sound on the monitoring console. DING DING DING.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|a1]]</tw-passagedata><tw-passagedata pid="68" name="Spiders" tags="" position="975,850" size="100,100">The large spider you saw earlier has summoned her kin. 
+[[Continue|a1]]</tw-passagedata><tw-passagedata pid="66" name="Spiders" tags="" position="725,850" size="100,100">The large spider you saw earlier has summoned her kin. 
 The entrance to the restroom is now laced with cobwebs.
-The usually transparent threads are woven so tight the web drapes like a sheet over the door.</tw-passagedata><tw-passagedata pid="69" name="Introduction" tags="" position="1100,850" size="100,100">You&#39;re an Operator in Training at the old water treatment plant. You work the night shift. 
+The usually transparent threads are woven so tight the web drapes like a sheet over the door.</tw-passagedata><tw-passagedata pid="67" name="Introduction" tags="" position="850,850" size="100,100">You&#39;re an Operator in Training at the old water treatment plant. You work the night shift. 
 Your job is to monitor the plant and well systems, tidy up, and answer the phone in case of emergencies.
 This is your second week on the job.
 &lt;br /&gt;&lt;br /&gt;
 [[About]]&lt;br /&gt;
 [[About You|ay1]]&lt;br /&gt;
 [[Begin| bg1]]&lt;br /&gt;
-[[Back Door|bd1]]</tw-passagedata><tw-passagedata pid="70" name="bg1" tags="" position="1225,850" size="100,100">You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
+[[Back Door|bd1]]</tw-passagedata><tw-passagedata pid="68" name="bg1" tags="" position="975,850" size="100,100">You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
 Swiping again to unlock the side door then making your way up to the second floor.
 &lt;br /&gt;&lt;br /&gt;
-[[Second floor|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="71" name="sf1" tags="" position="100,975" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;On the second floor is an entrance to a catwalk, 
+[[Second floor|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="69" name="sf1" tags="" position="1100,850" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;On the second floor is an entrance to a catwalk, 
 the control room, a supplies closet, and a locker room.
 There is also a stairway down to the ground floor.&lt;&lt;else&gt;&gt;
     You&#39;re on the second floor. &lt;&lt;/if&gt;&gt;
@@ -594,7 +608,7 @@ There is also a stairway down to the ground floor.&lt;&lt;else&gt;&gt;
 [[Catwalk|cw1]]&lt;br /&gt;
 [[Ground Floor|gf1]]&lt;br /&gt;
 [[Supplies Closet|jc1]]&lt;br /&gt;
-[[Locker Room|lr1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="72" name="p3" tags="" position="225,975" size="100,100">&lt;&lt;set $actions.joe to true&gt;&gt;
+[[Locker Room|lr1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="70" name="p3" tags="" position="1225,850" size="100,100">&lt;&lt;set $actions.joe to true&gt;&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Hey, Joe.&quot;&lt;/span&gt; You say as he steps closer to you.&lt;br /&gt;
 &lt;span class=&quot;voiceB&quot;&gt;&quot;Keep a vigilant watch tonight.&quot; &lt;/span&gt;He pauses. &lt;span class=&quot;voiceB&quot;&gt;&quot;There might be some mischief going on.&quot;&lt;/span&gt;&lt;br /&gt;
 You&#39;re confused for just one second then remember the date.&lt;br /&gt;
@@ -605,7 +619,7 @@ He tilts his head towards the catwalk.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Sure, sure. Everything will be fine.&quot;&lt;/span&gt; You assure him.&lt;br /&gt;
 He purses his lips together for a moment, like he doesn&#39;t agree, then heads downstairs to leave.&lt;br /&gt;
 &lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="73" name="StoryInit" tags="" position="350,975" size="100,100">&lt;&lt;nobr&gt;&gt;
+[[Continue|p4]]</tw-passagedata><tw-passagedata pid="71" name="StoryInit" tags="" position="100,975" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $phrase to &#39;&#39;&gt;&gt;
 &lt;&lt;set $style to &#39;&#39;&gt;&gt;
 
@@ -621,7 +635,7 @@ He purses his lips together for a moment, like he doesn&#39;t agree, then heads 
 }&gt;&gt;
 
 &lt;&lt;set $player to {
-    loc: &#39;&#39;,
+    pos: &#39;&#39;,
     coveralls: false,
     cType: &#39;&#39;,
     shoes: false,
@@ -629,15 +643,14 @@ He purses his lips together for a moment, like he doesn&#39;t agree, then heads 
     phone: false,
     closetKey: false,
     key: false,
-    interest: &#39;female&#39;
 }&gt;&gt;
 
 &lt;&lt;set $gc to {
     state: &quot;off&quot;,
-    hook: &quot;catwalk&quot;,
+    hook: &quot;top&quot;,
     pos: &quot;back&quot;,
     cart: false,
-    ride: true,
+    ride: false,
     start: &quot;back&quot;
 }&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata></tw-storydata>

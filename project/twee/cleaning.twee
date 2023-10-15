@@ -1,9 +1,12 @@
 :: jc1
-
+<<if $actions.joe is false>>You'd better get checked in first.<br />
+    <br />
+    [[Continue|previous()]]
+    <<else>>
 The door to the supplies closet is closed and locked. 
 Management started locking the door when they noticed large amounts of toilet paper missing during COVID-19.
 <br /><br />
-[[Unlock closet|jc2]]<br />
+[[Unlock closet|jc2]]<br /><</if>>
 
 :: jc2
 

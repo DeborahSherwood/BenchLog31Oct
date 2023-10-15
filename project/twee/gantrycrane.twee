@@ -1,16 +1,17 @@
 :: gc1
-<<set $player.loc to "back">>
+<<set $player.pos to "back">>
 <<if visited() is 1>>The control panel has three buttons.<</if>> 
-The crane is currently <<= $gc.state>> with the hook at the <<= $gc.hook>> of the girder. 
-The crane is positioned at the <<= $gc.pos>> of the plant floor.
+The crane is currently powered <<= $gc.state>> with the hook at the <<= $gc.hook>> level of the girder. 
+The crane is positioned in the <<= $gc.pos>> of the plant floor. <<if $gc.cart is true>>The loading cart is attached to the hook.<</if>>
 <br /><br />
 [[On/Off Toggle|gct1]]<br />
 [[Up/Down Toggle|gct2]]<br />
 [[Forward/Reverse Toggle|gc3]]<br />
+<<if $gc.hook eq "floor" and $gc.pos eq $player.pos and $gc.cart is true>>[[Climb into cart|gc6]]<br /><</if>>
 [[Back door|bd1]]<br />
 
 :: gct1
-<<if $gc.state eq "off">><<set $gc.state to "on">><<else>><<set $gc.state to "off">><</if>>
+<<set $player.pos to "back">><<if $gc.state eq "off">><<set $gc.state to "on">><<else>><<set $gc.state to "off">><</if>>
 The crane is now <<= $gc.state>>.
 <br /><br />
 [[On/Off Toggle|gct1]]<br />
@@ -19,7 +20,7 @@ The crane is now <<= $gc.state>>.
 [[Back door|bd1]]<br />
 
 :: gct2
-<<if $gc.state is "on">>
+<<set $player.pos to "back">><<if $gc.state is "on">>
 <<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
 The hook moves to the <<= $gc.hook>> position then stops.<<else>>
     The crane needs power first.
@@ -27,15 +28,15 @@ The hook moves to the <<= $gc.hook>> position then stops.<<else>>
 <br /><br />
 [[On/Off Toggle|gct1]]<br />
 [[Up/Down Toggle|gct2]]<br />
-<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><</if>>
 [[Forward/Reverse Toggle|gc3]]<br />
+<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><<elseif $gc.hook eq "floor" and $gc.pos eq $player.pos and $gc.cart is true>>[[Climb into cart|gc6]]<br /><</if>>
 [[Back door|bd1]]<br />
 
 :: gc3
-<<if $gc.state eq "on">>
-<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
-<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front">>
-<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+<<set $player.pos to "back">><<if $gc.state eq "on">>
+<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "middle", $player.pos to "middle">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front", $gc.start to "front">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back", $gc.start to "back">><</if>>
 The crane moves to the <<= $gc.pos>> of the plant floor, along the rails.<<else>>
     The crane needs power first.<</if>>
 <br /><br />
@@ -46,7 +47,7 @@ The crane moves to the <<= $gc.pos>> of the plant floor, along the rails.<<else>
 
 :: gc4
 
-The loading cart can be used with the Gantry crane to move loads from the front to the back of the plant floor.
+The loading cart can be used with the Gantry crane to move loads along the rails in the plant. 
 <br /><br />
 <<if $gc.cart is false>>
 [[Attach Cart|gc5]]<br /><<else>>
@@ -54,55 +55,65 @@ The loading cart can be used with the Gantry crane to move loads from the front 
 [[Control Panel|gc1]]<br />
 
 :: gc5
-
-<<if $gc.hook eq "floor" and $player.loc eq $gc.pos>><<set $gc.cart to true>>
+<<set $player.pos to "back">>
+<<if $gc.hook eq "floor" and $player.pos eq $gc.pos>><<set $gc.cart to true>>
     You attach the heavy chain from the cart onto the Gantry hook.<<else>>
     The Gantry hook needs to be lowered first.<</if>>
 <br /><br />
-<<craneWidget>>
+<<if $gc.hook eq "floor" and $gc.pos eq $player.pos and $gc.cart is true>>[[Climb into cart|gc6]]<br /><</if>>
 [[Control Panel|gc1]]<br />
 
 :: gc6
 <<set $gc.ride to true>>
-You climb into the loading cart. There is a small box with two buttons and a long extension cord.
+You climb into the loading cart. There is a control box connected by a long extension cord.
 <br /><br />
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
+<<if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true>>[[Exit Cart|gc11]]<br /><</if>>
 
 :: gct7
 
 <<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
-The hook begins to <<if $gc.hook eq "catwalk">>hoist<<else>>lower<</if>> the cart to the <<= $gc.hook>> position.
+The cart is <<if $gc.hook eq "catwalk">>hoisted<<else>>lowered<</if>> to the <<= $gc.hook>> position then stops.
 <br /><br />
-<<if $gc.ride is true>>[[Exit Cart]]<</if>>
+<<if $gc.ride is true>>
+    <<if $gc.pos eq "middle" and $gc.hook eq "catwalk">>
+        [[Exit Cart|cw8]]<br />
+        <<elseif $gc.pos eq "back" or $gc.pos eq "front" and $gc.hook eq "floor">>
+        [[Exit Cart|gc11]]<br />
+    <</if>>
+<</if>>
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
   
 
 :: gc8
-<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "mid">>
-<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front">>
-<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back">><</if>>
+<<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "middle", $player.pos to "middle">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front", $gc.start to "front", $player.pos to "front">>
+<<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back", $gc.start to "back", $player.pos to "front">><</if>>
 The crane moves to the <<= $gc.pos>> of the plant floor along the rails then stops.
+<<if $gc.pos eq "middle" and $gc.hook eq "floor">>You cannot exit the cart here.<</if>>
 <br /><br />
-<<if $gc.pos eq "middle" and $gc.ride is true>>[[Exit to Catwalk]]<br /><</if>>
+<<if $gc.ride is true>>
+    <<if $gc.pos eq "middle" and $gc.hook eq "floor">>
+        <<else>>[[Exit Cart|gc11]]<br />
+    <</if>>
+<</if>>
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
 
 :: gc10
-
+<<set $gc.ride to true>>
 You step back onto the loading cart.
 <br /><br />
-<<if $gc.pos eq "middle">>[[Exit to Catwalk]]<</if>>
+<<if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true>>[[Exit Cart|gc11]]<br /><</if>>
 [[Up/Down Toggle|gct7]]<br />
 [[Forward/Reverse Toggle|gc8]]<br />
 
-:: crane [widget]
-<<nobr>>
-<<widget "craneWidget">>
-<<if $gc.hook eq "floor" and $gc.pos eq $player.loc and $gc.cart is true>>
-    [[Climb into cart|gc6]]<br />
 
-<</if>>
-<</widget>>
-<</nobr>>
+:: gc11
+<<set $player.pos to $gc.pos, $gc.ride to false>>
+You carefully step out of the loading cart.
+<<if $player.pos eq "front">><<include "gf3">>
+    <<elseif $player.pos eq "middle">><<include "cw8">>
+<<else>><<include "bd1">><</if>>

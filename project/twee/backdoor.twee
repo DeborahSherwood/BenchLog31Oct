@@ -1,12 +1,11 @@
 :: bd1
-
-You're at the back door. You can exit to the rear exterior of the plant.
-The Gantry crane control panel is here next to stairs leading up to the catwalk.
-There is an empty loading cart here. You can also return to the ground floor entry.
+<<if visited() is 1>>
+You're at the back door. You can exit to the rear exterior of the plant or return to the ground floor entry.
+There is a Gantry crane control panel here and an empty loading cart leaning against the back wall.<<else>>
+    You're at the back door.<</if>>
 <br /><br />
 [[Exterior]]<br />
-[[Catwalk|cw1]]<br />
 [[Control Panel|gc1]]<br />
-[[Loading Cart|gc4]]<br />
+<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><<elseif $gc.loc eq "back" and $gc.hook eq "floor">>[[Climb into cart|gc6]]<br /><</if>>
 [[Ground Floor|gf1]]<br />
 

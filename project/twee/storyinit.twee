@@ -15,7 +15,7 @@
 }>>
 
 <<set $player to {
-    loc: '',
+    pos: '',
     coveralls: false,
     cType: '',
     shoes: false,
@@ -23,15 +23,14 @@
     phone: false,
     closetKey: false,
     key: false,
-    interest: 'female'
 }>>
 
 <<set $gc to {
     state: "off",
-    hook: "catwalk",
+    hook: "top",
     pos: "back",
     cart: false,
-    ride: true,
+    ride: false,
     start: "back"
 }>>
 <</nobr>>

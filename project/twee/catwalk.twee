@@ -45,12 +45,19 @@ The tank was disassembled and removed. It was replaced by two modern tanks that 
 
 :: cw8
 
-You exit the loading cart and are now at the Memorial on the catwalk.
-You can go to the second floor landing, down the stairs to the back door or get back in the loading cart.
-<<if $demon.scare is true>>Something from the Memorial catches your eye.<</if>>
+You are now at the memorial on the catwalk.
+You can go to the second floor landing or get back in the loading cart.
+You hear a strange sound near the memorial.
 <br /><br />
 [[Memorial|cw9]]<br />
-[[Back Door|bd1]]<br />
 [[Second floor landing|sf1]]<br />
 [[Loading Cart|gc10]]<br />
 
+:: cw9
+
+<span class="voiceB">I didn't trip."</span> You hear a gurgling sound.
+<span class="voiceB">"I was murdered."</span> The gurgling voice is haunting.<br />
+Looking at the picture of the normally smiling young Bobby, the face is now haggard and his eyes are full of worry.<br />
+<span class="voiceA">"Gah!"</span> You gasp and run back to the safety of the control room.
+<br /><br />
+[[Control Room|p4]]<br />

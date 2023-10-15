@@ -23,21 +23,10 @@ You'll need to get the key from your locker.
 
 :: jc3
 
-The small closet has a large drain in the floor and a faucet with both hot and cold water valves.
-To your left is a bucket on wheels. Hanging from hooks along the wall are a mop, a broom and a dustpan.
-The shelves are stocked with floor cleaner and polish, trash bags, paper towels, glass cleaner
-toilet paper, hand soap and disposable hand towels. 
+The closet has a large drain in the floor and a faucet with both hot and cold water valves.
+To your left is a bucket on wheels. Hanging from hooks along the wall are a mop and a broom and a dustpan.
+The shelves are stocked with what you'd expect a supply closet to have in stock.
 
 <br /><br />
-[[Bucket|d1]]<br />
-[[Mop|d1]]<br />
-[[Broom|d1]]<br />
-[[Dustpan|d1]]<br />
-[[Floor Cleaner|d1]]<br />
-[[Floor Polish|d1]]<br />
-[[Trash Bags|d1]]<br />
-[[Paper Towels|d1]]<br />
-[[Glass Cleaner|d1]]<br />
-[[Hand Soap|d1]]<br />
-[[Hand Towels|d1]]<br />
-[[Toilet Paper|d1]]<br />
+[[Bucket|d1][$cleaning to "bucket"]]<br />
+[[Mop|d1][$cleaning to "mop"]]<br />

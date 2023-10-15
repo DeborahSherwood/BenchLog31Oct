@@ -1,14 +1,14 @@
 :: d1
 
 You're about to reach for the $cleaning when you hear a loud sound, like a heavy piece of fabric being ripped in half.
-You stick your head out the door and peer down the hall.
+You stick your head out the door of the closet and peer down the hall.
 <br /><br />
 [[Continue|d2]]
 
 :: d2
 Standing before you is the most beautiful creature you have ever seen.
-Glossy black, curly hair, vibrant red skin, tall, shapely and wearing a devilish smile.
-You take a deep breath and rise to your full height then step into the hall.
+Glossy black and curly hair, vibrant red skin, tall, shapely and wearing a devilish smile.
+You take a deep breath and step into the hall.
 <br /><br />
 [[Continue|d3]]
 
@@ -26,7 +26,12 @@ You follow her in, concerned about security protocols and whatnot.
 She makes her way to the control desk and sits down, twisting the chair to face you.
 You've stopped short because the floor, which needed to be mopped, has not only been mopped but also waxed and polished. It positively shines.
 You stand in disbelief, looking down at the floor.<br />
-<span class="demon">Let's have some fun.</span> She smiles broadly and quite playfully, looking to you for a response.
+<span class="demon">Let's have some fun.</span> She smiles quite playfully, looking to you for a response.
 <br /><br />
+<<set _options to ['\"How did you get in here?\"', '\"We\'re not allowed to have unauthorized guests.\"', '\"Can I help you with something?\"']>>
+<<listbox "$phrase" autoselect>>
+	<<optionsfrom _options>>
+<</listbox>> 
+[[Continue|d5]]
 
-
+:: d5

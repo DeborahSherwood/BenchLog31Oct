@@ -1,7 +1,7 @@
 :: lr1
 <<if $actions.joe is true>>
 You head towards the locker room to get changed over but are stopped short when you hear the door open.
-A very large and dark shape fills the hallway. It's the Grim Reaper. You gasp.<br />
+A very large and dark shape fills the hallway. It appears to be the Grim Reaper.<br />
 <br />
 [[Run|lr2]]<br />
 [[Fight|lr3]]<br />
@@ -68,9 +68,10 @@ You feel bad you threw the phone at him and you hope he feels bad for scaring yo
 :: h1
 
 <span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he heads out.
-From the hallway you can enter the locker room.
+From the hallway you can enter the locker room or go back to the landing.
 <br /><br />
 [[Locker room|u1]]<br />
+[[Second floor landing|sf1]]<br />
 [[Exit|e1]]
 
 :: u1

@@ -8,6 +8,6 @@ They pass along pertinent information before eagerly heading out.
 <<if $actions.joe is false>>[[Talk to Joe|p3]]<br /><</if>>
 <<if $plant.phoneRinging is true>>[[Answer phone|r1]]<br /><</if>>
 [[Cameras|c1]]<br />
-[[Duty Phone|dp1]]<br />
+<<if $actions.phone is false and $player.phone is false>>[[Duty Phone|dp1]]<br /><</if>>
 [[Monitoring Console|mc1]]<br />
 [[Exit|sf1]]<br />

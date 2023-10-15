@@ -11,7 +11,8 @@
 <<set $actions to {
     owpRead: false,
     respects: false,
-    joe: false
+    joe: false,
+    phone: false
 }>>
 
 <<set $player to {

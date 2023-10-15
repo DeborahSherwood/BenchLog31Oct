@@ -1,5 +1,6 @@
 :: r1
 <<if $player.phone is true>>You try to answer the call on the duty phone but your hear static then a pop then the phone crumbles into several pieces.
+    <<set $player.phone to false, $actions.phone to true>>
     <<else>>
 Policy states the phone must be answered by the third ring.
 <</if>>
@@ -12,8 +13,8 @@ You race towards the control room,
 [[Continue|r2]]
 
 :: r2
-
-<span class="voiceA">"Water Treatment Plant. How can I help you?"</span>You answer, breathlessly.<br />
+<<set $plant.phoneRinging to false>>
+<span class="voiceA">"Water Treatment Plant. How can I help you?"</span> You answer, breathlessly.<br />
 <span class="demon">"Are you there alone?"</span> A raspy voice asks. The voice sounds like Demi Moore only slightly deeper.<br />
 <<set _options to ['\"I, I. Pardon me?\"', '\"Of course not. We\'re fully staffed at the moment.\"', '\"Yes I am, why?\"']>>
 <<listbox "$phrase" autoselect>>
@@ -24,47 +25,49 @@ You race towards the control room,
 
 :: r1a
 
-<<= $phrase>><br />
 <<if $phrase eq "I, I. Pardon me?">>
+    <span class="voiceA"><<= $phrase>></span> You stutter.<br />
     <span class="demon">"You're not alone, are you?"</span><br />
     <<elseif $phrase eq "Of course not. We're fully staffed at the moment.">>
-   <span class="demon">"Liar."</span>  The Demi-Demon declares.<br />
+    <span class="voiceA"><<= $phrase>></span> You wish.<br />
+   <span class="demon">"Liar."</span>  The Demi-Demon voice declares.<br />
     <<else>>
-        <span class="demon">"How about some company?"</span><br />
+        <span class="voiceA"><<= $phrase>></span> You're curious about the question.<br />
+        <span class="demon">"How about some company then?"</span> The sultry voice replies.<br />
 <</if>>
-You're not sure how to respond so you hang up. That is no emergency, you say to yourself.<br />
+You're not sure how to respond so you hang up. That is no emergency, you think to yourself.
 <br /><br />
-[[Continue|p4]]
+[[Continue|r3]]
 
 
 :: r3
 
-The phone rings, causing you to jump.<br />
+The phone rings again, causing you to jump.<br />
 <span class="voiceA">"Water Treatment Plant. Can I help you?"</span> You ask hesitantly.<br />
  <span class="demon">"I mean, do you want company tonight?"</span> The Demi-Demon voice queries.<br />
-You hang up quickly and walk around in circles in the control room, trying to calm your nerves.
+ <span class="voiceA">"Sorry, no guest are allowed."</span> You hang up quickly.<br />
+
+You walk around in circles in the control room for a moment. You really don't want to deal with any strangers tonight.
+But the voice sounds sincere and also very sexy.
 <br /><br />
-[[Continue|p4]]
+[[Continue|r4]]
 
 :: r4
 
-You really don't want to answer the phone, but it is part of your job. Policy states it must be answered by the third ring.
-You wait until the very end of the the second ring to answer.<br />
+After just one minute, the phone rings again.
+You wait until the very end of the the third ring to answer.<br />
 <span class="voiceA">"Water Treatment Plant."</span> You just blurt it out, not trying to sound nice or professional.<br />
 <span class="voiceB">"Gurgle muck gurgle ugh"</span> It sounds like a person trying to talk while under water.<br />
-You hang up and start rubbing your temples. 
+You hang up and start rubbing your temples. You don't like the way this night is going.
 After a minute you rise to find a puddle of water near the control desk that wasn't there before.
 <br /><br />
 [[Continue|r1r]]
 
-
-
 :: r1r
 
 You furrow your brow. Now you'll have to get out the mop and bucket and clean that mess up.
-An alarm starts to sound on the monitoring console. DING DING DING.
 <br /><br />
-[[Continue|a1]]
+[[Supplies Closet|jc1]]<br />
 
 
 

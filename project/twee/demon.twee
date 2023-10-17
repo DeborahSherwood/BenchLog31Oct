@@ -15,7 +15,7 @@ You take a deep breath and step into the hall.
 :: d3 
 
 <span class="demon">"You don't need to do that."</span> She declares with a dramatic wave of an arm towards the closet.<br />
-<span class="voiceA">"But I need to..."</span> Your voice trails off. You can't tear your eyes away from her.
+<span class="voiceA">"But I need to..."</span> Your voice trails off. You can't tear your eyes away from her.<br />
 <span class="demon">"What? clean?"</span> Another dramatic wave of the arm as she moves past you into the control room.
 You follow her in, concerned about security protocols and whatnot.
 <br /><br />
@@ -26,12 +26,15 @@ You follow her in, concerned about security protocols and whatnot.
 She makes her way to the control desk and sits down, twisting the chair to face you.
 You've stopped short because the floor, which needed to be mopped, has not only been mopped but also waxed and polished. It positively shines.
 You stand in disbelief, looking down at the floor.<br />
-<span class="demon">Let's have some fun.</span> She smiles quite playfully, looking to you for a response.
+<span class="demon">"Let's have some fun."</span> She says quite playfully, looking to you for a response.
 <br /><br />
 <<set _options to ['\"How did you get in here?\"', '\"We\'re not allowed to have unauthorized guests.\"', '\"Can I help you with something?\"']>>
 <<listbox "$phrase" autoselect>>
 	<<optionsfrom _options>>
-<</listbox>> 
+<</listbox>> <br />
 [[Continue|d5]]
 
 :: d5
+
+<span class="demon">"I'm here."</span> She pauses then continues. <br />
+<span class="demon">"I'm here because I want to get to know you. Who you really are."</span> She emphasizes the "you".<br />

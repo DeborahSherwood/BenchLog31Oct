@@ -1,6 +1,21 @@
 :: mt1
 
-The mixing tank is where treated water is stored and mixed to help keep the water fresh and clear.
-Sensors installed will alarm if a access door is opened.
+<<if visited() is 1>>
+The mixing tank is where treated water is stored and mixed to help keep it fresh and clear.
+The tank is 33 feet (10 meters) in diameter and height and holds 2 Million gallons of water.
+There are two access doors, one at ground level and another on top of the tank.
+Sensors will alarm in the control room if an access door is opened. <<else>>
+The tank currently has INSERT VARIABLE HERE. gallons.
+<</if>>
 <br /><br />
-[[Maybe|sf1]]
+[[Open Ground Access|mt2]]<br />
+[[Open Top Access|mt3]]
+
+
+:: mt2
+
+IF TANK IS FULL  The ground access cannot be opened while the tank has water in it. ELSE
+Using all your strength, you pull down the latch and swing open the access door.
+<br /><br />
+[[Enter Tank|mt3]]<br />
+[[Mixing Tank|mt1]]

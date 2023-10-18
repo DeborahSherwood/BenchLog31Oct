@@ -1,0 +1,17 @@
+:: ex1
+
+You enter a grassy area with a large mixing tank on one side and a trash dumpster on the other. 
+You can return to the plant though the back door.
+<br /><br />
+[[Mixing Tank|mt1]]<br />
+[[Trash Dumpster|ex2]]<br />
+[[Back Door|bd1]]
+
+
+:: ex2
+
+The trash dumpster is nearly full of trash. Good thing Sanitation is scheduled to empty it tomorrow.
+CONDITIONAL VARIABLE HERE!
+<br /><br />
+[[Mixing Tank|mt1]]<br />
+[[Back Door|bd1]]

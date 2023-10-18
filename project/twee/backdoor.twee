@@ -1,11 +1,28 @@
 :: bd1
 <<if visited() is 1>>
 You're at the back door. You can exit to the rear exterior of the plant or return to the ground floor entry.
-There is a Gantry crane control panel here and an empty loading cart leaning against the back wall.<<else>>
+There is a Gantry crane control panel here and an empty loading cart leaning against the back wall.
+There are two large pipes with valves horseshoeing up from the grates. <<else>>
     You're at the back door.<</if>>
 <br /><br />
-[[Exterior]]<br />
+[[Exterior|ex1]]<br />
 [[Control Panel|gc1]]<br />
 <<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><<elseif $gc.loc eq "back" and $gc.hook eq "floor">>[[Climb into cart|gc6]]<br /><</if>>
+[[Valves|bd2]]<br />
 [[Ground Floor|gf1]]<br />
 
+:: bd2
+
+The large pipes are labeled "In from Tank" and "Out to Tank". The valves are controlled with hand wheels that look like metal steering wheels.
+The IN valve is currently closed. 
+The OUT valve is currently open.
+<br /><br />
+[[Turn IN Valve|bd3]]<br />
+[[Turn OUT Valve|bd4]]<br />
+[[Back Door|bd1]]
+
+:: bd3
+
+Turning the valve is tough work. It takes about 20 full rotations of the wheel to ________ the valve.
+
+:: bd4

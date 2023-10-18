@@ -28,7 +28,7 @@ You've stopped short because the floor, which needed to be mopped, has not only 
 You stand in disbelief, looking down at the floor.<br />
 <span class="demon">"Let's have some fun."</span> She says quite playfully, looking to you for a response.
 <br /><br />
-<<set _options to ['\"How did you get in here?\"', '\"We\'re not allowed to have unauthorized guests.\"', '\"Can I help you with something?\"']>>
+<<set _options to ['\"How did you get in here?\"', '\"We\'re not allowed to have guests.\"', '\"Can I help you with something?\"']>>
 <<listbox "$phrase" autoselect>>
 	<<optionsfrom _options>>
 <</listbox>> <br />
@@ -36,5 +36,9 @@ You stand in disbelief, looking down at the floor.<br />
 
 :: d5
 
-<span class="demon">"I'm here."</span> She pauses then continues. <br />
+<span class="demon">"I'm here."</span> She pauses then carefully chooses her words. <br />
 <span class="demon">"I'm here because I want to get to know you. Who you really are."</span> She emphasizes the "you".<br />
+You're speechless. She rolls the chair closer to you and reaches for your hands with both arms. 
+<br /><br />
+[[Take her hands]]<br />
+[[Take a step back]]<br />

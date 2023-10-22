@@ -1,0 +1,103 @@
+:: map
+<<nobr>>
+<div id="floor">
+<html>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+
+  <line x1="80" y1="395" x2="80" y2="215" stroke="yellow" stroke-width="6" /> /* Gantry Crane */
+  <line x1="69" y1="205" x2="80" y2="220" stroke="yellow" stroke-width="4" /> /* Gantry v */
+  <line x1="80" y1="216" x2="90" y2="205" stroke="yellow" stroke-width="4" /> /* Gantry v */
+
+  <rect x=320 y=390 stroke="grey" stroke-width="2" fill="#062038" width="80" height="125" />/* locker room */
+
+
+  <g stroke="grey" >
+  <!-- Draw the horizontal lines left to right -->
+
+  <line x1="0" y1="0" x2="515" y2="2" stroke-width="2" /> /* top horizontal line */
+  <line x1="190" y1="55" x2="215" y2="55" stroke-width="2" /> /* below dumpster line */
+  <line x1="255" y1="55" x2="300" y2="55" stroke-width="2" /> /* below dumpster line */
+
+   <line x1="300" y1="160" x2="370" y2="160" stroke-width="2" /> /* parking stripe */
+   <line x1="300" y1="120" x2="370" y2="120" stroke-width="2" /> /* parking stripe */
+   <line x1="300" y1="80" x2="370" y2="80" stroke-width="2" /> /* parking stripe */
+
+   <line x1="445" y1="160" x2="515" y2="160" stroke-width="2" /> /* parking stripe */
+   <line x1="445" y1="120" x2="515" y2="120" stroke-width="2" /> /* parking stripe */
+   <line x1="445" y1="80"  x2="515" y2="80" stroke-width="2" /> /* parking stripe */
+   <line x1="445" y1="40"  x2="515" y2="40" stroke-width="2" /> /* parking stripe */
+
+  <line x1="0" y1="205" x2="122.5" y2="205" stroke-width="2" /> /* building horizontal line */
+  <line x1="175" y1="205" x2="400" y2="205" stroke-width="2" /> /* building horizontal line */
+
+  <line x1="0" y1="515" x2="10" y2="515" stroke-width="2" /> /* bottom horizontal line */
+  <line x1="58" y1="515" x2="400" y2="515" stroke-width="2" /> /* bottom horizontal line */
+<line x1="0" y1="440" x2="80" y2="440" stroke-width="2" /> /* Ground Floor/Front Door/Stairs */
+<line x1="122.5" y1="390" x2="400" y2="390" stroke-width="2" /> /* second Floor boundary */
+
+
+  
+  <!-- Draw the vertical lines  -->
+  <line x1="0" y1="0" x2="0" y2="515" stroke-width="2" /> /* left outer line */
+  <line x1="400" y1="205" x2="400" y2="515" stroke-width="2" /> /* right outer line */
+  <line x1="513" y1="2" x2="513" y2="515" stroke-width="2" /> /* road to parking*/
+  <line x1="300" y1="55" x2="300" y2="205" stroke-width="2" /> /* parking boundary */
+  <line x1="190" y1="0" x2="190" y2="55" stroke-width="2" /> /* dumpster boundary */
+  <line x1="122.5" y1="390" x2="122.5" y2="480" stroke-width="2" /> /* Ground Floor */
+</g>
+  <g stroke="grey">
+    <rect x=200 y=10    fill="darkgreen" width="50" height="25" />/* bin */
+    <rect x=93  y=480   fill="none" width="6" height="35" />/* stair */
+    <rect x=99  y=480   fill="none" width="7" height="35" />/* stair */
+    <rect x=106 y=480   fill="none" width="8" height="35" />/* stair */
+    <rect x=114 y=480   fill="none" width="8.5" height="35" />/* stair */
+    <rect x=114 y=480   fill="none" width="40" height="35" />/* landing */
+    <rect x=123 y=473   fill="none" width="31" height="7" />/* stair */
+    <rect x=123 y=465.5 fill="none" width="31" height="7.5" />/* stair */
+    <rect x=123 y=457.5 fill="none" width="31" height="8" />/* stair */
+    <rect x=123 y=448.5 fill="none" width="31" height="8.5" />/* stair */
+    <rect x=145 y=250   fill="#ccc" width="40" height="120" rx="8" />/* train */
+    <rect x=195 y=250   fill="#ccc" width="40" height="120" rx="8" />/* train */
+    <rect x=245 y=250   fill="#ccc" width="40" height="120" rx="8" />/* train */
+    <rect x=295 y=250   fill="#ccc" width="40" height="120" rx="8" />/* train */
+    <rect x=345 y=250   fill="#ccc" width="40" height="120" rx="8" />/* train */
+    <rect x=218 y=275   fill="white" width="93" height="34" />/* label*/
+  </g>
+
+
+  <circle cx="95" cy="95" r="80" fill="BurlyWood" stroke="grey" stroke-width="1" />/* Mixing Tank */
+  <circle cx="40" cy="250" r="30" fill="#d5d5d5" stroke="grey" stroke-width="1" />/* Chem Tank Ortho */
+  <circle cx="40" cy="320" r="30" fill="#d5d5d5" stroke="grey" stroke-width="1" />/* Chem Tank Acid */
+  <circle cx="40" cy="390" r="30" fill="#d5d5d5" stroke="grey" stroke-width="1" />/* Chem Tank Hypo */
+
+    <line x1="80" y1="391" x2="90" y2="400" stroke="yellow" stroke-width="4" /> /* gantry v */
+  <line x1="70" y1="400" x2="80" y2="391" stroke="yellow" stroke-width="4" /> /* gantry v */
+
+  <line x1="40" y1="440" x2="40" y2="205" stroke="grey" stroke-width="10" /> /* Catwalk v */
+  <line x1="40" y1="406" x2="122.5" y2="406" stroke="grey" stroke-width="10" /> /* catwalk h */
+
+
+
+  <text x="35" y="510" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Front</text>
+  <text x="35" y="530" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Door</text>
+  <text x="150" y="200" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Back</text>
+  <text x="150" y="222" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Door</text>
+
+    <text x="225" y="27" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="white">Bin</text>
+    <text x="455" y="515" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Gate</text>
+   <text x="400" y="45" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="grey">Parking</text>
+
+  <text x="95" y="90" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">Mixing</text>
+  <text x="95" y="107" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">Tank</text>
+
+  <text x="40" y="319" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">Chem</text>
+  <text x="40" y="335" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">Tanks</text>
+  <text x="265" y="290" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="Orange">Nanofiltration</text>
+  <text x="265" y="305" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="Orange">Trains</text>
+  <text x="83" y="410" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">catwalk</text>
+
+</svg>
+</html>
+</div><</nobr>>
+[[Continue|gf1]]
+

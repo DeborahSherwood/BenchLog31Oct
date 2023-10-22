@@ -16,6 +16,7 @@
 }>>
 
 <<set $player to {
+    name: '',
     pos: '',
     coveralls: false,
     cType: '',

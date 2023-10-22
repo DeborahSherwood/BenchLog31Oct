@@ -14,6 +14,7 @@ After 25 years in your chosen profession, you retired but found yourself with to
 You decided you wanted to do something easy and stress free.
 <br /><br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine. 
+Your name is <<textbox "$player.name" "Name">>.
 <br /><br />
 [[About]]<br />
 [[Begin| bg1]]

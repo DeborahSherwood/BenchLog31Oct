@@ -2,7 +2,7 @@
 <<set $player.pos to passage()>><<if visited() is 1>>
 You enter the control room just as the day crew is wrapping up for the night.
 They pass along pertinent information before eagerly heading out. 
-<<else>>The control room is the epicenter of the plant.<</if>>
+<<else>>The control room over looks the plant floor. The control desk has all the devices required to run the plant.<</if>>
 <<if $actions.joe is false>>One operator lingers by the door.<</if>>
 <br /><br />
 <<if $actions.joe is false>>[[Talk to Joe|p3]]<br /><</if>>

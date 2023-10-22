@@ -63,3 +63,24 @@ a:hover {
       color: #c58136;
       
 }
+#floor {
+  width: 540px;
+  height: 580px;
+  resize: both;
+  overflow: auto;
+
+}
+.svg-container {
+  width: 540px;
+  height: 580px;
+  resize: both;
+  overflow: auto;
+
+}
+svg {
+  width: 95%;
+  height: 95%;
+ }
+ .test {
+  background-image: url(grid.svg);
+ }

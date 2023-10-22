@@ -1,0 +1,13 @@
+:: sf1
+
+<<if visited() is 1>>On the second floor is an entrance to a catwalk, 
+the control room, a supplies closet, and a locker room.
+There is also a stairway down to the ground floor.<<else>>
+    You're on the second floor. <</if>>
+<br /><br />
+
+[[Control Room|p4]]<br />
+[[Catwalk|cw1]]<br />
+[[Ground Floor|gf1]]<br />
+[[Supplies Closet|jc1]]<br />
+[[Locker Room|lr1]]<br />

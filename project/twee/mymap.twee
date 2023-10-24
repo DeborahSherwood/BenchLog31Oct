@@ -1,7 +1,8 @@
-  :: map
+:: mymap
+
   <<nobr>>
   <div id="floor">
-  <html>
+<html>
   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
 
   <line x1="80" y1="395" x2="80" y2="215" stroke="yellow" stroke-width="6" /> /* Gantry Crane */
@@ -36,7 +37,7 @@
   <line x1="122.5" y1="390" x2="400" y2="390" stroke-width="2" /> /* second Floor boundary */
   <line x1="151" y1="465.5" x2="260" y2="465.5" stroke-width="2" /> /* loft boundary */
 
-  <line x1="151" y1="455.5" x2="260" y2="455.5" stroke-width="2" /> /* second floor hall/control room boundary */
+  <line x1="151" y1="440" x2="320" y2="440" stroke-width="2" /> /* second floor hall/control room boundary */
 
   <!-- Draw the vertical lines  -->
   <line x1="0" y1="0" x2="0" y2="515" stroke-width="2" /> /* left outer line */
@@ -98,6 +99,7 @@
 
   </svg>
   </html>
-  </div><</nobr>>
+  </div>
+  
+  <</nobr>>
   [[Continue|gf1]]
-

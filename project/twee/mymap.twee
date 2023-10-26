@@ -97,7 +97,7 @@
   <text x="265" y="320" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="Orange">Trains</text>
   <text x="83" y="415" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="black">catwalk</text>
   <text x="265" y="420" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="white">Control Room</text>
-  <text x="300" y="400" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="white">Atrium</text>
+  <text x="190" y="500" font-size="15" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="white">Atrium</text>
 
   </svg>
   </html>

@@ -4,7 +4,7 @@
     [[Continue|previous()]]
     <<else>>
 <<if $actions.respects is false>>
-"Paying Respects" means a walk down a narrow catwalk from the control room towards the back of the plant.
+"Paying Respects" means a walk down a narrow catwalk from the second floor towards the back of the plant.
 The catwalk is suspended above several chemical tanks.
 About half way down the walk, there is a memorial to the only operator ever killed while on duty at the plant.
 <br /><br />
@@ -38,7 +38,7 @@ His clothes and skin would be completely dissolved before the fire department ar
 :: cw7
 <<set $actions.respects to true>>
 The plant was shutdown for three days while crews removed what was left of Marcus's body.
-The tank was disassembled and removed. It was replaced by two modern tanks that are completely enclosed with only fill and release valves.
+The old tanks were disassembled and removed. They were replaced by modern tanks that are completely enclosed with only fill and release valves.
 "Paying Respects" is a grim reminder of how important safety protocols are and why everyone must follow them. You tap the photo of the young lad then head back down the catwalk.
 <br /><br />
 [[Second floor landing|sf1]]<br />

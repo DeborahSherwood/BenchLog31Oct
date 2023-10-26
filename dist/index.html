@@ -99,7 +99,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="79" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
+	<!-- UUID://F14172B6-DD10-4C50-AF16-43DE19EB2C64// --><tw-storydata name="Bench Log 31 Oct" startnode="78" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="F14172B6-DD10-4C50-AF16-43DE19EB2C64" zoom="1" format="SugarCube" format-version="2.36.1" options="debug" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "app.min.css" */
 #ui-bar{background-color:#1f1b1a}.low{text-transform:lowercase}.tra{text-transform:capitalize}#passages{margin-left:3px}.passage{max-width:80ex;margin-left:3px}body{background:#1f1b1a;color:#8b957c;font-family:Tahoma,sans-serif;font-size:large}.title{font-weight:700;text-decoration:underline;padding-bottom:8px}.voiceA{color:#c9b06d}.voiceB{color:#b09c61}.demon{color:#d75741}a{color:#d7a241}a:hover{color:#d7a241;text-decoration:underline}a.link-visited{color:#c58136}#floor{width:540px;height:580px;resize:both;overflow:auto}.svg-container{width:540px;height:580px;resize:both;overflow:auto}svg{width:95%;height:95%}.test{background-image:url(grid.svg)}
 /* twine-user-stylesheet #2: "deftone stylus.ttf" */
 @font-face {
@@ -108,7 +108,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">"use strict";var testvar=444,today=(config.addVisitedLinkClass=!0,Config.passages.nobr=!0,new Date),date=today.getMonth()+1+"-"+today.getDate()+"-"+today.getFullYear(),time=today.getHours()+":"+today.getMinutes(),dateTime=date+" "+time,curTime=time;curTime.toLocaleString("en-US",{hour12:!1}),State.variables.curDateTime=dateTime,State.variables.curTime=curTime;</script><tw-passagedata pid="1" name="About" tags="" position="100,100" size="100,100">A flirtatious demon, a visitor from the past 
 and a night of near misses make for a fun
 adventure at the old water treatment plant.
-You&#39;ve got to defend your soul and help save another.
+
 &lt;br /&gt;&lt;br /&gt;
 [[About You|ay1]]&lt;br /&gt;
 [[Begin| bg1]]</tw-passagedata><tw-passagedata pid="2" name="ay1" tags="" position="225,100" size="100,100">After 25 years in your chosen profession, you retired but found yourself with too much free time on your hands.
@@ -694,13 +694,7 @@ Using all your strength, you pull down the latch and swing open the access door.
   &lt;/div&gt;
   
   &lt;&lt;/nobr&gt;&gt;
-  [[Continue|gf1]]</tw-passagedata><tw-passagedata pid="71" name="owp" tags="" position="100,975" size="100,100">&lt;&lt;set $actions.owpRead to true&gt;&gt;
-The old brick water treatment plant was built in the early 1950s to provide clean water to the growing city.
-The plant is well maintained and kept clean but it is old. There must be twelve coats of paint on the interior walls.&lt;br /&gt;
-You take great pride in keeping the floors cleaned and polished; the thick windows crystal clear and the walls and doors smudge free.
-&lt;br /&gt;&lt;br /&gt;
-[[About]]&lt;br /&gt;
-[[Begin| bg1]]</tw-passagedata><tw-passagedata pid="72" name="r1" tags="" position="225,975" size="100,100">&lt;&lt;if $player.phone is true&gt;&gt;You try to answer the call on the duty phone but your hear static then a pop then the phone crumbles into several pieces.
+  [[Continue|gf1]]</tw-passagedata><tw-passagedata pid="71" name="r1" tags="" position="100,975" size="100,100">&lt;&lt;if $player.phone is true&gt;&gt;You try to answer the call on the duty phone but your hear static then a pop then the phone crumbles into several pieces.
     &lt;&lt;set $player.phone to false, $actions.phone to true&gt;&gt;
     &lt;&lt;else&gt;&gt;
 Policy states the phone must be answered by the third ring.
@@ -711,7 +705,7 @@ You race towards the control room,
 &lt;&lt;else&gt;&gt;padding your way around the corner.
 &lt;&lt;/if&gt;&gt;
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|r2]]</tw-passagedata><tw-passagedata pid="73" name="r2" tags="" position="350,975" size="100,100">&lt;&lt;set $plant.phoneRinging to false&gt;&gt;
+[[Continue|r2]]</tw-passagedata><tw-passagedata pid="72" name="r2" tags="" position="225,975" size="100,100">&lt;&lt;set $plant.phoneRinging to false&gt;&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant. How can I help you?&quot;&lt;/span&gt; You answer, breathlessly.&lt;br /&gt;
 &lt;span class=&quot;demon&quot;&gt;&quot;Are you there alone?&quot;&lt;/span&gt; A raspy voice asks. The voice sounds like Demi Moore only slightly deeper.&lt;br /&gt;
 &lt;&lt;set _options to [&#39;\&quot;I, I. Pardon me?\&quot;&#39;, &#39;\&quot;Of course not. We\&#39;re fully staffed at the moment.\&quot;&#39;, &#39;\&quot;Yes I am, why?\&quot;&#39;]&gt;&gt;
@@ -719,7 +713,7 @@ You race towards the control room,
 	&lt;&lt;optionsfrom _options&gt;&gt;
 &lt;&lt;/listbox&gt;&gt; 
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|r1a]]</tw-passagedata><tw-passagedata pid="74" name="r1a" tags="" position="475,975" size="100,100">&lt;&lt;if $phrase eq &quot;I, I. Pardon me?&quot;&gt;&gt;
+[[Continue|r1a]]</tw-passagedata><tw-passagedata pid="73" name="r1a" tags="" position="350,975" size="100,100">&lt;&lt;if $phrase eq &quot;I, I. Pardon me?&quot;&gt;&gt;
     &lt;span class=&quot;voiceA&quot;&gt;&lt;&lt;= $phrase&gt;&gt;&lt;/span&gt; You stutter.&lt;br /&gt;
     &lt;span class=&quot;demon&quot;&gt;&quot;You&#39;re not alone, are you?&quot;&lt;/span&gt;&lt;br /&gt;
     &lt;&lt;elseif $phrase eq &quot;Of course not. We&#39;re fully staffed at the moment.&quot;&gt;&gt;
@@ -731,7 +725,7 @@ You race towards the control room,
 &lt;&lt;/if&gt;&gt;
 You&#39;re not sure how to respond so you hang up. That is no emergency, you think to yourself.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|r3]]</tw-passagedata><tw-passagedata pid="75" name="r3" tags="" position="600,975" size="100,100">The phone rings again, causing you to jump.&lt;br /&gt;
+[[Continue|r3]]</tw-passagedata><tw-passagedata pid="74" name="r3" tags="" position="475,975" size="100,100">The phone rings again, causing you to jump.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant. Can I help you?&quot;&lt;/span&gt; You ask hesitantly.&lt;br /&gt;
  &lt;span class=&quot;demon&quot;&gt;&quot;I mean, do you want company tonight?&quot;&lt;/span&gt; The Demi-Demon voice queries.&lt;br /&gt;
  &lt;span class=&quot;voiceA&quot;&gt;&quot;Sorry, no guest are allowed.&quot;&lt;/span&gt; You hang up quickly.&lt;br /&gt;
@@ -739,7 +733,7 @@ You&#39;re not sure how to respond so you hang up. That is no emergency, you thi
 You walk around in circles in the control room for a moment. You really don&#39;t want to deal with any strangers tonight.
 But the voice sounds sincere and also very sexy.
 &lt;br /&gt;&lt;br /&gt;
-[[Continue|r4]]</tw-passagedata><tw-passagedata pid="76" name="r4" tags="" position="725,975" size="100,100">After just one minute, the phone rings again.
+[[Continue|r4]]</tw-passagedata><tw-passagedata pid="75" name="r4" tags="" position="600,975" size="100,100">After just one minute, the phone rings again.
 You wait until the very end of the the third ring to answer.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Water Treatment Plant.&quot;&lt;/span&gt; You just blurt it out, not trying to sound nice or professional.&lt;br /&gt;
 &lt;span class=&quot;voiceB&quot;&gt;&quot;You&#39;re in danger!&quot;&lt;/span&gt; It sounds like  the caller is trying to talk while under water.&lt;br /&gt;
@@ -747,7 +741,7 @@ You hang up and start rubbing your temples. You don&#39;t like the way this nigh
 After a minute you rise to find a puddle of water near the control desk that wasn&#39;t there before.
 You furrow your brow. Now you&#39;ll have to get out the mop and bucket and clean that mess up.
 &lt;br /&gt;&lt;br /&gt;
-[[Supplies Closet|jc1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="77" name="sf1" tags="" position="850,975" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;On the second floor is an entrance to a catwalk, 
+[[Supplies Closet|jc1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="76" name="sf1" tags="" position="725,975" size="100,100">&lt;&lt;if visited() is 1&gt;&gt;On the second floor is an entrance to a catwalk, 
 the control room, a supplies closet, and a locker room.
 There is also a stairway down to the ground floor.&lt;&lt;else&gt;&gt;
     You&#39;re on the second floor. &lt;&lt;/if&gt;&gt;
@@ -757,9 +751,9 @@ There is also a stairway down to the ground floor.&lt;&lt;else&gt;&gt;
 [[Catwalk|cw1]]&lt;br /&gt;
 [[Ground Floor|gf1]]&lt;br /&gt;
 [[Supplies Closet|jc1]]&lt;br /&gt;
-[[Locker Room|lr1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="78" name="Spiders" tags="" position="975,975" size="100,100">The large spider you saw earlier has summoned her kin. 
+[[Locker Room|lr1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="77" name="Spiders" tags="" position="850,975" size="100,100">The large spider you saw earlier has summoned her kin. 
 The entrance to the restroom is now laced with cobwebs.
-The usually transparent threads are woven so tight the web drapes like a sheet over the door.</tw-passagedata><tw-passagedata pid="79" name="Introduction" tags="" position="1100,975" size="100,100">You&#39;re an Operator in Training at the old water treatment plant. You work the night shift. 
+The usually transparent threads are woven so tight the web drapes like a sheet over the door.</tw-passagedata><tw-passagedata pid="78" name="Introduction" tags="" position="975,975" size="100,100">You&#39;re an Operator in Training at the old water treatment plant. You work the night shift. 
 Your job is to monitor the plant and well systems, tidy up, and answer the phone in case of emergencies.
 This is your second week on the job.
 &lt;br /&gt;&lt;br /&gt;
@@ -767,10 +761,10 @@ This is your second week on the job.
 [[About You|ay1]]&lt;br /&gt;
 [[Begin| bg1]]&lt;br /&gt;
 [[Back Door|bd1]]&lt;br /&gt;
-[[mymap]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="80" name="bg1" tags="" position="1225,975" size="100,100">You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
+[[mymap]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="79" name="bg1" tags="" position="1100,975" size="100,100">You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
 Swiping again to unlock the back door then making your way up to the second floor.
 &lt;br /&gt;&lt;br /&gt;
-[[Second floor|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="81" name="p3" tags="" position="100,1100" size="100,100">&lt;&lt;set $actions.joe to true&gt;&gt;
+[[Second floor|sf1]]&lt;br /&gt;</tw-passagedata><tw-passagedata pid="80" name="p3" tags="" position="1225,975" size="100,100">&lt;&lt;set $actions.joe to true&gt;&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Hey, Joe.&quot;&lt;/span&gt; You say as he steps closer to you.&lt;br /&gt;
 &lt;span class=&quot;voiceB&quot;&gt;&quot;Keep a vigilant watch tonight.&quot; &lt;/span&gt;He pauses. &lt;span class=&quot;voiceB&quot;&gt;&quot;There might be some mischief going on.&quot;&lt;/span&gt;&lt;br /&gt;
 You&#39;re confused for just one second then remember the date.&lt;br /&gt;
@@ -781,7 +775,7 @@ He tilts his head towards the catwalk.&lt;br /&gt;
 &lt;span class=&quot;voiceA&quot;&gt;&quot;Sure, sure, Joe. Everything will be fine.&quot;&lt;/span&gt; You assure him.&lt;br /&gt;
 He purses his lips together for a moment, like he doesn&#39;t agree, then heads downstairs to leave.&lt;br /&gt;
 &lt;br /&gt;
-[[Continue|p4]]</tw-passagedata><tw-passagedata pid="82" name="StoryInit" tags="" position="225,1100" size="100,100">&lt;&lt;nobr&gt;&gt;
+[[Continue|p4]]</tw-passagedata><tw-passagedata pid="81" name="StoryInit" tags="" position="100,1100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $phrase to &#39;&#39;&gt;&gt;
 &lt;&lt;set $style to &#39;&#39;&gt;&gt;
 

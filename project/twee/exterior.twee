@@ -1,17 +1,23 @@
 :: ex1
-
-You enter a grassy area with a large mixing tank on one side and a trash dumpster on the other. 
-You can return to the plant though the back door.
+<<if visited() is 1>>
+You enter a grassy area with a large mixing tank, a chlorine storage building, and a tool shed nearby. 
+You can return to the plant though the back door.<<else>>You're at the exterior of the plant.<</if>>
 <br /><br />
 [[Mixing Tank|mt1]]<br />
-[[Trash Dumpster|ex2]]<br />
+[[Chlorine Storage|ex3]]<br />
+[[Tool Shed|ex2]]<br />
 [[Back Door|bd1]]
 
 
 :: ex2
 
-The trash dumpster is nearly full of trash. Good thing Sanitation is scheduled to empty it tomorrow.
-CONDITIONAL VARIABLE HERE!
+The tool shed has tools used to keep the plant ship-shape.
+There are wrenches, spare filters, small pump motors and other miscellaneous tools.
 <br /><br />
+[[Valve Wrench]]<br />
 [[Mixing Tank|mt1]]<br />
 [[Back Door|bd1]]
+
+:: ex3
+
+The chlorine building stores canisters of chlorine gas.

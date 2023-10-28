@@ -2,7 +2,7 @@
 
 A flirtatious demon, a visitor from the past 
 and a night of near misses make for a fun
-adventure at the old water treatment plant.
+adventure at the water treatment plant.
 
 <br /><br />
 [[About You|ay1]]<br />
@@ -13,8 +13,8 @@ adventure at the old water treatment plant.
 After 25 years in your chosen profession, you retired but found yourself with too much free time on your hands.
 You decided you wanted to do something easy and stress free.
 <br /><br />
-This job is exactly what you needed. It can be lonely at times, but it suits you just fine. 
-Your name is <<textbox "$player.name" "Name">>.
+This job is exactly what you needed. It can be lonely at times, but it suits you just fine. <br />
+Your name is <<textbox "$player.name" "Riley">>.
 <br /><br />
 [[About]]<br />
 [[Begin| bg1]]

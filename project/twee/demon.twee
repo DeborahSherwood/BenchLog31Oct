@@ -1,12 +1,13 @@
 :: d1
 
-You're about to reach for the $cleaning when you hear a loud sound, like a heavy piece of fabric being ripped in half.
+You're about to reach for the $cleaning when you hear a loud sound, like a thick piece of fabric being ripped apart.
 You stick your head out the door of the closet and peer down the hall.
 <br /><br />
 [[Continue|d2]]
 
 :: d2
-Standing before you is the most beautiful creature you have ever seen.
+
+Standing before you is the most beautiful creature you've ever seen.
 Glossy black and curly hair, vibrant red skin, tall, shapely and wearing a devilish smile.
 You take a deep breath and step into the hall.
 <br /><br />
@@ -24,8 +25,7 @@ You follow her in, concerned about security protocols and whatnot.
 :: d4 
 
 She makes her way to the control desk and sits down, twisting the chair to face you.
-You've stopped short because the floor, which needed to be mopped, has not only been mopped but also waxed and polished. It positively shines.
-You stand in disbelief, looking down at the floor.<br />
+Unauthorized people are most certainly not allowed to sit at the control desk. But you don't say anything.<br />
 <span class="demon">"Let's have some fun."</span> She says quite playfully, looking to you for a response.
 <br /><br />
 <<set _options to ['\"How did you get in here?\"', '\"We\'re not allowed to have guests.\"', '\"Can I help you with something?\"']>>
@@ -37,8 +37,8 @@ You stand in disbelief, looking down at the floor.<br />
 :: d5
 
 Ignoring you, she begins to speak.
-<span class="demon">"I'm here."</span> She pauses then carefully chooses her words. <br />
-<span class="demon">"I'm here because I want you."</span> She emphasizes the "you".<br />
+<span class="demon">"I'm here."</span> She pauses for emphasis. <br />
+<span class="demon">"I'm here because I want you."</span> She looks deep into your eyes.<br />
 You're speechless. She rolls the chair closer to you and reaches for your hands with both arms. 
 <br /><br />
 [[Take her hands|d6]]<br />
@@ -46,10 +46,10 @@ You're speechless. She rolls the chair closer to you and reaches for your hands 
 
 :: d6
 
-Grasping both her hands in yours, you instantly feel a burst of energy pulse through your body. You feel free, like you could fly.
-And powerful and strong. And you feel love, so much love. Love like you've never felt before. <br />
-<span class="demon">"This could be us. We could be together like this forever!"</span> Her voice echoes, thumping like a base line.<br />
-You feel yourself slipping away,getting lost in this surreal euphoria. 
+Grasping both her hands in yours, you instantly feel a burst of energy pulse through your body. 
+You feel free, like you could fly. And powerful and strong. And you feel love, so much love. Love like you've never felt before. <br />
+<span class="demon">"This could be us. We could be together like this forever."</span> Her voice echoes, thumping like a base line.<br />
+You feel yourself slipping away, getting lost in this surreal euphoria. 
 <br /><br />
 [[Ask her name|d8]]<br />
 [[Take a step back|d7]]<br />
@@ -78,6 +78,6 @@ But before you can say it, an alarm sounds on the monitoring console.
 <span class="voiceA">"I have to go check that."</span> You back away slowly.<br />
 <span class="voiceA">"Stay right here."</span> You point towards her and the chair.<br />
 She grins playfully, she knows she's got you. As you turn to leave, you feel warmth in the space between your legs.
-As though all the blood in your body is rushing there.
+As though all the blood in your body is rushing to there.
 <br /><br />
 [[Control Room|p4]]

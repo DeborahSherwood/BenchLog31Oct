@@ -4,7 +4,7 @@
     [[Continue|previous()]]
     <<else>>
 The door to the supplies closet is closed and locked. 
-Management started locking the door when they noticed large amounts of toilet paper missing during COVID-19.
+Management started locking the door when they noticed large amounts of toilet paper went missing during COVID-19.
 <br /><br />
 [[Unlock closet|jc2]]<br /><</if>>
 

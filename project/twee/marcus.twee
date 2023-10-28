@@ -1,0 +1,21 @@
+:: m1 
+
+As you approach, you see a shadow against the tank, mostly in the shape of a human.
+As you near the figure, you realize it isn't human but water vapor in the shape of a human.
+<br /><br />
+[[Check Tank Access|m2]]<br />
+[[Exterior|ex1]]
+
+:: m2
+
+As you move to check over the door, the water vapor drifts in front of you.<br />
+<span class="marcus">"You're in danger."</span> 
+The voice is just a whisper and you recognize it from the phone call you received earlier.
+You turn and look into the vapor, you see his face somehow, the face of Marcus. 
+<br /><br />
+[[Talk to Marcus|m3]]<br />
+[[Exterior|ex1]]
+
+:: m3
+
+<span class="voiceA"></span>

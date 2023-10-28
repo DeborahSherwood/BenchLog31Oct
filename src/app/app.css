@@ -52,6 +52,13 @@ body
 .demon {
   color: #d75741;
 }
+.alarm {
+  color: #b3351f;
+}
+.marcus {
+  
+  color: #1f67b3;
+}
 a {
   color: #d7a241;
   }
@@ -80,7 +87,4 @@ a:hover {
 svg {
   width: 95%;
   height: 95%;
- }
- .test {
-  background-image: url(grid.svg);
  }

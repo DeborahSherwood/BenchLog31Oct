@@ -9,7 +9,7 @@ The catwalk is suspended above several chemical tanks.
 About half way down the walk, there is a memorial to the only operator ever killed while on duty at the plant.
 <br /><br />
 [[Next|cw2]]<<else>>
-    You've already paid your respects. There's nothing to do on the catwalk right now.
+    There's nothing to do on the catwalk right now.
     <br /><br />
     [[Control Room|p4]]
 <</if>>
@@ -50,7 +50,7 @@ You can go to the second floor landing or get back in the loading cart.
 You hear a strange sound near the memorial.
 <br /><br />
 [[Memorial|cw9]]<br />
-[[Second floor landing|sf1]]<br />
+[[Landing|sf1]]<br />
 [[Loading Cart|gc10]]<br />
 
 :: cw9
@@ -60,4 +60,11 @@ You hear a strange sound near the memorial.
 Looking at the picture of the normally smiling young Marcus, the face is now haggard and his eyes are full of worry.<br />
 <span class="voiceA">"Gah!"</span> You gasp and run back to the safety of the control room.
 <br /><br />
-[[Control Room|p4]]<br />
+[[Landing|sf1]]<br />
+
+:: cw10
+
+You're at the far end of the catwalk. The loading cart is here.
+From here you can enter the loading cart or walk along the catwalk.
+<br /><br />
+[[Landing|sf1]]<br />

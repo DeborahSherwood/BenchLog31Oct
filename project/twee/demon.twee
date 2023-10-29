@@ -48,7 +48,7 @@ You're speechless. She rolls the chair closer to you and reaches for your hands 
 
 Grasping both her hands in yours, you instantly feel a burst of energy pulse through your body. 
 You feel free, like you could fly. And powerful and strong. And you feel love, so much love. Love like you've never felt before. <br />
-<span class="demon">"This could be us. We could be together like this forever."</span> Her voice echoes, thumping like a base line.<br />
+<span class="demon">"This could be us, <<= $player.name >>. We could be together like this forever."</span> Her voice echoes, thumping like a base line.<br />
 You feel yourself slipping away, getting lost in this surreal euphoria. 
 <br /><br />
 [[Ask her name|d8]]<br />
@@ -58,7 +58,7 @@ You feel yourself slipping away, getting lost in this surreal euphoria.
 
 You take a big step back and take a moment to collect yourself.<br />
 <span class="voiceA">"Who are you?"</span> you whisper.<br />
-A name pops into your head. Her name. She arches her eyebrows and grins. She knows you know. 
+A name pops into your head. Her name. <<= $demon.name >>. She arches her eyebrows and grins. She knows you know. 
 But before you can say it, an alarm sounds on the monitoring console.
 <br /><br />
 [[Monitoring Console|mca1]]<br />
@@ -67,7 +67,7 @@ But before you can say it, an alarm sounds on the monitoring console.
 :: d8
 
 <span class="voiceA">"Who are you?"</span> you whisper.<br />
-A name pops into your head. Her name. She arches her eyebrows and grins. She knows you know. 
+A name pops into your head. Her name. <<= $demon.name >>. She arches her eyebrows and grins. She knows you know. 
 But before you can say it, an alarm sounds on the monitoring console.
 <br /><br />
 [[Monitoring Console|mca1]]<br />
@@ -77,7 +77,6 @@ But before you can say it, an alarm sounds on the monitoring console.
 
 <span class="voiceA">"I have to go check that."</span> You back away slowly.<br />
 <span class="voiceA">"Stay right here."</span> You point towards her and the chair.<br />
-She grins playfully, she knows she's got you. As you turn to leave, you feel warmth in the space between your legs.
-As though all the blood in your body is rushing to there.
+She smiles playfully, she knows she's got you. As you turn to leave, you feel warmth in the space between your legs.
 <br /><br />
-[[Control Room|p4]]
+[[Landing|sf1]]<br />

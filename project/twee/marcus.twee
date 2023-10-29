@@ -18,4 +18,11 @@ You turn and look into the vapor, you see his face somehow, the face of Marcus.
 
 :: m3
 
-<span class="voiceA"></span>
+<span class="voiceA">"How can this be?"</span> You ask.<br />
+<span class="marcus">"That doesn't matter. Just know her only reason for being here is you."</span> <br />
+<span class="voiceA">"She told me that much. How is that dangerous?"</span> You press.<br />
+The mist quickly dissipates as you hear the back door close. It's <<= $demon.name>>. 
+She's walking towards you, twirling her hair.
+<br /><br />
+[[Check Tank Access|m2]]<br />
+[[Exterior|ex1]]

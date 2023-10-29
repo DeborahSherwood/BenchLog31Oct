@@ -27,6 +27,12 @@
     key: false,
 }>>
 
+<<set $demon to {
+    name: ''
+}>>
+<<set $lc to {
+    pos: ''
+}>>
 <<set $gc to {
     state: "off",
     hook: "top",

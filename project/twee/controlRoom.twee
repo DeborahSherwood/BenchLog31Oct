@@ -10,4 +10,4 @@ They pass along pertinent information before eagerly heading out.
 [[Cameras|c1]]<br />
 <<if $actions.phone is false and $player.phone is false>>[[Duty Phone|dp1]]<br /><</if>>
 [[Monitoring Console|mc1]]<br />
-[[Exit|sf1]]<br />
+[[Landing|sf1]]<br />

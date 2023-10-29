@@ -7,7 +7,7 @@ There are two large pipes horseshoeing up from the grates.<<else>>
 <br /><br />
 [[Exterior|ex1]]<br />
 [[Control Panel|gc1]]<br />
-<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><<elseif $gc.loc eq "back" and $gc.hook eq "floor">>[[Climb into cart|gc6]]<br /><</if>>
+<<if $gc.cart is false>>[[Loading Cart|gc4]]<br /><<elseif $gc.pos eq "back" and $gc.hook eq "floor">>[[Climb into cart|gc6]]<br /><</if>>
 [[Pipes|bd2]]<br />
 [[Ground Floor|gf1]]<br />
 

@@ -2,13 +2,12 @@
 <<if $actions.joe is false>>You'd better get checked in first.<br />
     <br />
     [[Continue|previous()]]<<else>>
-On the ground floor you can go to the plant floor, take the stairs to the second floor, or exit the front door.
+On the ground floor you can enter the plant floor, take the stairs to the second floor, or exit through the front door.
 It's always 10 degrees cooler than the second level.
 <br /><br />
-
-[[Plant|gf3]]<br />
-[[Stairs to second level|sf1]]<br />
-[[Front door|gf2]]<br /><</if>>
+[[Plant Floor|gf3]]<br />
+[[Stairs Up|sf1]]<br />
+[[Front Exit|gf2]]<br /><</if>>
 
 :: gf2
 
@@ -16,26 +15,25 @@ The front door is self locking with a badge swipe on the outside of the door and
 You're currently inside the building.
 <br /><br />
 [[Front Exit|gf4]]<br />
-[[Plant floor|gf3]]<br />
-[[Stairs to second level|sf1]]
+[[Plant Floor|gf3]]<br />
+[[Stairs Up|sf1]]
 
 :: gf3
-<<set $player.pos to "front">><<if visited() is 1>>
-The plant has grates set over 12 feet deep pits. The pits have large pipes that carry water throughout the treatment process.
+<<set $player.pos to "front-floor">><<if visited() is 1>>
+The plant has grates set over 12 foot deep pits. The pits have large pipes that carry water throughout the treatment process.
 There are five very large nano filtration filters to your right. 
-Chemical tanks are to your left with the catwalk suspended above.
-At the far end of the plant floor, you see a control panel for a Gantry crane near the back door.<<else>>
+Chemical tanks are to your left with the catwalk suspended above.<<else>>
 From here, you can go to the ground floor entry or walk over the grates to the back door of the plant. UNLESS THERE IS LAVA<</if>>
 <br /><br />
 <<if $gc.ride is true and $gc.pos eq $player.pos and $gc.cart is true>>[[Exit Cart|gc11]]<br /><</if>>
 <<if $gc.ride is false and $gc.pos eq $player.pos and $gc.cart is true>>[[Climb into Cart|gc10]]<br /><</if>>
 [[Back Door|bd1]]<br />
-[[Ground Floor|gf1]]<br />
+[[Ground Floor Entry|gf1]]<br />
 
 :: gf4
 
 Exiting the plant, you hear the door lock behind you. 
-In front of you is signage and a lighted flag pole. The landscaping includes tall grasses and knockout rose bushes.
+In front of you is signage and a lighted flag pole. The landscaping includes tall grasses and rose bushes.
 <br /><br />
 [[Signage|gf6]]<br />
 [[Flag pole|gf7]]<br />

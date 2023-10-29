@@ -1,5 +1,5 @@
 :: gc1
-<<set $player.pos to "back">>
+<<set $player.pos to "back-floor">>
 <<if visited() is 1>>The control panel has three buttons.<</if>> 
 The crane is currently powered <<= $gc.state>> with the hook at the <<= $gc.hook>> level of the girder. 
 The crane is positioned in the <<= $gc.pos>> of the plant floor. <<if $gc.cart is true>>The loading cart is attached to the hook.<</if>>
@@ -11,7 +11,7 @@ The crane is positioned in the <<= $gc.pos>> of the plant floor. <<if $gc.cart i
 [[Back door|bd1]]<br />
 
 :: gct1
-<<set $player.pos to "back">><<if $gc.state eq "off">><<set $gc.state to "on">><<else>><<set $gc.state to "off">><</if>>
+<<if $gc.state eq "off">><<set $gc.state to "on">><<else>><<set $gc.state to "off">><</if>>
 The crane is now <<= $gc.state>>.
 <br /><br />
 [[On/Off Toggle|gct1]]<br />
@@ -20,7 +20,7 @@ The crane is now <<= $gc.state>>.
 [[Back door|bd1]]<br />
 
 :: gct2
-<<set $player.pos to "back">><<if $gc.state is "on">>
+<<if $gc.state is "on">>
 <<if $gc.hook eq "floor">><<set $gc.hook to "catwalk">><<else>><<set $gc.hook to "floor">><</if>>
 The hook moves to the <<= $gc.hook>> position then stops.<<else>>
     The crane needs power first.
@@ -33,7 +33,7 @@ The hook moves to the <<= $gc.hook>> position then stops.<<else>>
 [[Back door|bd1]]<br />
 
 :: gc3
-<<set $player.pos to "back">><<if $gc.state eq "on">>
+<<if $gc.state eq "on">>
 <<if $gc.pos eq "front" or $gc.pos eq "back">><<set $gc.pos to "middle", $player.pos to "middle">>
 <<elseif $gc.pos eq "middle" and $gc.start eq "back">><<set $gc.pos to "front", $gc.start to "front">>
 <<elseif $gc.pos eq "middle" and $gc.start eq "front">><<set $gc.pos to "back", $gc.start to "back">><</if>>
@@ -55,7 +55,7 @@ The loading cart can be used with the Gantry crane to move loads along the rails
 [[Control Panel|gc1]]<br />
 
 :: gc5
-<<set $player.pos to "back">>
+
 <<if $gc.hook eq "floor" and $player.pos eq $gc.pos>><<set $gc.cart to true>>
     You attach the heavy chain from the cart onto the Gantry hook.<<else>>
     The Gantry hook needs to be lowered first.<</if>>

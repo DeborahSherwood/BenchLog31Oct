@@ -1,0 +1,50 @@
+:: ts1
+<<if visited() is 1>>
+The tool shed has a variety of tools and equipment to keep the plant running smoothly.<<else>>
+There are different types of equipment and storage lockers here.<</if>>
+<br /><br />
+[[Look in Cabinet|ts2]]<br />
+[[Look at Equipment|ts3]]<br />
+[[Look in Tool Chest|ts4]]<br />
+[[Look on Workbench|ts5]]<br />
+
+:: ts2
+
+The cabinet contains spools of electrical wire, various pipe fittings and connectors, relay switches and other miscellaneous parts.
+<br /><br />
+[[Continue|ts1]]
+
+:: ts3
+
+An air compressor sits in one corner next to a sand blasting cabinet. Spare pumps and parts are scattered about.
+<br /><br />
+[[Continue|ts1]]
+
+:: ts4
+
+The tool chest contains several screwdrivers and wrenches of various size and type.
+<br /><br />
+[[More|mts4]]<br />
+[[Continue|ts1]]
+
+:: ts5
+
+A grinding/buffing wheel is mounted to the workbench along with a drill press and bins of various sized screws, nuts, bolts and brackets.
+<br /><br />
+[[Continue|ts1]]
+
+:: mts4
+
+Along with various types of screwdrivers are valve wrenches in three sizes.
+<br /><br />
+[[Small Valve Wrench|tw][$item to 'small wrench']]<br />
+[[Medium Valve Wrench|tw][$item to 'medium wrench']]<br />
+[[Large Valve Wrench|tw][$item to 'large wrench']]<br />
+
+:: tw
+
+You select the <<= $item>>.
+You can either carry the <<= $item>> or put it in your cargo pocket (if it is empty).
+<br /><br />
+[[Carry]]
+[[Pocket]]

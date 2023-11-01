@@ -23,8 +23,11 @@ The OUT valve is currently open.
 
 :: bd3
 
-Turning the valve is tough work. It takes about 20 full rotations of the wheel to open the valve.
+<<if visited() is 1>> <<set $iftv to "closed" >>
+The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.<<else>>
+Your at the "In from Tank" valve.<</if>>
+
 
 :: bd4
 
-Turning the valve is tough work. It takes about 20 full rotations of the wheel to close the valve.
+The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.

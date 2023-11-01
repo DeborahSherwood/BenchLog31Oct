@@ -13,10 +13,13 @@ There are two large pipes horseshoeing up from the grates.<<else>>
 
 :: bd2
 
-The large pipes are labeled "In from Tank" and "Out to Tank" and have valves attached. The valves are controlled with hand wheels that look like metal steering wheels.
+The large pipes are labeled "In from Tank" and "Out to Tank" and have valves attached. 
+The valves are controlled with hand wheels that look like metal steering wheels.
+Some instructions are stuck to the pipes.
 The IN valve is currently closed. 
 The OUT valve is currently open.
 <br /><br />
+[[Instructions|bd5]]<br />
 [[Turn IN Valve|bd3]]<br />
 [[Turn OUT Valve|bd4]]<br />
 [[Back Door|bd1]]
@@ -26,8 +29,28 @@ The OUT valve is currently open.
 <<if visited() is 1>> <<set $iftv to "closed" >>
 The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.<<else>>
 Your at the "In from Tank" valve.<</if>>
+<br /><br />
+<<if $player.wrench is true>>[[Use Wrench]]<br /><</if>>
+[[Back Door|bd1]]
 
 
 :: bd4
+<<if visited() is 1 and $player.wrench is false>> <<set $ottv to "closed" >>
+The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.<<else>>
+Your at the "Out to Tank" valve.<</if>>
+<br /><br />
+<<if $player.wrench is true>>[[Use Wrench]]<br /><</if>>
+[[Back Door|bd1]]
 
-The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.
+:: bd5
+
+The instructions are clear. <br />
+<br />
+Operators,<br />
+Only one pipe can be open at a time. <br />
+Therefore, close a pipe before opening the other.<br />
+Otherwise, the plant will blow up.<br />
+- Joe
+
+<br /><br />
+[[Back Door|bd1]]

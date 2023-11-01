@@ -88,3 +88,11 @@ svg {
   width: 95%;
   height: 95%;
  }
+
+ .label {
+  background-color: grey;
+  color: rgb(198, 23, 23);
+  font-weight: bold;
+  padding: 10px; 
+  width: 60%;
+ }

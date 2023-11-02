@@ -69,9 +69,8 @@ He looks slightly peeved that you hit him. <br />
 <span class="voiceA">"<<=$phrase>>"</span> You holler as he creeps down the stairs. You hear him laughing as he heads out.
 You have an assigned locker where you keep coveralls, safety shoes and other personal items. 
 <br /><br />
-[[Coveralls|lr5]]<br />
+[[Change over|lr5]]<br />
 [[Safety Shoes|lr6]]<br />
-[[Key Card|lr7]]<br />
 [[Closet key|lr14]]<br />
 [[Exit|e1]]
 
@@ -95,7 +94,6 @@ Summer is over but it's still warm enough to wear your summer coveralls.
 <</if>>Oddly, you pick up a scent from the coveralls. As if someone else may have worn them. 
 <br /><br />
 [[Safety Shoes|lr6]]<br />
-[[Key Card|lr7]]<br />
 [[Closet key|lr14]]<br />
 [[Exit|e1]]
 
@@ -174,9 +172,7 @@ The floor is cool against your bare feet, which is actually kind of nice.
 :: lr7
 
 <<if $player.key is false>><<set $player.key to true>>
-You keep your key card then put your other personal items in the locker.
-Your key card is also your ID card. All the exterior doors can be opened by swiping your card.
-You attach the card to a retractable key holder then clip it to your side pocket.
+You keep your key card then put your other personal items, including your most precious heirloom, into the locker.
 <br /><br />
 [[Coveralls|lr5]]<br />
 [[Safety Shoes|lr6]]<br />

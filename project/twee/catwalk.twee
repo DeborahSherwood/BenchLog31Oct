@@ -1,10 +1,7 @@
 :: cw1
-<<if $actions.joe is false>>You'd better get checked in first.<br />
-    <br />
-    [[Continue|previous()]]
-    <<else>>
-<<if $actions.respects is false>>
-"Paying Respects" means a walk down a narrow catwalk from the second floor towards the back of the plant.
+
+<<if $actions.respects is false and $actions.joe is true>>
+"Paying Respects" means a walk down a narrow catwalk from the second floor towards the back of the plant.<<elseif $actions.respects is false and $actions.joe is false >>
 The catwalk is suspended above several chemical tanks.
 About half way down the walk, there is a memorial to the only operator ever killed while on duty at the plant.
 <br /><br />
@@ -13,7 +10,7 @@ About half way down the walk, there is a memorial to the only operator ever kill
     <br /><br />
     [[Control Room|p4]]
 <</if>>
-<</if>>
+
 
 :: cw2
 

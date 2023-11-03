@@ -1,8 +1,9 @@
 :: About
 
-A flirtatious demon, a visitor from the past 
-and a night of near misses make for a fun
-adventure at the water treatment plant.
+A flirtatious demon and a visitor from the past 
+challenge you for your very soul.
+Will you stave them off to say alive, join their ranks or outsmart them at their own devious game.
+
 
 <br /><br />
 [[About You|ay1]]<br />
@@ -14,7 +15,7 @@ After 25 years in your chosen profession, you retired but found yourself with to
 You decided you wanted to do something easy and stress free.
 <br /><br />
 This job is exactly what you needed. It can be lonely at times, but it suits you just fine. <br />
-Your name is <<textbox "$player.name" "Riley">>.
+Your name is <<textbox "$player.name" "Horacio">>.
 <br /><br />
 [[About]]<br />
 [[Begin| bg1]]

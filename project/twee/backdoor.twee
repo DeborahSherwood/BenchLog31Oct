@@ -14,8 +14,8 @@ There are two large pipes horseshoeing up from the grates.<<else>>
 :: bd2
 
 The large pipes are labeled "In from Tank" and "Out to Tank" and have valves attached. 
-The valves are controlled with hand wheels that look like metal steering wheels.
-Some instructions are stuck to the pipes.
+The valves are opened and closed with metal hand wheels.
+Instructions are stuck to a pipe.
 The IN valve is currently closed. 
 The OUT valve is currently open.
 <br /><br />
@@ -44,8 +44,6 @@ Your at the "Out to Tank" valve.<</if>>
 
 :: bd5
 
-The instructions are clear. <br />
-<br />
 Operators,<br />
 Only one pipe can be open at a time. <br />
 Therefore, close a pipe before opening the other.<br />
@@ -53,4 +51,4 @@ Otherwise, the plant will blow up.<br />
 - Joe
 
 <br /><br />
-[[Back Door|bd1]]
+[[Continue|bd2]]

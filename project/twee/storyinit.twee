@@ -7,6 +7,9 @@
     lights: false,
     phoneRinging: false
 }>>
+<<set $demon to {
+    name: 'Lucciana'
+}>>
 
 <<set $actions to {
     owpRead: false,

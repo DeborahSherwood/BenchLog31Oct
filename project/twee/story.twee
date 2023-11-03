@@ -19,7 +19,7 @@ This is your second week on the job.
 <br /><br />
 [[About]]<br />
 [[About You|ay1]]<br />
-[[Tutorial]]<br />
+[[Tutorial|tut]]<br />
 [[Begin| bg1]]<br />
 [[Back Door|bd1]]<br />
 [[mymap]]<br />
@@ -27,9 +27,8 @@ This is your second week on the job.
 :: bg1 
 
 You arrive promptly at a quarter to six, swiping your key card to gain entry to the gated parking lot.
-Swiping again to unlock the back door. Head to the second floor to check in.
-<br /><br />
-[[Second floor|sf1]]<br />
+Swiping again to unlock the back door. 
+<<include "bd1">>
 
 
 :: p3

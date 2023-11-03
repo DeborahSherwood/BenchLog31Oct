@@ -1,4 +1,4 @@
-:: tutorial
+:: tut
 
 This is a choice-based text adventure set at a water treatment plant.
 While you don't need to know all the details of how water treatment works, a few notes here will help with game play.
@@ -16,35 +16,54 @@ This is a free world where you are free to explore everywhere on the map.
 Some locations may seem useless when first visited but every location contributes to the story eventually.
 The in-game map can be printed from the browser or will be available in the sidebar.
 <br /><br />
-[[Map|mapTut]]<br />
+[[Plant|plantTut]]<br />
+[[Pipes|pipeTut]]<br />
+[[Demons|demonTut]]<br />
+[[Soulstone|stoneTut]]<br />
+[[Tutorial|tut]]<br />
 
 :: plantTut
 
 Water is piped in from wells that draw raw water from underground aquifers.
-The raw water runs through "trains", a nanofiltration process, that cleans water of impurities.
-The water is treated with chlorine and other chemicals then distributed to the city as well as stored in an above ground mixing tank.
-The mixing tank can hold up to 2 Million gallons of fresh water. The water is mixed or rather, moved around inside the tank, to prevent algae growth and stagnation.
+The raw water is run through "trains", a nanofiltration process, that cleans the water of impurities.
+The water is then treated with chlorine and other chemicals and is then distributed to the city as well as stored in an above ground mixing tank.
+The mixing tank can hold up to 2 Million gallons of treated water. The treated water is mixed or rather, moved around inside the tank, to prevent algae growth and stagnation.
 <br /><br />
-[[Introduction]]
+[[Map|mapTut]]<br />
+[[Pipes|pipeTut]]<br />
+[[Demons|demonTut]]<br />
+[[Soulstone|stoneTut]]<br />
+[[Tutorial|tut]]<br />
 
 :: pipeTut
 
 Pipes in the floor move water into and out of the plant.
 The flow and direction can be changed and adjusted using valves in the pipes.
 <br /><br />
-[[Introduction]]
+[[Map|mapTut]]<br />
+[[Plant|plantTut]]<br />
+[[Demons|demonTut]]<br />
+[[Soulstone|stoneTut]]<br />
+[[Tutorial|tut]]<br />
 
 :: demonTut
 
-Demons are usually defined as fallen angels and are hungry for your soul. 
+Demons are usually defined as fallen angels who are hungry for your soul. 
 They're also known for being tricky and deceitful and possess supernatural powers.
 <br /><br />
-[[Introduction]]
+[[Map|mapTut]]<br />
+[[Plant|plantTut]]<br />
+[[Pipes|pipeTut]]<br />
+[[Soulstone|stoneTut]]<br />
+[[Tutorial|tut]]<br />
 
 :: stoneTut
 
 A Soulstone is a mythical token that a demon can bind your soul to.
 The token can be anything that has meaning to you.
 <br /><br />
-[[Introduction]]
+[[Map|mapTut]]<br />
+[[Plant|plantTut]]<br />
+[[Pipes|pipeTut]]<br />
+[[Tutorial|tut]]<br />
 

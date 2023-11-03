@@ -1,13 +1,12 @@
 :: gf1
-<<if $actions.joe is false>>You'd better get checked in first.<br />
-    <br />
-    [[Continue|previous()]]<<else>>
-On the ground floor you can enter the plant floor, take the stairs to the second floor, or exit through the front door.
-It's always 10 degrees cooler than the second level.
+
+On the ground floor you can go to the plant floor, take the stairs to the second floor, or go through the front door.
+There is an evacuation map on the wall.
 <br /><br />
 [[Plant Floor|gf3]]<br />
 [[Stairs Up|sf1]]<br />
-[[Front Exit|gf2]]<br /><</if>>
+[[Evacuation Map|mymap]]<br />
+[[Front Exit|gf2]]<br />
 
 :: gf2
 

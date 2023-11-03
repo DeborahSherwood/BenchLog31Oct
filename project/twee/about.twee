@@ -7,6 +7,7 @@ Will you stave them off to say alive, join their ranks or outsmart them at their
 
 <br /><br />
 [[About You|ay1]]<br />
+[[Tutorial|tut]]<br />
 [[Begin| bg1]]
 
 :: ay1
@@ -18,4 +19,5 @@ This job is exactly what you needed. It can be lonely at times, but it suits you
 Your name is <<textbox "$player.name" "Horacio">>.
 <br /><br />
 [[About]]<br />
+[[Tutorial|tut]]<br />
 [[Begin| bg1]]

@@ -18,6 +18,11 @@
     phone: false
 }>>
 
+<<set $valve to {
+    in: "open",
+    out: "closed"
+}>>
+
 <<set $player to {
     name: '',
     pos: '',
@@ -28,6 +33,7 @@
     phone: false,
     closetKey: false,
     key: false,
+    wrench: true
 }>>
 
 <<set $demon to {
@@ -38,7 +44,7 @@
 }>>
 <<set $gc to {
     state: "off",
-    hook: "top",
+    hook: "catwalk",
     pos: "back",
     cart: false,
     ride: false,

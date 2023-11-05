@@ -1,8 +1,8 @@
 :: bd1
 <<if visited() is 1>>
-You can exit to the rear exterior of the plant or walk across the plant to the ground floor entry.
-There is a Gantry crane control panel here and an empty loading cart leaning against the back wall.
-There are two large pipes horseshoeing up from grates.<<else>>
+From the back door you can exit to the rear exterior of the plant or walk across the plant to the ground floor entry.
+There is a Gantry crane and control panel here and an empty loading cart leaning against the back wall.
+There are two large pipes horseshoeing up from the underground through grates.<<else>>
     You're at the back door.<</if>>
 <br /><br />
 [[Exterior|ex1]]<br />
@@ -16,30 +16,31 @@ There are two large pipes horseshoeing up from grates.<<else>>
 The large pipes are labeled "In from Tank" and "Out to Tank" and have valves attached. 
 The valves are opened and closed with metal hand wheels.
 Instructions are stuck to one of the pipes.
-The IN valve is currently closed. 
-The OUT valve is currently open.
+The "In from Tank" valve is currently <<= $valve.in>>. 
+The "Out to Tank" valve is currently <<= $valve.out>>.
 <br /><br />
 [[Instructions|bd5]]<br />
-[[Turn IN Valve|bd3]]<br />
-[[Turn OUT Valve|bd4]]<br />
+[[In Valve|bd3]]<br />
+[[Out Valve|bd4]]<br />
 [[Back Door|bd1]]
 
 :: bd3
 
-<<if visited() is 1>> <<set $iftv to "closed" >>
+<<if visited() is 1>> 
 The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.<<else>>
 Your at the "In from Tank" valve.<</if>>
 <br /><br />
-<<if $player.wrench is true>>[[Use Wrench]]<br /><</if>>
+<<if $player.wrench is true>>[[Use Wrench|bd5][$tank to "in"]]<br /><</if>>
 [[Back Door|bd1]]
 
 
 :: bd4
-<<if visited() is 1 and $player.wrench is false>> <<set $ottv to "closed" >>
+
+<<if visited() is 1 and $player.wrench is false>> 
 The valve seems stuck and no matter how hard you try, it won't turn. A tool might help.<<else>>
 Your at the "Out to Tank" valve.<</if>>
 <br /><br />
-<<if $player.wrench is true>>[[Use Wrench]]<br /><</if>>
+<<if $player.wrench is true>>[[Use Wrench|bd5][$tank to "out"]]<br /><</if>>
 [[Back Door|bd1]]
 
 :: bd5
@@ -52,3 +53,7 @@ Otherwise, the plant will blow up.<br />
 
 <br /><br />
 [[Continue|bd2]]
+
+:: bd5
+
+<<= $tank>>

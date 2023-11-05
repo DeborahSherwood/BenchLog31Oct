@@ -1,6 +1,6 @@
 :: gc1
 <<set $player.pos to "back-floor">>
-<<if visited() is 1>>The control panel has three buttons.<</if>> 
+<<if visited() is 1>>The Gantry crane control panel has three buttons.<</if>> 
 The crane is currently powered <<= $gc.state>> with the hook at the <<= $gc.hook>> level of the girder. 
 The crane is positioned in the <<= $gc.pos>> of the plant floor. <<if $gc.cart is true>>The loading cart is attached to the hook.<</if>>
 <br /><br />

@@ -8,13 +8,13 @@ While you don't need to know all the details of how water treatment works, a few
 [[Pipes|pipeTut]]<br />
 [[Demons|demonTut]]<br />
 [[Soulstone|stoneTut]]<br />
-[[Introduction]]
+[[Begin| bg1]]<br />
 
 :: mapTut
 
-This is a free world where you are free to explore everywhere on the map. 
+This is a free world map where you are free to explore. 
 Some locations may seem useless when first visited but every location contributes to the story eventually.
-The in-game map can be printed from the browser or will be available in the sidebar.
+The in-game map can be printed from the browser or will be available in the sidebar (once you find it).
 <br /><br />
 [[Plant|plantTut]]<br />
 [[Pipes|pipeTut]]<br />
@@ -26,7 +26,7 @@ The in-game map can be printed from the browser or will be available in the side
 
 Water is piped in from wells that draw raw water from underground aquifers.
 The raw water is run through "trains", a nanofiltration process, that cleans the water of impurities.
-The water is then treated with chlorine and other chemicals and is then distributed to the city as well as stored in an above ground mixing tank.
+The water is treated with chemicals and finally stored in a mixing tank.
 The mixing tank can hold up to 2 Million gallons of treated water. The treated water is mixed or rather, moved around inside the tank, to prevent algae growth and stagnation.
 <br /><br />
 [[Map|mapTut]]<br />
@@ -49,7 +49,7 @@ The flow and direction can be changed and adjusted using valves in the pipes.
 :: demonTut
 
 Demons are usually defined as fallen angels who are hungry for your soul. 
-They're also known for being tricky and deceitful and possess supernatural powers.
+They're also known for being deceitful and possess supernatural powers.
 <br /><br />
 [[Map|mapTut]]<br />
 [[Plant|plantTut]]<br />
